@@ -1,0 +1,903 @@
+
+$marketing-site-hero-height: 65vh;
+$tthh-hero-height: 100vh;
+// if you are goign to change the height, please create a new _scss file specific to the project
+
+canvas { 
+	display: block; 
+	position: fixed;
+	z-index: -1; // put it to background
+	left: 0; // position it to fill the whole screen
+	top: 0; // position it to fill the whole screen
+}
+.menu-top-logo {
+  padding: 0 20px 0 10px;
+  @include breakpoint(small) {
+    display: none;
+  }
+  @include breakpoint(medium) {
+    display: none;
+  }
+  @include breakpoint(large) {
+    display: inline-block;
+  }
+}
+.menu-top-logo-wht {
+  color: #ffffff !important;
+  filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(220deg) brightness(103%) contrast(103%) !important;
+}
+html.has-scroll-smooth {
+  overflow: auto !important;
+}
+.marketing-site-hero {
+  height: $marketing-site-hero-height;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: 40em) {
+    background-position: center center;
+  }
+}
+
+.marketing-site-hero-content {
+  max-width: $global-width;
+  margin: 0 auto;
+  padding: $global-menu-padding;
+
+  .button.round {
+    border-radius: 5000px;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    margin-bottom: 0;
+  }
+}
+button {
+  cursor: pointer;
+}
+button:focus, a:focus {outline:0;}
+
+.grid-padding-x {
+  padding: $global-menu-padding;
+}
+a {
+  color: $blue;
+  font-size: 1.5rem;
+
+  @include breakpoint(small) {
+    font-size: inherit;
+  }
+
+  &:hover {
+    color: $blue;
+    text-decoration: underline;
+  } 
+}
+a.button {
+  background-color: $white;
+  color: $black-drk;
+  font-family: 'Graphik-Semibold' !important;
+
+  &:hover {
+    transition: all ease-in-out .25s;
+    opacity: .8;    
+  }
+}
+a.btn-trans {
+  background: transparent;
+  border: solid 2px $white;
+  border-radius: 4px;
+  padding: 12px 28px;
+  color: $white;
+  font-family: 'Graphik-Semibold';
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 10%;
+  text-decoration: none !important;
+  display: block;
+  width: fit-content;
+  margin-top: 32px;
+  transition: all ease-in-out .25s;
+
+  &:hover {
+    opacity: .8 !important;
+  }
+}
+a.button-black {
+  background: #000000 !important;
+  color: $white !important;
+}
+.note {
+  font-size: 0.625rem;
+  color: $white;
+  margin: 1rem 0 .3rem 0;
+  @include breakpoint(small) {
+    letter-spacing: 0.03rem;
+  }
+  @include breakpoint(medium) {
+    letter-spacing: 0.0625rem;
+  }
+  @include breakpoint(large) {
+    letter-spacing: 0.0625rem;
+  }
+}
+.subtitle-note {
+  font-size: 0.625rem;
+  color: $white;
+  letter-spacing: 0.0625rem;
+  margin: -1rem 0 2.5rem 0;
+  @include breakpoint(small) {
+    margin: 0 0 2.5rem 0;
+  }
+}
+.subtitle {
+  @include breakpoint(small) {
+    line-height: inherit;
+  }
+  @include breakpoint(medium) {
+    line-height: 38px;
+  }
+  @include breakpoint(large) {
+    line-height: 38px;
+  }
+
+}
+.text-left {
+  text-align: center !important;
+  @include breakpoint(large) {
+    text-align: left !important;
+  }
+}
+p {
+  color: $white;
+  font-size: 1.4rem;
+  letter-spacing: .5px;
+}
+strong {
+  font-family: $body-font-bold;
+}
+h1 {
+  font-size: 2.15rem;
+  line-height: 2.7rem;
+  color: $white;
+  font-weight: 400;
+  letter-spacing: -1.5px;
+  @include breakpoint(small) {
+    margin-bottom: 1rem !important;
+  }
+
+  @include breakpoint(large) {
+    font-size: 5rem !important;
+    margin: 0 !important;
+    line-height: 5.9rem;
+  }
+}
+.h1-pricing {
+  font-size: 2.15rem;
+  line-height: 2.7rem;
+  font-weight: 400;
+  letter-spacing: -1.5px;
+  margin: 0;
+
+  @include breakpoint(large) {
+    font-size: 5rem;
+    line-height: 5.9rem;
+    margin: 0;
+  }
+}
+h2 {
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: $black;
+  display: inline-flex;
+  margin: 0;
+
+  @include breakpoint(large) {
+    font-size: 3.125rem;
+  }
+}
+h5 {
+  font-size: 2.188rem;
+  font-weight: 900;
+}
+p, h6 {
+  padding: 0;
+  margin: 0;
+}
+h6 {
+  font-size: .9rem;
+  font-family: $body-font-bold;
+
+  @include breakpoint(medium) {
+    font-size: 1.5rem; 
+  }
+}
+.h1-pad-bot {
+  transition: all ease-in-out .2s;
+
+  @include breakpoint(small) {
+    padding: 0 5%;
+    font-size: 34px;
+    line-height: 120%;
+  }
+
+  @include breakpoint(medium) {   
+      padding: 0 12%;
+      font-size: 54px;
+      line-height: 115%;
+  }
+
+  @include breakpoint(large) {
+      padding: 0 0 35px 0;
+      font-size: 5rem !important;
+      line-height: 115%;
+  }
+
+}
+.black {
+  color: #000000 !important;
+}
+.align-bottom {
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+.header-title {
+  width: 90%;
+  transition: all ease-in-out .25s;
+  @include breakpoint(large) {
+    width: 790px;
+  }
+}
+.masthead-wide {
+  padding: 14rem 0 0 0;
+}
+.header-wide {
+  width: 100%;
+}
+.carousel-high {
+  padding: 16rem 0 0 0;
+}
+#love {
+  position: relative;
+  margin-bottom: 80px;
+  display: block;
+  height: 10px;
+}
+.title {
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.0625rem;
+  margin: 0;
+}
+.title-video {
+  margin-top: 2.5rem;
+  font-size: 1rem;
+  @include breakpoint(large) {
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+.subtitle-video {
+  padding: 0 1.25rem;
+  @include breakpoint(large) {
+    padding: 0 12.5rem;
+  }
+}
+.txt-mob {
+  @include breakpoint(small) {
+    display: inline-block;
+  }
+  @include breakpoint(medium) {
+    display: inline-block;
+  }
+  @include breakpoint(large) {
+    display: none;
+  }
+}
+.txt-desk {
+  @include breakpoint(small) {
+    display: none;
+  }
+  @include breakpoint(medium) {
+    display: none;
+  }
+  @include breakpoint(large) {
+    display: inline-block;
+  }
+}
+.text-green {
+  color: $green;
+}
+.text-black {
+  color: $black-drk !important;
+}
+.text-left {
+  text-align: left;
+  padding: 0 .5rem;
+  @include breakpoint(large) {
+    padding-right: 3rem;
+  }
+}
+.text-padding {
+  @include breakpoint(small) {
+    padding-right: 0;
+  }
+  @include breakpoint(large) {
+   padding-right: 3rem;
+  }
+}
+.txt-left {
+  text-align: left;
+}
+.tthh-height {
+  height: $tthh-hero-height;
+}
+.tthh-section {
+  margin-top: 7rem;
+}
+.tthh-short {
+  margin-top: 1rem;
+}
+.tthh-container {
+  padding: 4rem 1rem;
+  color: $white;
+
+  @include breakpoint(large) {
+    padding: 7rem;
+  }
+  
+  .img-arrow {
+    width: 100px;
+    float: left;
+    margin-right: 1.25rem;
+  }
+  .highlight {
+    span  {
+      font-family: $body-font-bold;
+      font-weight: 900;
+      background-color: $green;
+      padding: 0.938rem 1.563rem;
+      border-radius: 1.563rem;
+    }
+  }
+  .subheader {
+    font-family: $body-font-bold;
+    color: $white;
+    font-size: 1.7rem;
+    margin: 1.7rem 0 2.5rem 0;
+    letter-spacing: -1px;
+    text-align: center;
+    transition: all ease-in-out 2.25s;
+    @include breakpoint(large) {
+      font-size: 3.125rem;
+    }
+  }
+
+  .subtitle {
+    max-width: 61.875rem;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+    font-size: 1.063rem;
+    @include breakpoint(large) {
+      font-size: 1.4rem;
+      padding: 2.5rem 0;
+    }
+  }
+
+  h4 {
+    font-size: 17px;
+    color: $white;
+    letter-spacing: 0.031rem;
+    margin: 2.5rem 0;
+    @include breakpoint(medium) {
+      font-size: 1.5rem;
+    }
+  }
+  a.button, .button-menu {
+    padding: 1.1rem 1.2rem; 
+    margin: 0;
+    background-color: $white;
+    color: $black-drk;
+    font-family: 'Graphik-Semibold';
+
+    &:hover {
+      background-color: $white !important;
+      opacity: .8 !important;
+    }
+  }
+}
+.button-watch {
+  margin-top: 0 !important;
+}
+.button-header {
+  margin-top: 25px !important;
+}
+.h4 {
+  font-size: 17px;
+  margin-bottom: -5px;
+  @include breakpoint(medium) {
+    font-size: 1.5rem;
+  }
+}
+.text-upper {
+  text-transform: uppercase;
+  font-family: 'Graphik-Semibold';
+  font-size: 1rem !important;
+  letter-spacing: 10%;
+}
+.all-container {
+  margin-top: 25vh;
+}
+.tthh-masthead {
+  padding-top: 7rem;
+  
+  @include breakpoint(large) {
+    padding-top: 14rem;
+  }
+}
+.button-menu{
+  padding: 0.9rem 1rem !important; 
+  color: $black-drk !important;
+}
+.originals-tile-cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-content: baseline;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  font-family: $body-font-bold;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 8px #333;
+  line-height: 1.9rem;
+  padding: 0 20px;
+  z-index: 999;
+  @include breakpoint(large) {
+    font-size: 2.6rem;
+    line-height: 2.9rem;
+  }
+}
+.img-grid {
+  margin-bottom: 8.75rem;
+  margin-top: -1.5rem
+}
+.img-chan {
+  margin-top: 5.5rem;
+}
+.grid-tabs {
+  padding: 7rem 5.5rem 0 3.5rem;
+}
+.grid-deal {
+  padding-top: 4rem;
+}
+.grid-flip {
+  flex-direction: column-reverse;
+
+  @include breakpoint(large) {
+    flex-direction:initial;
+  }
+}
+.icon-arrow-container {
+  margin: 14rem 0 0 0;
+  overflow: hidden;
+}
+.icon-arrow {
+  width: 60px;
+
+
+  @include breakpoint(large) {
+    width: 100px;
+  }
+}
+.quiz-container {
+  margin: 10rem 0;
+  padding: 5.5rem 10%;
+  background-color: $green;
+  color: $black;
+}
+
+
+video.tthh-video {
+  width: 100%;
+  height: 70%;
+  margin-top: 2.5rem;
+  z-index: -1;
+  border-radius: 20px;
+  outline: none;
+
+  @include breakpoint(large) {
+    width: 80%;
+  }
+}
+
+.vid-wrapper {
+  width: -webkit-fill-available;
+  // max-width: 1800px;
+
+  transition: all ease-in-out .25s;
+
+  @include breakpoint(small) {
+      margin: 0 25px;
+      border-radius: 16px;
+  }
+  @include breakpoint(medium) {
+      margin: 0 40px;
+      border-radius: 25px;
+  }
+  @include breakpoint(large) {
+      margin: 0 64px;
+      border-radius: 25px;
+  }
+}
+
+.vid-title {
+  color: $white;
+  text-align: left;
+  font-family: 'Graphik-Semibold';
+  transition: all ease-in-out .25s;
+
+  @include breakpoint(small) {
+      margin-top: 24px;
+      padding-bottom: 0;
+  }
+  @include breakpoint(medium) {
+      font-size: 48px;
+      padding-bottom: 48px;
+  }
+  @include breakpoint(large) {
+      font-size: 48px;
+      padding-bottom: 48px;
+      margin-top: 0 !important;
+  }
+}
+
+a.button {
+    text-transform: $button-text-decoration;
+    white-space: nowrap;
+    background: $white;
+    letter-spacing: 1px;
+    color: $black-drk;
+    padding: 0.7rem .6rem;
+
+    @include breakpoint(medium) {
+      padding: 0.9rem 1rem;
+    }
+}
+$marketing-site-three-up-width: 900px;
+
+.marketing-site-three-up {
+  text-align: center;
+  padding: 2rem 0;
+
+  .row {
+    max-width: $marketing-site-three-up-width;
+  }
+
+  .columns {
+    margin-bottom: 1rem;
+
+    @media screen and (min-width: 40em) {
+      margin-bottom: 0;
+    }
+  }
+
+  .fa {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: $primary-color;
+  }
+}
+
+.marketing-site-three-up-headline {
+  margin-bottom: 2rem;
+  font-size: 24px;
+}
+.note-fav {
+  font-size: 0.625rem;
+  color: $white;
+  letter-spacing: 0.0625rem;
+  transition: all ease-in-out .25s;
+  @include breakpoint(small) {
+    margin: 1rem 1rem 0 1rem;
+  }
+  @include breakpoint(medium) {
+    margin: 1rem 3rem 0 3rem;
+  }
+  @include breakpoint(large) {
+    margin: 1rem 0 0 0;
+  }
+}
+.note-live {
+  margin-top: -1.5rem;
+}
+.live-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-content: space-between;
+  flex-flow: wrap;
+  margin: 4rem 0;
+  @include breakpoint(large) {
+    margin: 7rem 0;
+  }
+
+  div {
+    padding: 5px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 70%;
+    overflow: hidden;
+    @include breakpoint(medium) {
+      padding: 9px;
+      width: 70px;
+      height: 70px;
+    }
+  }
+}
+.img-live-icon {
+  background-color: $white;
+  width: 40px;
+  height: 40px;
+
+  @include breakpoint(medium) {
+    width: 50px;
+    height: 50px;
+  }
+}
+footer .footer--legal-link {
+  font-size: 12px;
+}
+.section {
+  display: grid;
+  place-items: center;
+}
+
+
+
+
+
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+            transform: translateX(calc(-250px * 7));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+            transform: translateX(calc(-250px * 7));
+  }
+}
+.slider {
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.slider::before, .slider::after {
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  -webkit-animation: scroll 30s linear infinite;
+          animation: scroll 30s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+
+
+
+.note-new-price {
+  margin: 10px 0;
+  @include breakpoint(small) {
+    margin: 0 10px 15px 0;
+  }
+  @include breakpoint(medium) {
+    margin: 10px 0;
+  }
+  @include breakpoint(large) {
+    margin: 10px 0;
+  }
+}
+.note-new-price p {
+  color: #111111;
+  font-size: 12px;
+  @include breakpoint(small) {
+    padding-bottom: 0;
+    font-size: 10px;
+    text-align: center;
+  }
+  @include breakpoint(medium) {
+    font-size: 12px;
+    text-align: left;
+  }
+  @include breakpoint(large) {
+    padding-bottom: 0;
+    font-size: 12px;
+    text-align: left;
+  }
+}
+
+.chart-feed {
+  transition: all ease-in-out .25s;
+  @include breakpoint(small) {
+    font-size: 20px;
+    text-align: center;
+  }
+  @include breakpoint(medium) {
+    font-size: 24px;
+    text-align: center;
+  }
+  @include breakpoint(large) {
+    font-size: 32px;
+    text-align: left;
+  }
+  font-family: 'Graphik-bold';
+  color: $green;
+  margin: 60px 0 0 0;
+}
+
+.chart-feed-black {
+  color: #000000;
+}
+
+
+
+.close-button-center {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+
+  &:after {
+    content: '';
+    background: url(https://hulu-matchmaker.s3.amazonaws.com/attachments/ckro70zxjobbr1u72rc1zmsac-icon-close.svg) no-repeat;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+}
+
+//audio player
+.audio-wrapper {
+  z-index: 99999;
+  position: fixed;
+  right: 360px;
+  top: 22px;
+  transition: all ease-in-out .25s;
+  @include breakpoint(small) {
+    right: 70px;
+    top: 15px;
+  }
+  @include breakpoint(medium) {
+    right: 70px;
+    top: 15px;
+  }
+  @include breakpoint(large) {
+    right: 360px;
+    top: 22px;
+  }
+}
+#player-container #play-pause {
+  cursor: pointer;
+  text-indent: -999999px;
+  height: 25px;
+  width: 25px;
+  padding: 0;
+  z-index: 2;
+  background-repeat: no-repeat!important;
+  background-position: center;
+  background-size: 100%;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+.play {
+  background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl5ikheo0saug1v3cnqcp1utb-icon-sound-off.full.png');
+}
+.pause {
+   background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl5ikhejxapzh1v586o6b7ihv-icon-sound-on.full.png')!important;
+}
+.reveal-overlay {
+  z-index: 999999;
+}
+
+
+.partner-wrapper {
+  width: max-content;
+  margin: 0 auto;
+  margin-bottom: 0;
+}
+.partner-title {
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: .6px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.partner-title-wht {
+  color: $white;
+}
+.partner-image {
+  align-items: center;
+    @include breakpoint(small) {
+      width: 260px;
+      display: inline-table;
+  }
+  @include breakpoint(medium) {
+      width: 100%;
+      display: flex;
+  }
+  @include breakpoint(large) {
+    width: 100%;
+    display: flex;
+  }
+}
+.partner-image img {
+  margin: 0 auto;
+  transition: all ease-in-out .25s;
+  @include breakpoint(small) {
+    width: 85px;
+    margin: 0 5px;
+  }
+  @include breakpoint(medium) {
+    width: 100px;
+    margin: 0 5px;
+  }
+  @include breakpoint(large) {
+    width: 100px;
+    margin: 0 5px;
+  }
+}
+.partner-image-125 {
+  transition: all ease-in-out .25s;
+  @include breakpoint(small) {
+    width: 110px !important;
+    margin: 0 5px;
+  }
+  @include breakpoint(medium) {
+    width: 125px !important;
+    margin: 0 5px;
+  }
+  @include breakpoint(large) {
+    width: 125px !important;
+    margin: 0 5px;
+  }
+}

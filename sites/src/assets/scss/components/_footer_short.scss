@@ -1,0 +1,63 @@
+.footer-short-wrapper {
+    position: fixed;
+    bottom: 1rem;
+    left: 2rem;
+    z-index: 9;
+    transition: all ease-in-out .25s;
+
+    @include breakpoint(small) {
+        left: 1rem;
+    }
+    @include breakpoint(large) {
+        left: 2rem;
+    }
+
+    li {
+        float: left;
+        margin-right: 1.5rem;
+        color: $white;
+        text-transform: uppercase;
+        font-size: 0.625rem;
+        letter-spacing: 0.357143px;
+
+        @include breakpoint(small) {
+            font-size: 0.425rem;
+            margin-right: .5rem;
+        }
+        @include breakpoint(large) {
+            font-size: 0.625rem;
+            margin-right: 1.5rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: $white;
+
+            &:hover {
+                // opacity: .7;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+.footer-share {
+    color: $white;
+    font-size: 0.625rem;
+    letter-spacing: 1.5px;
+    font-family: $body-font-bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.share-btn-short, .share-btn-short-lst {
+    margin-left: 15px;
+
+    &:hover {
+        opacity: .7;
+    }
+}
+.share-btn-short {
+    width: 11px;
+}
+.share-btn-short-lst {
+    width: 21px;
+}

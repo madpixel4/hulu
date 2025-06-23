@@ -1,0 +1,89 @@
+.cover-direction {
+    cursor: pointer;
+    background-color:rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 99;
+
+    h2 {
+
+    color: $white;
+    margin-top: 6rem;
+    font-weight: 600;
+
+    @include breakpoint(small) {
+        font-size: 1.25rem;
+    } 
+    @include breakpoint(medium) {
+    font-size: 1.25rem;
+    } 
+    @include breakpoint(large) {
+    font-size: 1.25rem;
+    }
+  }
+}
+#target {
+    display:flex;
+  }
+  
+  .Hide
+  {
+    display:none;
+  }
+  .cover-explore-icon {
+    position: absolute;
+    margin-top: -5rem;
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+  }
+  .cover-audio-note {
+      font-size: 1rem;
+      color: $white;
+      position: absolute;
+      top: 4.5rem;
+      transition: all ease-in-out .25s;
+
+      @include breakpoint(small) {
+        right: unset;
+      } 
+      @include breakpoint(medium) {
+        right: unset;
+      } 
+      @include breakpoint(large) {
+        right: 16rem;
+      } 
+  }
+  .cover-close-note {
+      font-size: 0.875rem;
+      color: $white;
+      position: absolute;
+      top: 10rem;
+      right: 5%;
+      display: inline-flex;
+      font-family: 'Graphik-Semibold';
+      letter-spacing: .5px;
+      line-height: 25px;
+
+      @include breakpoint(small) {
+        top: 6rem;
+      }
+      @include breakpoint(large) {
+        top: 10rem;
+      }
+
+
+      &:after {
+          content: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/ckro70zxjobbr1u72rc1zmsac-icon-close.svg');
+          padding-left: .7rem;
+      }
+  }

@@ -1,0 +1,139 @@
+.accordion-content, .accordion-title {
+    border: 0;
+    padding: 0;
+    background-color: transparent !important;
+  }
+  .accordion-title {
+    padding: 2rem 5rem;
+    border-bottom: 0 !important;
+    margin-bottom: 4rem;
+  }
+  .accordion-title:hover {
+    text-decoration: none;
+    background-color: transparent;
+    color: $black-drk;
+  }
+  .accordion-title::before {
+    content: '';
+    display: inline-flex;
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cklr5tzwj5uyi1jb0hp8svspd-icon-addon-show.full.png') no-repeat;
+    background-position: 0 0;
+    background-size: 100%;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    position: relative;
+    left: 0;
+    right: 0;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  .acc__active::before {
+    content: '';
+    display: inline-flex;
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cklr5tztg5uje1jaoo8l7xget-icon-addon-hide.full.png') no-repeat;
+    background-position: 0 0;
+    background-size: 100%;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    position: relative;
+    left: 0;
+    right: 0;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  .accordion-title-questions {
+    padding: 2rem 0;
+    font-size: 1rem;
+    line-height: 1.4rem;
+  
+    @include breakpoint(large) {
+      font-size: 1.125rem;
+    }
+  }
+  :last-child > .accordion-content:last-child {
+    border-bottom: 0;
+  }
+  .accordion-title-questions::before {
+    content: '';
+    background:url('https://hulu-matchmaker.s3.amazonaws.com/attachments/ckla0hy2s2hi21u87kcl3peig-icon-plus.svg') no-repeat;
+    background-position: 0 0;
+    background-size: 40px;
+    width: 40px;
+    height: 40px; 
+    display: inline;
+    float: right;
+    position: relative;
+    margin-top: -15px;
+  
+    @include breakpoint(large) {
+      background-size: 48px;
+      width: 48px;
+      height: 48px;
+    }
+  }
+  
+  .is-active > .accordion-title-questions::before {
+    content: '';
+    background:url('https://hulu-matchmaker.s3.amazonaws.com/attachments/ckla0hy2q2hno1u8snwyblspb-icon-minus.svg') no-repeat;
+    background-position: 0 0;
+    background-size: 40px;
+    width: 40px;
+    height: 40px;  
+    display: inline;
+    float: right;
+    position: relative;
+    margin-top: -15px;
+  
+    @include breakpoint(large) {
+      background-size: 48px;
+      width: 48px;
+      height: 48px;
+    }
+  }
+  .accordion-title:hover, .accordion-title:focus {
+    background-color: transparent;
+  }
+  .accordion-content-questions {
+    color: $medium-dark-gray;
+    margin: 1rem 0;
+    width: 80%;
+
+    a {
+      font-size: 1rem;
+    }
+  }
+  .accordion-ul {
+    margin: 2rem 0  1rem 0;
+
+    li {
+      list-style-type:disc ;
+      margin-left: 2rem;
+      padding-bottom: 1rem;
+    }
+  }
+  .acc {
+    margin: 0 auto;
+  }
+  .acc__title {
+    cursor: pointer;
+  }
+  .acc__card {
+    margin: 0;
+    position: relative;
+  }
+  .acc__panel {
+    background: $white;
+    color: $black-drk;
+    display: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+  .accordian-note {
+    color: $medium-dark-gray;
+    font-size: .7rem;
+    margin-top: 1.5rem;
+  }
+  

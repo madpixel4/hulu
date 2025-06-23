@@ -1,0 +1,1486 @@
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+// ::-webkit-scrollbar {
+//   width: 0px;
+// }
+// /* Track */
+// ::-webkit-scrollbar-track {
+//   box-shadow: inset 0 0 0px transparent; 
+//   border-radius: 0px;
+// }
+// /* Handle */
+// ::-webkit-scrollbar-thumb {
+//   background: transparent; 
+//   border-radius: 0px;
+// }
+// /* Handle on hover */
+// ::-webkit-scrollbar-thumb:hover {
+//   background: transparent; 
+// }
+
+.bk-gradient-huluween {
+  background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktvorw6doa0k1v6x6o057okg-bg-veil-grad-2-3x.full.jpg') no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999;
+  position: fixed;
+  @include breakpoint(small) {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktw52zmyovgl1v1n48p2aibf-bg-veil-grad-2-mobile3.full.jpg') no-repeat;
+    background-size: cover;
+    height: 101vh;
+  }
+  @include breakpoint(medium) {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktvorw6doa0k1v6x6o057okg-bg-veil-grad-2-3x.full.jpg') no-repeat;
+    background-size: cover;
+    height: 101vh;
+  }
+  @include breakpoint(large) {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktvorw6doa0k1v6x6o057okg-bg-veil-grad-2-3x.full.jpg') no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#hw-wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding:0px;
+  box-sizing:border-box;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  padding-right: 15px;
+  overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+#hw-wrapper::-webkit-scrollbar { /* WebKit */
+  width: 0;
+  height: 0;
+}
+.hw-tiles-wrapper {
+  background: transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9;
+}
+.hw-gradient {
+  width: 100vw;
+  height: 100vh;
+  z-index: 9;
+  position: absolute;
+  background: radial-gradient(transparent, black);
+}
+.hw-container {
+  width: 5057px;
+  height: 3222px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all ease-in-out .25s;
+  @include breakpoint(small) {
+    width: 2677px;
+  }
+  @include breakpoint(medium) {
+    width: 3539px;
+  }
+  @include breakpoint(large) {
+    width: 5057px;
+  }
+}
+.icon-audio {
+    margin-right: 2rem;
+    cursor: pointer;
+    position: absolute;
+    z-index: 9;
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        right: 40px;
+        top: 12px;
+      }
+    @include breakpoint(medium) {
+        right: 60px;
+        top: 12px;
+      }
+    @include breakpoint(large) {
+        right: 330px;
+        top: 20px;
+      }
+    &:hover {
+        opacity: .7;
+    }
+}
+.icon-audio-sub {
+  @include breakpoint(small) {
+    right: 40px;
+    }
+  @include breakpoint(medium) {
+      right: 60px;
+    }
+  @include breakpoint(large) {
+      right: 230px;
+    }
+}
+.playpause  {
+    cursor: pointer;
+    text-indent: -999999px;
+    height:1.875rem;
+    width: 1.875rem;
+    background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/ckrnuqlnun9rm1u6kcbsvb8tl-icon-audio-off.svg');
+    background-repeat: no-repeat!important;
+    background-position: center;
+    background-size: 1.875rem;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:1.875rem;
+  }
+.icon-play {
+  background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/ckro0fnhqnhyk1u6y8lv0xwqz-icon-audio-play.svg');
+}
+.icon-pause {
+    background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/ckrnuqlnun9rm1u6kcbsvb8tl-icon-audio-off.svg');
+}
+.play-button {
+  z-index: 99999999;
+  color: #000;
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  background: white;
+  top: 500px;
+  left: -543px;
+  margin: 0 auto;
+  right: 0;
+}
+.hw-logo {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+
+  img {
+    @include breakpoint(small) {
+      width: 70%;
+    }
+    @include breakpoint(medium) {
+      width: 375px;
+    }
+    @include breakpoint(large) {
+      width: 375px;
+    }
+  }
+}
+.hw-tile {
+  background: linear-gradient(349.11deg, #000000 -41.19%, rgba(0, 0, 0, 0) 41.44%), #424957;
+  border-radius: 0.75rem;
+  min-width: 15.625rem;
+  min-height: 9.688rem;
+  position: absolute;
+  cursor: pointer;
+  transition: all ease-in-out .25s;
+
+
+  .hw-tile-info-wrapper {
+      color: $white;
+      position: absolute;
+      left: 0.625rem;
+      bottom: 0.625rem;
+      display: block;
+      text-align: right;
+
+      .hw-tile-title {
+          font-weight: 600;
+          letter-spacing: 0.1em;
+          font-size: 0.625rem;
+          text-transform: uppercase;
+          text-align: left;
+      }
+      .hw-tile-note {
+          font-weight: 400;
+          font-size: 0.438rem;
+          letter-spacing: 0.1em;
+          text-align: left;
+      }
+      .hw-tile-img-network {
+        border-radius: 0;
+        margin-left: .4rem;
+        height: 8px;
+        margin-top: -1px;
+      }
+      .hw-tile-img-network-long {
+        height: 10px;
+      }
+  }
+  img {
+    border-radius: 0.75rem;
+  }
+}
+.hw-tile-355x295 {
+    width: 22.188rem;
+    height: 18.438rem;
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+      width: 15.5316rem;
+      height: 12.9066rem;
+    }
+    @include breakpoint(medium) {
+      width: 22.188rem;
+      height: 18.438rem;
+    }
+    @include breakpoint(large) {
+      width: 22.188rem;
+      height: 18.438rem;
+    }
+}
+.hw-tile-355x498 {
+    width: 22.188rem;
+    height: 31.125rem;
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+      width: 15.5316rem;
+      height: 21.7875rem;
+    }
+    @include breakpoint(medium) {
+      width: 22.188rem;
+      height: 31.125rem;
+    }
+    @include breakpoint(large) {
+      width: 22.188rem;
+      height: 31.125rem;
+    }
+}
+.hw-tile-250x440 {
+    width: 15.625rem;
+    height: 27.5rem;
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+      width: 10.9375rem;
+      height: 27.25rem;
+    }
+    @include breakpoint(medium) {
+      width: 15.625rem;
+      height: 27.5rem;
+    }
+    @include breakpoint(large) {
+      width: 15.625rem;
+      height: 27.5rem;
+    }
+}
+.hw-tile-505x235 {
+    width: 31.563rem;
+    height: 14.688rem;
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+      width: 22.0941rem;
+      height: 10.2816rem;
+    }
+    @include breakpoint(medium) {
+      width: 31.563rem;
+      height: 14.688rem;
+    }
+    @include breakpoint(large) {
+      width: 31.563rem;
+      height: 14.688rem;
+    }
+}
+.hw-tile-250x155 {
+  width: 15.625rem;
+  height: 9.688rem;
+}
+.tile-1 {
+  top: 1440px;
+  left: 2425px;
+  transition: all ease-in-out .25s;
+
+  @include breakpoint(small) {
+    left: 1087px;
+  }
+  @include breakpoint(medium) {
+    left: 1697px;
+  }
+  @include breakpoint(large) {
+    left: 2425px;
+  }
+
+  background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/ckstmn4260k3l1v7hts2r0pl9-american-horror-stories-354x294-2x.full.jpg');
+  background-size: cover;
+
+  &:hover {
+    .img-layer-1 {
+      background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/ckstmn4260k3l1v7hts2r0pl9-american-horror-stories-354x294-2x.full.jpg');
+      margin: -16px 0 0 -177px;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.75rem;
+      @include breakpoint(small) {
+        margin-left: -125px;
+      }
+      @include breakpoint(medium) {
+        margin-left: -177px;
+      }
+      @include breakpoint(large) {
+        margin-left: -177px;
+      }
+    }
+  }
+}
+.tile-2 {
+  top: 1495px;
+  left: 1850px;
+  transition: all ease-in-out .25s;
+
+  @include breakpoint(small) {
+    left: 706px;
+  }
+  @include breakpoint(medium) {
+    left: 1295px;
+  }
+  @include breakpoint(large) {
+    left: 1850px;
+  }
+
+  background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/ckt3j3bnodf9b1v7h5c8mll11-fear-the-walking-dead-354x498-2x.full.jpg');
+  background-size: cover;
+
+  &:hover {
+    .img-layer-2 {
+      background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/ckt3j3bnodf9b1v7h5c8mll11-fear-the-walking-dead-354x498-2x.full.jpg');
+      margin: -17px 0 0 -178px;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.75rem;
+      @include breakpoint(small) {
+        margin-left: -125px;
+      }
+      @include breakpoint(medium) {
+        margin-left: -177px;
+      }
+      @include breakpoint(large) {
+        margin-left: -177px;
+      }
+    }
+  }
+}
+.tile-3 {
+  top: 1230px;
+  left: 1670px;
+  transition: all ease-in-out .25s;
+
+  @include breakpoint(small) {
+    left: 818.3px;
+  }
+  @include breakpoint(medium) {
+    left: 1169px;
+  }
+  @include breakpoint(large) {
+    left: 1670px;
+  }
+
+  background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktalxnu50ghu1v3djk9j6hvw-ouija-354x294-2x.full.jpg');
+  background-size: cover;
+
+  &:hover {
+    .img-layer-3 {
+      background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktalxnu50ghu1v3djk9j6hvw-ouija-354x294-2x.full.jpg');
+      margin: -17px 0 0 -177px;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.75rem;
+      @include breakpoint(small) {
+        margin-left: -125px;
+      }
+      @include breakpoint(medium) {
+        margin-left: -177px;
+      }
+      @include breakpoint(large) {
+        margin-left: -177px;
+      }
+    }
+  }
+}
+.tile-4 {
+  top: 1430px;
+  left: 3125px;
+  transition: all ease-in-out .25s;
+
+  @include breakpoint(small) {
+    left: 1611.25px;
+  }
+  @include breakpoint(medium) {
+    left: 2187.5px;
+  }
+  @include breakpoint(large) {
+    left: 3125px;
+  }
+
+  background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktbqtsls1y7c1v5rgno31tf7-what-we-do-in-the-shadows-252x440-2x.full.jpg');
+  background-size: cover;
+
+  &:hover {
+    .img-layer-4 {
+      background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktbqtsls1y7c1v5rgno31tf7-what-we-do-in-the-shadows-252x440-2x.full.jpg');
+      margin: -17px 0 0 -124px;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.75rem;
+      @include breakpoint(small) {
+        margin-left: -125px;
+      }
+      @include breakpoint(medium) {
+        margin-left: -124px;
+      }
+      @include breakpoint(large) {
+        margin-left: -124px;
+      }
+    }
+  }
+}
+
+.tile-5 {
+  top: 1935px;
+  left: 2545px;
+  transition: all ease-in-out .25s;
+
+  @include breakpoint(small) {
+    left: 1247.05px;
+  }
+  @include breakpoint(medium) {
+    left: 1781.5px;
+  }
+  @include breakpoint(large) {
+    left: 2545px;
+  }
+
+
+  background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktbrn8du1zcf1w7a5ztntfmw-drag-me-to-hell-504x234-2x.full.jpg');
+  background-size: cover;
+
+  &:hover {
+    .img-layer-5 {
+      background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktbrn8du1zcf1w7a5ztntfmw-drag-me-to-hell-504x234-2x.full.jpg');
+      margin: -17px 0 0 -252px;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.75rem;
+      @include breakpoint(small) {
+        margin-left: -177px;
+      }
+      @include breakpoint(medium) {
+        margin-left: -252px;
+      }
+      @include breakpoint(large) {
+        margin-left: -252px;
+      }
+    }
+  }
+}
+.tile-6 {
+  top: 1315px;
+  left: 2985px;
+  transition: all ease-in-out .25s;
+
+  @include breakpoint(small) {
+    top: 1375px;
+    left: 1462.65px;
+  }
+  @include breakpoint(medium) {
+    top: 1315px;
+    left: 2089.5px;
+  }
+  @include breakpoint(large) {
+    top: 1315px;
+    left: 2985px;
+  }
+
+  background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktbsb4nr204q1v3dk5bmkmpc-gaia-252x156-2x.full.jpg');
+  background-size: cover;
+
+  &:hover {
+    .img-layer-6 {
+      background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktbsb4nr204q1v3dk5bmkmpc-gaia-252x156-2x.full.jpg');
+      margin: -17px 0 0 -125px;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.75rem;
+    }
+  }
+}
+
+.tile-7 {
+  top: 970px;
+  left: 2230px;
+  transition: all ease-in-out .25s;
+
+  @include breakpoint(small) {
+    left: 1312.7px;
+  }
+  @include breakpoint(medium) {
+    left: 1561px;
+  }
+  @include breakpoint(large) {
+    left: 2230px;
+  }
+
+  background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktbsski620ux1v2cy52v95ut-antebellum-354x294-2x.full.jpg');
+  background-size: cover;
+
+  &:hover {
+    .img-layer-7 {
+      background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktbsski620ux1v2cy52v95ut-antebellum-354x294-2x.full.jpg');
+      margin: -17px 0 0 -177px;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.75rem;
+      @include breakpoint(small) {
+        margin-left: -125px;
+      }
+      @include breakpoint(medium) {
+        margin-left: -177px;
+      }
+      @include breakpoint(large) {
+        margin-left: -177px;
+      }
+    }
+  }
+}
+.tile-8 {
+  top: 1600px;
+  left: 3650px;
+  transition: all ease-in-out .25s;
+
+  @include breakpoint(small) {
+    left: 1968.5px;
+  }
+  @include breakpoint(medium) {
+    left: 2555px;
+  }
+  @include breakpoint(large) {
+    left: 3650px;
+  }
+
+  background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktbtif8c21qc1v26n41hccoc-censor-354x498-2x.full.jpg');
+  background-size: cover;
+
+  &:hover {
+    .img-layer-8 {
+      background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktbtif8c21qc1v26n41hccoc-censor-354x498-2x.full.jpg');
+      margin: -16px 0 0 -177px;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.75rem;
+      @include breakpoint(small) {
+        margin-left: -125px;
+      }
+      @include breakpoint(medium) {
+        margin-left: -177px;
+      }
+      @include breakpoint(large) {
+        margin-left: -177px;
+      }
+    }
+  }
+}
+.tile-9 {
+  top: 970px;
+  left: 3550px;
+  transition: all ease-in-out .25s;
+
+  @include breakpoint(small) {
+    left: 1739.5px;
+  }
+  @include breakpoint(medium) {
+    left: 2485px;
+  }
+  @include breakpoint(large) {
+    left: 3550px;
+  }
+
+  background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktbv8ebj23y91v5ym0slxe7h-the-witch-354x294-2x.full.jpg');
+  background-size: cover;
+
+  &:hover {
+    .img-layer-9 {
+      background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktbv8ebj23y91v5ym0slxe7h-the-witch-354x294-2x.full.jpg');
+      margin: -17px 0 0 -177px;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.75rem;
+      @include breakpoint(small) {
+        margin-left: -125px;
+      }
+      @include breakpoint(medium) {
+        margin-left: -177px;
+      }
+      @include breakpoint(large) {
+        margin-left: -177px;
+      }
+    }
+  }
+}
+.tile-10 {
+  top: 2365px;
+  left: 3025px;
+  transition: all ease-in-out .25s;
+
+  @include breakpoint(small) {
+    left: 1282.25px;
+  }
+  @include breakpoint(medium) {
+    left: 2117.5px;
+  }
+  @include breakpoint(large) {
+    left: 3025px;
+  }
+
+  background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktbz68ka29541v3dicxca3if-buffy-354x294-2x.full.jpg');
+  background-size: cover;
+
+  &:hover {
+    .img-layer-10 {
+      background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktbz68ka29541v3dicxca3if-buffy-354x294-2x.full.jpg');
+      margin: -17px 0 0 -177px;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.75rem;
+      @include breakpoint(small) {
+        margin-left: -125px;
+      }
+      @include breakpoint(medium) {
+        margin-left: -177px;
+      }
+      @include breakpoint(large) {
+        margin-left: -177px;
+      }
+    }
+  }
+}
+.tile-11 {
+    top: 1001px;
+    left: 1070px;
+    transition: all ease-in-out .25s;
+
+    @include breakpoint(small) {
+      left: 424.3px;
+    }
+    @include breakpoint(medium) {
+      left: 749px;
+    }
+    @include breakpoint(large) {
+      left: 1070px;
+    }
+
+    background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktc3axb32eic1w7azxc2f0lf-the-resort-354x498-2x.full.jpg');
+    background-size: cover;
+  
+    &:hover {
+      .img-layer-11 {
+        background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktc3axb32eic1w7azxc2f0lf-the-resort-354x498-2x.full.jpg');
+        margin: -17px 0 0 -177px;
+        width: 100%;
+        height: 100%;
+        border-radius: 0.75rem;
+        @include breakpoint(small) {
+          margin-left: -125px;
+        }
+        @include breakpoint(medium) {
+          margin-left: -177px;
+        }
+        @include breakpoint(large) {
+          margin-left: -177px;
+        }
+      }
+    }
+}
+.tile-12 {
+  top: 2582px;
+  left: 1546px;
+  transition: all ease-in-out .25s;
+
+  @include breakpoint(small) {
+    left: 557.54px;
+  }
+  @include breakpoint(medium) {
+    left: 1082.2px;
+  }
+  @include breakpoint(large) {
+    left: 1546px;
+  }
+
+  background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cku7ngjwh3o2g1vak1b8c4dr5-childs-play2x.full.jpg');
+    background-size: cover;
+  
+    &:hover {
+      .img-layer-12 {
+        background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cku7ngjwh3o2g1vak1b8c4dr5-childs-play2x.full.jpg');
+        margin: -17px 0 0 -177px;
+        width: 100%;
+        height: 100%;
+        border-radius: 0.75rem;
+        @include breakpoint(small) {
+          margin-left: -125px;
+        }
+        @include breakpoint(medium) {
+          margin-left: -177px;
+        }
+        @include breakpoint(large) {
+          margin-left: -177px;
+        }
+      }
+    }
+}
+.tile-13 {
+  top: 2340px;
+  left: 2125px;
+  transition: all ease-in-out .25s;
+
+  @include breakpoint(small) {
+    left: 841.25px;
+  }
+  @include breakpoint(medium) {
+    left: 1487.5px;
+  }
+  @include breakpoint(large) {
+    left: 2125px;
+  }
+
+  background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktc5ln9i2hj41w7avrweczrr-the-hunt-252x156-2x.full.jpg');
+  background-size: cover;
+
+  &:hover {
+    .img-layer-13 {
+      background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktc5ln9i2hj41w7avrweczrr-the-hunt-252x156-2x.full.jpg');
+      margin: -17px 0 0 -125px;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.75rem;
+    }
+  }
+}
+.tile-14 {
+  top: 2455px;
+  left: 2260px;
+  transition: all ease-in-out .25s;
+
+  @include breakpoint(small) {
+    left: 907.4px;
+  }
+  @include breakpoint(medium) {
+    left: 1582px;
+  }
+  @include breakpoint(large) {
+    left: 2260px;
+  }
+
+  background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktc9b0uu2maz1v5ycrsswnm0-the-conjuring-252x440-2x.full.jpg');
+  background-size: cover;
+
+  &:hover {
+    .img-layer-14 {
+      background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktc9b0uu2maz1v5ycrsswnm0-the-conjuring-252x440-2x.full.jpg');
+      margin: -17px 0 0 -125px;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.75rem;
+    }
+  }
+  
+}
+.tile-15 {
+  top: 285px;
+  left: 1975px;
+  transition: all ease-in-out .25s;
+
+  @include breakpoint(small) {
+    left: 767.75px;
+  }
+  @include breakpoint(medium) {
+    left: 1382.5px;
+  }
+  @include breakpoint(large) {
+    left: 1975px;
+  }
+
+  background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktd3nadw00ag1v6t3wn184za-bad-hair-252x440-2x.full.jpg');
+  background-size: cover;
+
+  &:hover {
+    .img-layer-15 {
+      background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktd3nadw00ag1v6t3wn184za-bad-hair-252x440-2x.full.jpg');
+      margin: -17px 0 0 -125px;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.75rem;
+    }
+  }
+}
+.tile-16 {
+  top: 770px;
+  left: 2875px;
+  transition: all ease-in-out .25s;
+
+  @include breakpoint(small) {
+    left: 1408.75px;
+  }
+  @include breakpoint(medium) {
+    left: 2012.5px;
+  }
+  @include breakpoint(large) {
+    left: 2875px;
+  }
+
+  background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktd44wr801731v6xo2icjz3d-the-evil-door-252x156-2x.full.jpg');
+  background-size: cover;
+
+  &:hover {
+    .img-layer-16 {
+      background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktd44wr801731v6xo2icjz3d-the-evil-door-252x156-2x.full.jpg');
+      margin: -17px 0 0 -125px;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.75rem;
+    }
+  }
+}
+.tile-17 {
+    top: 1850px;
+    left: 910px;
+    transition: all ease-in-out .25s;
+
+    @include breakpoint(small) {
+      left: 345.9px;
+    }
+    @include breakpoint(medium) {
+      left: 637px;
+    }
+    @include breakpoint(large) {
+      left: 910px;
+    }
+
+    background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktd8cjnc074m1v58tgxx6cgv-it-252x440-2x.full.jpg');
+    background-size: cover;
+
+  &:hover {
+    .img-layer-17 {
+      background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktd8cjnc074m1v58tgxx6cgv-it-252x440-2x.full.jpg');
+      margin: -17px 0 0 -125px;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.75rem;
+    }
+  }
+}
+.tile-18 {
+  top: 2595px;
+  left: 3230px;
+  transition: all ease-in-out .25s;
+
+  @include breakpoint(small) {
+    left: 1582.7px;
+  }
+  @include breakpoint(medium) {
+    left: 2261px;
+  }
+  @include breakpoint(large) {
+    left: 3230px;
+  }
+
+
+  background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktc2pfxz2dog1w49yycux5bo-american-horror-story-504x234-2x.full.jpg');
+  background-size: cover;
+
+  &:hover {
+    .img-layer-18 {
+      background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktc2pfxz2dog1w49yycux5bo-american-horror-story-504x234-2x.full.jpg');
+      margin: -17px 0 0 -252px;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.75rem;
+      @include breakpoint(small) {
+        margin-left: -177px;
+      }
+      @include breakpoint(medium) {
+        margin-left: -252px;
+      }
+      @include breakpoint(large) {
+        margin-left: -252px;
+      }
+    }
+  }
+}
+.tile-19 {
+  top: 845px;
+  left: 705px;
+  transition: all ease-in-out .25s;
+
+  @include breakpoint(small) {
+    left: 245.45px;
+  }
+  @include breakpoint(medium) {
+    left: 493.5px;
+  }
+  @include breakpoint(large) {
+    left: 705px;
+  }
+
+  background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktdan3dp08z01v4zz3qy1ycl-mother-504x234-2x.full.jpg');
+  background-size: cover;
+
+  &:hover {
+    .img-layer-19 {
+      background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktdan3dp08z01v4zz3qy1ycl-mother-504x234-2x.full.jpg');
+      margin: -17px 0 0 -252px;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.75rem;
+      @include breakpoint(small) {
+        margin-left: -177px;
+      }
+      @include breakpoint(medium) {
+        margin-left: -252px;
+      }
+      @include breakpoint(large) {
+        margin-left: -252px;
+      }
+    }
+  }
+}
+.tile-20 {
+  top: 585px;
+  left: 4025px;
+  transition: all ease-in-out .25s;
+
+  @include breakpoint(small) {
+    left: 1972.25px;
+  }
+  @include breakpoint(medium) {
+    left: 2817.5px;
+  }
+  @include breakpoint(large) {
+    left: 4025px;
+  }
+
+
+  background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktdb8ch10a6d1v7cbl7e9ekb-twilight-zone-504x234-2x.full.jpg');
+  background-size: cover;
+
+  &:hover {
+    .img-layer-20 {
+      background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktdb8ch10a6d1v7cbl7e9ekb-twilight-zone-504x234-2x.full.jpg');
+      margin: -17px 0 0 -252px;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.75rem;
+      @include breakpoint(small) {
+        margin-left: -177px;
+      }
+      @include breakpoint(medium) {
+        margin-left: -252px;
+      }
+      @include breakpoint(large) {
+        margin-left: -252px;
+      }
+    }
+  }
+}
+.tile-21 {
+  top: 405px;
+  left: 4460px;
+  transition: all ease-in-out .25s;
+
+  @include breakpoint(small) {
+    left: 2185.4px;
+  }
+  @include breakpoint(medium) {
+    left: 3122px;
+  }
+  @include breakpoint(large) {
+    left: 4460px;
+  }
+
+  background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktddgmot0d4v1v7ctw9bqlol-run-354x498-2x.full.jpg');
+  background-size: cover;
+
+  &:hover {
+    .img-layer-21 {
+      background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktddgmot0d4v1v7ctw9bqlol-run-354x498-2x.full.jpg');
+      margin: -16px 0 0 -177px;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.75rem;
+      @include breakpoint(small) {
+        margin-left: -125px;
+      }
+      @include breakpoint(medium) {
+        margin-left: -177px;
+      }
+      @include breakpoint(large) {
+        margin-left: -177px;
+      }
+    }
+  }
+}
+.tile-22 {
+  top: 220px;
+  left: 3350px;
+  transition: all ease-in-out .25s;
+
+  @include breakpoint(small) {
+    left: 1641.5px;
+  }
+  @include breakpoint(medium) {
+    left: 2345px;
+  }
+  @include breakpoint(large) {
+    left: 3350px;
+  }
+
+  background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktde2bdx0dxe1v7c4d12yawi-the-purge-354x498-2x.full.jpg');
+  background-size: cover;
+
+  &:hover {
+    .img-layer-22 {
+      background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktde2bdx0dxe1v7c4d12yawi-the-purge-354x498-2x.full.jpg');
+      margin: -16px 0 0 -177px;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.75rem;
+      @include breakpoint(small) {
+        margin-left: -125px;
+      }
+      @include breakpoint(medium) {
+        margin-left: -177px;
+      }
+      @include breakpoint(large) {
+        margin-left: -177px;
+      }
+    }
+  }
+}
+.tile-23 {
+  top: 1535px;
+  left: 355px;
+  transition: all ease-in-out .25s;
+
+  @include breakpoint(small) {
+    left: 173.95px;
+  }
+  @include breakpoint(medium) {
+    left: 248.5px;
+  }
+  @include breakpoint(large) {
+    left: 355px;
+  }
+
+  background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktdent400ecf1v75a2zvi1qm-black-swan-354x294-2x.full.jpg');
+  background-size: cover;
+
+  &:hover {
+    .img-layer-23 {
+      background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktdent400ecf1v75a2zvi1qm-black-swan-354x294-2x.full.jpg');
+      margin: -16px 0 0 -177px;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.75rem;
+      @include breakpoint(small) {
+        margin-left: -125px;
+      }
+      @include breakpoint(medium) {
+        margin-left: -177px;
+      }
+      @include breakpoint(large) {
+        margin-left: -177px;
+      }
+    }
+  }
+}
+.tile-24 {
+  top: 1675px;
+  left: 4330px;
+  transition: all ease-in-out .25s;
+
+  @include breakpoint(small) {
+    left: 2261.7px;
+  }
+  @include breakpoint(medium) {
+    left: 3031px;
+  }
+  @include breakpoint(large) {
+    left: 4330px;
+  }
+
+  background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktdh9gph0iu21v58bz6hgqbg-annabelle-504x234-2x.full.jpg');
+  background-size: cover;
+
+  &:hover {
+    .img-layer-24 {
+      background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktdh9gph0iu21v58bz6hgqbg-annabelle-504x234-2x.full.jpg');
+      margin: -16px 0 0 -252px;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.75rem;
+      @include breakpoint(small) {
+        margin-left: -177px;
+      }
+      @include breakpoint(medium) {
+        margin-left: -252px;
+      }
+      @include breakpoint(large) {
+        margin-left: -252px;
+      }
+    }
+  }
+}
+.tile-25 {
+  top: 2445px;
+  left: 355px;
+  transition: all ease-in-out .25s;
+
+  @include breakpoint(small) {
+    left: 173.95px;
+  }
+  @include breakpoint(medium) {
+    left: 248.5px;
+  }
+  @include breakpoint(large) {
+    left: 355px;
+  }
+
+  background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktdhx6680jch1v4wgdjvskok-annihilation-504x234-2x.full.jpg');
+  background-size: cover;
+
+  &:hover {
+    .img-layer-25 {
+      background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktdhx6680jch1v4wgdjvskok-annihilation-504x234-2x.full.jpg');
+      margin: -16px 0 0 -252px;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.75rem;
+      @include breakpoint(small) {
+        margin-left: -177px;
+      }
+      @include breakpoint(medium) {
+        margin-left: -252px;
+      }
+      @include breakpoint(large) {
+        margin-left: -252px;
+      }
+    }
+  }
+}
+
+.tile-26 {
+  top: 505px;
+  left: 245px;
+  transition: all ease-in-out .25s;
+
+  @include breakpoint(small) {
+    left: 120.05px;
+  }
+  @include breakpoint(medium) {
+    left: 171.5px;
+  }
+  @include breakpoint(large) {
+    left: 245px;
+  }
+
+  background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktdi8vhr0j3h1v4z46qmjdqj-exorcist-354x294-2x.full.jpg');
+  background-size: cover;
+
+  &:hover {
+    .img-layer-26 {
+      background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktdi8vhr0j3h1v4z46qmjdqj-exorcist-354x294-2x.full.jpg');
+      margin: -16px 0 0 -177px;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.75rem;
+      @include breakpoint(small) {
+        margin-left: -125px;
+      }
+      @include breakpoint(medium) {
+        margin-left: -177px;
+      }
+      @include breakpoint(large) {
+        margin-left: -177px;
+      }
+    }
+  }
+}
+.tile-27 {
+  top: 2265px;
+  left: 4095px;
+  transition: all ease-in-out .25s;
+
+  @include breakpoint(small) {
+    left: 2006.55px;
+  }
+  @include breakpoint(medium) {
+    left: 2866.5px;
+  }
+  @include breakpoint(large) {
+    left: 4095px;
+  }
+
+  background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktn8ddopd8n21v6xxui46uzk-theemptyman.full.jpg');
+  background-size: cover;
+
+  &:hover {
+    .img-layer-27 {
+      background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktn8ddopd8n21v6xxui46uzk-theemptyman.full.jpg');
+      margin: -16px 0 0 -177px;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.75rem;
+      @include breakpoint(small) {
+        margin-left: -125px;
+      }
+      @include breakpoint(medium) {
+        margin-left: -177px;
+      }
+      @include breakpoint(large) {
+        margin-left: -177px;
+      }
+    }
+  }
+}
+.tile-28 {
+  top: 2525px;
+  left: 4270px;
+  transition: all ease-in-out .25s;
+
+  @include breakpoint(small) {
+    left: 2092.3px;
+  }
+  @include breakpoint(medium) {
+    left: 2989px;
+  }
+  @include breakpoint(large) {
+    left: 4270px;
+  }
+
+  background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktln1ciab5ug1v1n2z0p7mvt-false-positive-354x498.full.jpg');
+  background-size: cover;
+
+  &:hover {
+    .img-layer-28 {
+      background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktln1ciab5ug1v1n2z0p7mvt-false-positive-354x498.full.jpg');
+      margin: -16px 0 0 -177px;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.75rem;
+      @include breakpoint(small) {
+        margin-left: -125px;
+      }
+      @include breakpoint(medium) {
+        margin-left: -177px;
+      }
+      @include breakpoint(large) {
+        margin-left: -177px;
+      }
+    }
+  }
+}
+.tile-29 {
+  top: 169px;
+  left: 3265px;
+  transition: all ease-in-out .25s;
+
+  @include breakpoint(small) {
+    left: 1156.85px;
+  }
+  @include breakpoint(medium) {
+    left: 1795.5px;
+  }
+  @include breakpoint(large) {
+    left: 3265px;
+  }
+
+  background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktln1ckub54g1v7cgp4tn1cp-only-murders-504x234.full.jpg');
+  background-size: cover;
+
+  &:hover {
+    .img-layer-29 {
+      background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktln1ckub54g1v7cgp4tn1cp-only-murders-504x234.full.jpg');
+      margin: -16px 0 0 -252px;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.75rem;
+      @include breakpoint(small) {
+        margin-left: -177px;
+      }
+      @include breakpoint(medium) {
+        margin-left: -252px;
+      }
+      @include breakpoint(large) {
+        margin-left: -252px;
+      }
+    }
+  }
+}
+.tile-30 {  
+  top: 140px;
+  left: 1270px;
+  transition: all ease-in-out .25s;
+
+  @include breakpoint(small) {
+    left: 322.3px;
+  }
+  @include breakpoint(medium) {
+    left: 889px;
+  }
+  @include breakpoint(large) {
+    left: 1270px;
+  }
+
+  background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktdks2qe0nbj1v1n0e3oonvv-american-psycho-354x294-2x.full.jpg');
+  background-size: cover;
+
+  &:hover {
+    .img-layer-30 {
+      background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktdks2qe0nbj1v1n0e3oonvv-american-psycho-354x294-2x.full.jpg');
+      margin: -16px 0 0 -177px;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.75rem;
+      @include breakpoint(small) {
+        margin-left: -125px;
+      }
+      @include breakpoint(medium) {
+        margin-left: -177px;
+      }
+      @include breakpoint(large) {
+        margin-left: -177px;
+      }
+    }
+  }
+}
+.hw-tile-btn {
+  background: none;
+  background-size: 100%;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  width: 100%;
+  height: 100%;
+}
+.hw-tile-btn:hover {
+  background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cksywz3wi7jjw1v5yi685023n-icon-hover-huluween-shows.svg') no-repeat;
+  display: block;
+  background-position: center;
+}
+
+.hw-uluh-one, .hw-uluh-two, .hw-uluh-three, .hw-uluh-four, .hw-uluh-five {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  visibility: visible;
+  @include breakpoint(small) {
+    display: none;
+    visibility: hidden;
+  }
+  @include breakpoint(medium) {
+    display: block;
+    visibility: visible;
+  }
+  @include breakpoint(large) {
+    display: block;
+    visibility: visible;
+  }
+}
+
+.hw-uluh-one {
+  background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktf2gsuc2ljx1v1nsyzv3l4g-spectral-uluh-wide-x.full.png') no-repeat;
+  background-size: cover;
+  display: none;
+}
+.hw-uluh-two {
+  background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktf2gsyi2ler1v6xyjr4lgaf-spectral-uluh-close-x.full.png') no-repeat;
+  background-size: cover;
+  display: none;
+}
+.hw-uluh-three {
+  background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktuq6krdmzz61v75mtc5a6iv-spectral-uluh-wide-2.full.png') no-repeat;
+  background-size: cover;
+  display: none;
+}
+.hw-uluh-four {
+  background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktuq6krkey681v4wdg8tp403-spectral-uluh-close-3.full.png') no-repeat;
+  background-size: cover;
+  display: none;
+}
+.hw-uluh-five {
+  background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktuq6ks6mqj21w7jppj3l5n6-spectral-uluh-wide-1.full.png') no-repeat;
+  background-size: cover;
+  display: none;
+}
+
+.hw-uluh-mob-one, .hw-uluh-mob-two, .hw-uluh-mob-three, .hw-uluh-mob-four {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  display: none;
+  visibility: hidden;
+  @include breakpoint(small) {
+    display: block;
+    visibility: visible;
+  }
+  @include breakpoint(medium) {
+    display: none;
+    visibility: hidden;
+  }
+  @include breakpoint(large) {
+    display: none;
+    visibility: hidden;
+  }
+}
+.hw-uluh-mob-one {
+  background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktx3wqu3014m1vakabcwgkze-spectral-uluh-close-mobile3.full.png') no-repeat;
+  background-size: cover;
+  display: none;
+}
+.hw-uluh-mob-two {
+  background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktx3wqu6014n1v8jrejnrihe-spectral-uluh-wide-mobile2.full.png') no-repeat;
+  background-size: cover;
+  display: none;
+}
+.hw-uluh-mob-three {
+  background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktx3wqq301b41v9o1ofkrbys-spectral-uluh-close-mobile1.full.png') no-repeat;
+  background-size: cover;
+  display: none;
+}
+.hw-uluh-mob-four {
+  background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktx3wqx600ye1v6b3g12zweh-spectral-uluh-wide-mobile4.full.png') no-repeat;
+  background-size: cover;
+  display: none;
+}
+.cover-close-huluween {
+  z-index: 99;
+  cursor: pointer;
+  top: 100px;
+
+  &:hover, &:active, &:focus {
+    opacity: .8;
+  }
+}
+.reveal-huluween {
+  width: 100% !important;
+  max-width: 100% !important;
+  left: 0 !important;
+}

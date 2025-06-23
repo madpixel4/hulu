@@ -1,0 +1,1074 @@
+.body-bk-lolla-twentythree {
+    background-size: cover !important;
+    background-color: $green !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: -1px;
+    transition: all ease-in-out .1s;
+    z-index: -1;
+
+    @include breakpoint(small) {
+        background: url('https://assetshuluimcom-a.akamaihd.net/lolla/img/bk-lolla-mast-20aniv-mob.jpg') top center no-repeat;
+        height: 99vh;
+        background-position: center center;
+    }
+    @include breakpoint(medium) {
+        background: url('https://assetshuluimcom-a.akamaihd.net/lolla/img/bk-lolla-mast-20aniv-tab.jpg') top center no-repeat;
+        height: 100vh;
+        background-position: center center;
+    }
+    @include breakpoint(large) {
+        background: url('https://assetshuluimcom-a.akamaihd.net/lolla/img/bk-lolla-mast-20aniv-desk.jpg') top center no-repeat;
+        height: 115vh;
+        background-position: center -1px;
+    }
+}
+.masthead-cover-ill {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/ckr3wvuu9o67g1u5ut8kstgul-masthead-illustration-frame-1920.svg') no-repeat top center;        
+    background-size: 100% auto; 
+    position: absolute;
+    width: 95.5%;
+    margin-top: 4.5rem;
+    margin-left: 2.5%;
+    height: 100vh;
+    border-radius: 40px;
+    transition: all ease-in-out .25s;
+}
+.masthead-hhlm {
+    transition: all ease-in-out .1s;
+
+    @include breakpoint(small) {
+        width: 86px;
+    }
+    @include breakpoint(medium) {
+        width: 150px;
+    }
+    @include breakpoint(large) {
+        width: 190px;
+    }
+}
+.masthead-logo-twentythree {
+    transition: all ease-in-out .1s;
+
+
+    @include breakpoint(small) {
+        width: 280px;
+        margin-bottom: 10px;
+    }
+    @include breakpoint(medium) {
+        width: 560px;
+        margin-bottom: 10px;
+    }
+    @include breakpoint(large) {
+        width: 630px;
+        margin-bottom: 25px;
+    }
+}
+.lolla-height {
+    height: $tthh-hero-height;
+}
+.lolla-section {
+    margin-top: 7rem;
+}
+.lolla-short {
+    margin-top: 1rem;
+}
+.lolla-short-s {
+    padding-top: 1rem;
+    margin-top: -2rem;
+    @include breakpoint(large) {
+        padding-bottom: 1rem !important;
+    }
+}
+.top-bar-dark {
+    background-color: #040405;
+}
+.bg-scrolling {
+    background: linear-gradient(to top, rgba(225, 225, 225, 0), #040405);
+}
+.lolla-container {
+    padding: 4rem 0;
+    color: $white;
+
+    @include breakpoint(large) {
+        padding: 7rem;
+    }
+}
+.grid-lolla {
+    padding: 0rem 0.5rem 0 0.5rem;
+
+    @include breakpoint(large) {
+        padding: 2rem 0 0 3.5rem;
+    }
+  }
+.lolla-container-mobile {
+    padding: 4rem 1rem;
+    @include breakpoint(large) {
+        padding: 7rem;
+    }
+}
+.lolla-tabs-container {
+    padding: 4rem 0 2rem 0;
+    color: $white;
+
+    @include breakpoint(large) {
+        padding: 7rem 0 7rem 7rem;
+    }
+}
+.lolla-on-mob {
+    @include breakpoint(small) {
+        width: 85%;
+        margin: 0 auto;
+        margin-top: 2rem;
+        display: block;
+    }
+    @include breakpoint(medium) {
+        display: block;
+        width: 85%;
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+    @include breakpoint(large) {
+        display: none;
+        width: 100%;
+        margin-top: 0;
+    }
+}
+.lolla-on-desk {
+    @include breakpoint(small) {
+        display: none;
+    }
+    @include breakpoint(medium) {
+       display: none;
+    }
+    @include breakpoint(large) {
+        display: block;
+        position: absolute;
+        right: -10%;
+        margin: -400px 0 0 0;
+        width: 120%;
+    }
+}
+.lolla22-on-desk {
+    @include breakpoint(small) {
+        display: none;
+    }
+    @include breakpoint(medium) {
+       display: none;
+    }
+    @include breakpoint(large) {
+        max-width: 90%;
+    }
+}
+.img-arrow {
+    width: 100px;
+    float: left;
+    margin-right: 1.25rem;
+}
+.h1-lolla {
+    @include breakpoint(small) {
+        width: 88% !important;
+        margin: 0 auto;
+    }
+    @include breakpoint(medium) {
+        font-size: 3.375rem;
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 2rem;
+        line-height: 62px;
+        padding: 0 5rem;
+    }
+    @include breakpoint(large) {
+        font-size: 5rem;
+        line-height: 5.9rem;
+        width: 100% !important;
+        padding: 0 0 4rem 0 !important;
+        text-align: left;
+    }
+}
+.h4-lolla {
+    @include breakpoint(small) {
+        margin: 0 auto;
+        margin-top: 2rem;
+        width: 80%;
+    }
+    @include breakpoint(medium) {
+        margin: 0 auto;
+        margin-top: 2rem;
+        width: 80%;
+    }
+    @include breakpoint(large) {
+        margin: 0;
+        width: 100%;
+    }
+}
+.break {
+    display: block;
+    @include breakpoint(small) {
+        display: inline;
+    }
+}
+.img-doo-wap {
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        width: 40%;
+    }
+    @include breakpoint(medium) {
+        width: 164px;
+    }
+    @include breakpoint(large) {
+        width: 286px;
+    }
+}
+.highlight {
+    span  {
+    font-family: $body-font-bold;
+    font-weight: 900;
+    background-color: $green;
+    padding: 0.938rem 1.563rem;
+    border-radius: 1.563rem;
+    }
+}
+.subheader {
+    font-family: $body-font-bold;
+    color: $white;
+    font-size: 1.7rem;
+    margin: 1.7rem 0 2.5rem 0;
+    letter-spacing: -1px;
+    text-align: center;
+    transition: all ease-in-out 2.25s;
+    @include breakpoint(large) {
+    font-size: 3.125rem;
+    }
+}
+.masthead-wide-lolla22 {
+
+    transition: all ease-in-out .2s;
+    @include breakpoint(small) {
+        margin-top: 190px !important;
+    }
+    @include breakpoint(medium) {
+        margin-top: 190px !important;
+    }
+    @include breakpoint(large) {
+        margin-top: 100px !important;
+    }
+}
+.masthead-wide-lolla {
+    padding: 14rem 0 30rem 0;
+}
+.masthead-logo-lolla {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/ckr29qqw5m1m31u5u7t9cv9wo-masthead-lolla-logo-mobile.svg') top center no-repeat !important;
+    width: 270x !important;
+    height: 180px;
+    background-size: 80% !important;
+    background-position: 0 0;
+    margin: 0 auto;
+    margin-top: -3rem;
+    transition: all ease-in-out .2s;
+
+    @include breakpoint(small) {
+        width: 270px;
+        height: 150px;
+    }
+
+    @include breakpoint(medium) {
+        background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/ckr29qqw5m1m31u5u7t9cv9wo-masthead-lolla-logo-mobile.svg') top center no-repeat !important;
+        width: 738px;
+        height: 180px;
+    }
+
+    @include breakpoint(large) {
+        background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/ckr29qqw5m1m31u5u7t9cv9wo-masthead-lolla-logo-mobile.svg') top center no-repeat !important;
+        background-size: 90% !important;
+        background-position: 0 0;
+        margin: 0 auto;
+        width: 450px !important;
+        height: 240px;
+    }
+}
+.masthead-logo-lolla22 {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl430hzxawkzx1v5skla1x68s-lolla22-masthead.full.png') top center no-repeat;
+    background-size: 100%;
+    background-position: 0 0;
+    margin: 0 auto;
+    transition: all ease-in-out .2s;
+
+    @include breakpoint(small) {
+        width: 270px;
+        height: 120px;
+        margin-top: -12.5rem;
+    }
+    @include breakpoint(medium) {
+        width: 380px;
+        height: 160px;
+        margin-top: -8rem;
+    }
+    @include breakpoint(large) {
+        width: 470px;
+        height: 230px;
+        margin-top: -3rem;
+    }
+}
+.masthead-cover-lolla22-top {
+    position: relative;
+    width: 100%;
+    padding-top: 70px;
+    transition: all ease-in-out .25s;
+
+    .masthead-lolla22-left {
+        background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl44uk8un27mo1v5e6dkimzhq-lolla22-mast-tl.full.png') top left no-repeat;
+        position: absolute;
+        left: 0;
+        background-size: 100%;
+        transition: all ease-in-out .25s;
+
+        @include breakpoint(small) {
+            width: 150px;
+            height: 160px;
+        }
+        @include breakpoint(medium) {
+            width: 280px;
+            height: 210px;
+        }
+        @include breakpoint(large) {
+            width: 320px;
+            height: 280px;
+        }
+    }
+
+    .masthead-lolla22-center {
+        background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl44uk8yj27ra1v4nzkihkn8w-lolla22-mast-tc.full.png') top center no-repeat;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        background-size: 100%;
+        transition: all ease-in-out .25s;
+
+        @include breakpoint(small) {
+            width: 300px;
+            height: 160px;
+        }
+        @include breakpoint(medium) {
+            width: 280px;
+            height: 180px;
+        }
+        @include breakpoint(large) {
+            width: 520px;
+            height: 180px;
+        }
+    }
+
+    .masthead-lolla22-right {
+        background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl44vg65ejyw71v2d505dgv4n-lolla22-mast-tr.full.png') top right no-repeat;
+        position: absolute;
+        right: 0;
+        background-size: 100%;
+        transition: all ease-in-out .25s;
+
+        @include breakpoint(small) {
+            width: 150px;
+            height: 160px;
+        }
+        @include breakpoint(medium) {
+            width: 280px;
+            height: 210px;
+        }
+        @include breakpoint(large) {
+            width: 440px;
+            height: 280px;
+        }
+    }
+}
+.masthead-cover-lolla22-bot {
+    width: 100%;
+    transition: all ease-in-out .25s;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transition: all ease-in-out .25s;
+
+        @include breakpoint(small) {
+            background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl5lcaaiaps7v1v1ymifjuy6a-lolla22-mast-speaker-l.full.png') bottom left no-repeat;
+            background-size: 60%;
+            width: 180px;
+            height: 200px;
+            display: none;
+        }
+        @include breakpoint(medium) {
+            width: 280px;
+            height: 360px;
+            display: block;
+        }
+        @include breakpoint(large) {
+            background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl5lcaaiaps7v1v1ymifjuy6a-lolla22-mast-speaker-l.full.png') bottom left no-repeat;
+            background-size: 100%;
+            width: 270px;
+            height: 500px;
+            display: block;
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        transition: all ease-in-out .25s;
+
+        @include breakpoint(small) {
+            background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl5lcaa8d4x6l1v6hi4bdzuvj-lolla22-mast-speaker-r.full.png') bottom right no-repeat;
+            width: 180px;
+            height: 200px;
+            background-size: 60%;
+            display: none;
+        }
+        @include breakpoint(medium) {
+            width: 350px;
+            height: 460px;
+            display: block;
+        }
+        @include breakpoint(large) {
+            background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl5lcaa8d4x6l1v6hi4bdzuvj-lolla22-mast-speaker-r.full.png') bottom right no-repeat;
+            width: 270px;
+            height: 500px;
+            background-size: 100%;
+            display: block;
+        }
+    }
+
+}
+.masthead-block-wrapper {
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -1rem;
+    z-index: 9;
+}
+.subtitle-bold {
+    margin-top: -1rem;
+    font-weight: 800;
+    @include breakpoint(small) {
+        margin-top: 0;
+    }
+    @include breakpoint(medium) {
+        margin-top: .6rem;
+    }
+    @include breakpoint(large) {
+        margin-top: -1rem;
+    }
+}
+.subtitle-require {
+    font-size: .9rem !important;
+    margin: 0 auto;
+    margin-top: 12px;
+    margin-bottom: 0;
+    @include breakpoint(small) {
+        font-size: 10px !important;
+        max-width: 80%;
+    }
+    @include breakpoint(medium) {
+        font-size: .7rem !important;
+        max-width: 360px;
+    }
+    @include breakpoint(large) {
+        font-size: .9rem !important;
+        max-width: 560px;
+    }
+}
+.note-lolla {
+    display: block;
+    margin: .2rem 0 1rem 0;
+}
+.note-lolla22 {
+    @include breakpoint(small) {
+       padding: 0 80px !important;
+    }
+    @include breakpoint(medium) {
+        padding: 0;
+    }
+    @include breakpoint(large) {
+        padding: 0;
+    }
+
+}
+.txt-mobile {
+    text-align: center;
+    @include breakpoint(large) {
+        text-align: left;
+    }
+}
+a.button-header-lolla.button {
+    transition-delay: .3s !important;
+    &:hover {
+        background-color: $white;
+        color: $black-drk;
+        opacity: .8 !important;
+    }
+}
+.button-header-lolla {
+    margin-top: 1.5rem;
+}
+.button-watch-lolla {
+    margin: 0 auto;
+    margin-top: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    max-width: 220px;
+    //hide
+    display: none;
+
+    @include breakpoint(small) {
+        margin-top: -2rem;
+        margin-bottom: 6rem;
+    }
+}
+.lolla22-lineup {
+    transition: all ease-in-out .25s;
+    display: block;
+    position: absolute;
+    @include breakpoint(small) {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -200px;
+        position: relative;
+        text-align: center;
+        background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl5lcaao4ecad1v58nnwwlfko-lolla22-mast-boat.full.png') no-repeat center center;
+        background-size: 100%;
+        width: 260px;
+        height: 250px;
+    }
+    @include breakpoint(medium) {
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        text-align: center;
+        background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl5lcaao4ecad1v58nnwwlfko-lolla22-mast-boat.full.png') no-repeat center center;
+        background-size: 100%;
+        width: 405px;
+        height: 450px;
+    }
+    @include breakpoint(large) {
+        background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl5lcaao4ecad1v58nnwwlfko-lolla22-mast-boat.full.png') no-repeat center center;
+       position: absolute;
+       background-size: 100%;
+        width: 530px;
+        height: 550px;
+        margin: -380px 0 0 0;
+        left: none;
+        right: 120px;
+    }
+}
+.carousel-lolla {
+    padding: 3rem 0 3rem 0;
+    margin-bottom: 4rem;
+
+    @include breakpoint(small) {
+        padding: 0 0 1rem 0 !important;
+    }
+
+    @include breakpoint(large) {
+        padding: 3rem 0 0 0;
+        margin-bottom: 9rem;
+        margin-top: -100px;
+    }
+}
+.carousel-lolla-22 {
+    padding: 3rem 0 3rem 0;
+    margin-bottom: 4rem;
+
+    @include breakpoint(small) {
+        padding: 0 0 1rem 0 !important;
+    }
+
+    @include breakpoint(large) {
+        padding: 3rem 0 0 0;
+        margin-bottom: 9rem;
+    }
+}
+.accordion-lolla {
+    text-align: left;
+}
+.accordion-title-lolla {
+    margin-bottom: 0;
+} 
+.accordion-item {
+    border-bottom: solid 1px #EBEDF2;
+}
+
+.masthead-icons-wrapper {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    margin-top: -6rem;
+}
+.masthead-icons {
+    position: absolute;
+    margin: 0 5%;
+    max-width: 100%;
+}
+.masthead-t1 {
+    left: 2%;
+    top: 190px
+}
+.masthead-t2 {
+    left: 26%;
+    top: 80px
+}
+.masthead-t3 {
+    left: 47%;
+    top: 70px;
+    width: 190px;
+}
+.masthead-t4 {
+    left: 71%;
+    top: 120px;
+    width: 230px;
+}
+.masthead-t5 {
+    left: 0;
+    top: 520px;
+    width: 260px;
+}
+.masthead-t6 {
+    left: 20%;
+    top: 610px;
+    width: 120px;
+}
+.masthead-t7 {
+    left: 57%;
+    top: 645px;
+    width: 185px;
+}
+.masthead-t8 {
+    left: 69%;
+    top: 500px;
+    width: 150px;
+}
+.masthead-t9 {
+    left: 81%;
+    top: 420px;
+    width: 170px;
+}
+.row-one {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.row-listen {
+    display: block;
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/ckr29aamzm0z01u4wcahbelhe-right-arrow.svg') no-repeat;
+    background-position: 0 0;
+    background-size: 100%;
+    width: 29px;
+    height: 29px;
+    margin: 0 auto;
+
+
+    @include breakpoint(medium) {
+        width: 35px;
+        height: 35px;
+    }
+    @include breakpoint(large) {
+        width: 35px;
+        height: 35px;
+    }
+    &:hover {
+        opacity: .7;
+    }
+}
+.text-bonus img {
+    width: 29px;
+    height: 29px;
+
+    @include breakpoint(medium) {
+        width: 35px;
+        height: 35px;
+    }
+    @include breakpoint(large) {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+.lolla22-footer {
+    transition: all ease-in-out .25s;
+    
+    @include breakpoint(small) {
+        padding: 0 9rem;
+        margin: -80px 0 -2px 0;
+    }
+    @include breakpoint(medium) {
+        padding: 0 9rem;
+        margin: -80px 0 -2px 0;
+    }
+    @include breakpoint(large) {
+        padding: 0 9rem;
+        margin: -80px 0 -2px 0;
+    }
+}
+.lolla22-footer-monkey {
+    transition: all ease-in-out .25s;
+    
+    @include breakpoint(small) {
+        background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl47622ov2yfh1v45oyjr4jqw-lolla22-footer-monkey.full.png') no-repeat bottom center;
+        background-size: 100%;
+        width: 135px;
+        height: 250px;
+        margin-left: -120px;
+    }
+    @include breakpoint(medium) {
+        background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl47622ov2yfh1v45oyjr4jqw-lolla22-footer-monkey.full.png') no-repeat bottom center;
+        background-size: 100%;
+        width: 168px;
+        height: 300px;
+        margin-left: -120px;
+    }
+    @include breakpoint(large) {
+        background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl47622ov2yfh1v45oyjr4jqw-lolla22-footer-monkey.full.png') no-repeat bottom center;
+        background-size: 100%;
+        width: 288px;
+        height: 383px;
+    }
+}
+
+.lolla22-footer-eyes {
+    transition: all ease-in-out .25s;
+    
+    @include breakpoint(small) {
+        display: block;
+        background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl4x8f22nkxo11v8o6dq5flez-lolla22-eyes-bot-mob.full.png') no-repeat bottom center;
+        background-size: 100%;
+        width: 115px;
+        height: 190px;
+        right: 0;
+        position: absolute;
+        margin: -200px 0 0 0;
+    }
+    @include breakpoint(medium) {
+        display: block;
+        background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl4x8f22nkxo11v8o6dq5flez-lolla22-eyes-bot-mob.full.png') no-repeat bottom center;
+        background-size: 100%;
+        width: 178px;
+        height: 231px;
+        right: 0;
+        position: absolute;
+        margin: -229px 0 0 0;
+    }
+    @include breakpoint(large) {
+        display: none;
+    }
+}
+
+.lolla-container-vid {
+    background: url('https://assetshuluimcom-a.akamaihd.net/lolla/img/bk-lolla-vid-2.png') no-repeat !important;
+    background-position: top center !important;
+    background-size: cover !important;
+    background-color: #000000 !important;
+    width: 100%;
+    height: 115vh;
+    transition: all ease-in-out .2s;
+    @include breakpoint(small) {
+        height: 38vh;
+    }
+    @include breakpoint(medium) {
+        height: 50vh;
+    }
+    @include breakpoint(large) {
+        height: 115vh;
+    }
+
+    &:after {
+        content: '';
+        background: url('https://assetshuluimcom-a.akamaihd.net/lolla/img/img-lolla-vid-dots.png') no-repeat;
+        background-size: 100%;
+        background-position: bottom center;
+        display: block;
+
+        transition: all ease-in-out .2s;
+        @include breakpoint(small) {
+            width: 125px !important;
+            height: 100px !important;
+            margin: -38px 0 0 50px;
+        }
+        @include breakpoint(medium) {
+            width: 280px !important;
+            height: 100px !important;
+            margin: -38px 0 0 100px;
+        }
+        @include breakpoint(large) {
+            width: 420px !important;
+            height: 150px !important;
+            margin: -38px 0 0 100px;
+        }
+    }
+}
+.lolla-vid-middle {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    height: -webkit-fill-available;
+}
+.lolla22-video {
+    transition: all ease-in-out .25s;
+    
+    @include breakpoint(small) {
+        width: 90%;
+        margin-top: 40px;
+        border-radius: 10px;
+    }
+    @include breakpoint(medium) {
+       width: 645px;
+       margin-top: 0;
+       border-radius: 20px;
+    }
+    @include breakpoint(large) {
+        width: 980px;
+        margin-top: -80px;
+        border-radius: 20px;
+    }
+}
+
+
+
+//clouds animation
+.clouds-sliding-background22 {
+    background: url("https://hulu-matchmaker.s3.amazonaws.com/attachments/cl465zh5b30js1v5fhkcdy0f3-lolla22-clouds.full.png") repeat-x;
+    width: 100076px;
+    animation: slide 3960s linear infinite;
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        background-size: .8%;
+        height: 550px;
+    }
+    @include breakpoint(medium) {
+        background-size: 1.1%;
+        height: 950px;
+    }
+    @include breakpoint(large) {
+        background-size: 1.3%;
+        height: 1310px;
+    }
+  }
+  
+  @keyframes slide{
+    0%{
+      transform: translate3d(0, 0, 0);
+    }
+    100%{
+      transform: translate3d(-100692px, 0, 0);
+    }
+  }
+
+.lolla-section-fluffy {
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        padding: 15rem 0 15rem 0;
+    }
+    @include breakpoint(medium) {
+        padding: 15rem 0 15rem 0;
+    }
+    @include breakpoint(large) {
+        padding: 21rem 7rem 13rem 7rem !important;
+    }
+}
+
+//temp images
+.temp-wrapper {
+    margin: 0 10px;
+  }
+  
+  .temp-img {
+    width: 90.2%;
+    height: 362px;
+    background-color: #424957;
+    border-radius: 16px;
+    text-align: center;
+  }
+  .temp-img-left {
+    float: left;
+  }
+  .temp-img-right {
+    float: right;
+  }
+
+
+ 
+
+
+  @media only screen and (max-width: 2920px) {
+    .masthead-cover-ill {
+        background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/ckr3wvuu9o67g1u5ut8kstgul-masthead-illustration-frame-1920.svg') no-repeat top center;       
+    }    
+}
+@media only screen and (max-width: 1800px) {
+    .masthead-cover-ill {
+        background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/ckr3wvvh2o6b31u8p3oja3j42-masthead-illustration-frame-1600.svg') no-repeat top center;
+        background-size: 100% auto;
+    }  
+
+    .masthead-logo-lolla {
+        margin-top: -1rem !important;
+    }
+}
+@media only screen and (max-width: 1440px) {
+    .masthead-cover-ill {
+        background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/ckr3wvt9g8zn61u6mxq3n9v7k-masthead-illustration-frame-1440.svg') no-repeat top center;
+    } 
+
+    .masthead-logo-lolla {
+        margin-top: -1rem !important;
+    }
+}
+@media only screen and (max-width: 1280px) {
+    .masthead-cover-ill {
+        background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/ckr3wvu5ko63o1u7fnu02jvhy-masthead-illustration-frame-1280.svg') no-repeat top center;
+    } 
+}
+@media only screen and (max-width: 768px) {
+    .masthead-cover-ill {
+        background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/ckr3wvshao60b1u6g1vi1jlrr-masthead-illustration-frame-768.svg') no-repeat top center;
+    }
+    .body-bk-lolla {
+        background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/ckr29aapdm10o1u5ue09fogxb-gradient-background-768.full.jpg') top center no-repeat !important;
+        background-size: cover !important;
+        height: 100vh;
+     }
+     .masthead-logo-lolla {
+        width: 430px;
+    }
+    .note-lolla {
+        margin-top: 0;
+    }
+}
+@media only screen and (max-width: 475px) {
+    .body-bk-lolla {
+        height: 100vh;
+    }
+    .masthead-cover-ill {
+        background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/ckr3wvt1uo68r1u4wuaxlxcyn-masthead-illustration-frame-375.svg') no-repeat top center;
+    } 
+    .subtitle {
+        font-size: 1rem;
+    }
+    .masthead-block-wrapper {
+        position: relative;
+        width: 70%;
+        margin: 0 auto;
+        margin-top: -1rem;
+        z-index: 9;
+    }
+    .masthead-wide-lolla {
+        padding-bottom: 13rem;
+    }
+}
+
+.now-live {
+    display: none;
+    color: $green;
+    position: absolute;
+    margin-top: -3px;
+    margin-bottom: 10px;
+    font-size: 11px;
+    font-weight: bold;
+}
+.active {
+    display: block;
+}
+
+
+//alert
+.alert-wrapper {
+    width: 100%;
+    display: block;
+    position: fixed;
+    background-color: red;
+    color: $white;
+    z-index: 99999;
+    text-align: center;
+  
+    .alert-title {
+      font-family: 'Graphik-Semibold';
+      transition: all ease-in-out .25s;
+      @include breakpoint(small) {
+        font-size: 20px;
+      }
+      @include breakpoint(medium) {
+        font-size: 20px;
+      }
+      @include breakpoint(large) {
+        font-size: 26px;
+      }
+    }
+    .alert-copy {
+      font-family: 'Graphik-regular';
+      letter-spacing: .5px;
+      transition: all ease-in-out .25s;
+      @include breakpoint(small) {
+        font-size: 14px;
+      }
+      @include breakpoint(medium) {
+        font-size: 14px;
+      }
+      @include breakpoint(large) {
+        font-size: 16px;
+      }
+    }
+    
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+      top: 53px;
+      padding: 10px 20px;
+    }
+    @include breakpoint(medium) {
+      top: 53px;
+      padding: 20px 40px;
+    }
+    @include breakpoint(large) {
+      top: 65px;
+      padding: 20px 40px;
+    }
+  }
+  
+
+
+//MOBILE - LANDSCAPE VIEW
+@media (orientation: landscape) and (hover: none) and (pointer: coarse) {
+    .body-bk-lolla-twentythree {
+        height: 930px;
+    }
+    .lolla-container-vid {
+        height: 120vh;
+    }
+    .bonn-video {
+        width: 80% !important;
+    }
+}
+
+
+//MACBOOK 13in
+@media only screen and (min-width: 1280px) and (max-height: 800px)  {
+    .masthead-hhlm {
+        width: 150px;
+        margin-top: 30px;
+    }
+    .body-bk-lolla-twentythree {
+        height: 98vh;
+    }
+    .masthead-logo-twentythree {
+        width: 440px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        
+    }
+}

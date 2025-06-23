@@ -1,0 +1,428 @@
+//iheartradio
+.masthead-wrapper-ihr {
+    transition: all ease-in-out .2s;
+    @include breakpoint(small) {
+        width: 920px;
+        margin-top: 50px;
+    }
+    @include breakpoint(medium) {
+        width: 920px;
+        margin-top: 50px;
+    }
+    @include breakpoint(large) {
+        width: 920px;
+        margin-top: 50px;
+    }
+}
+.masthead-ihr-logo {
+    display: block;
+    margin: 0 auto;
+    transition: all ease-in-out .2s;
+    @include breakpoint(small) {
+        width: 180px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    @include breakpoint(medium) {
+        width: 240px;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+    @include breakpoint(large) {
+        width: 300px;
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
+}
+.masthead-ihr-hulu {
+    display: block;
+    margin: 0 auto;
+    transition: all ease-in-out .2s;
+    @include breakpoint(small) {
+        width: 280px;
+        margin-top: 17px;
+        margin-bottom: 15px;
+    }
+    @include breakpoint(medium) {
+        width: 320px;
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+    @include breakpoint(large) {
+        width: 400px;
+        margin-top: 25px;
+    }
+}
+.masthead-block {
+    overflow: hidden;
+    transition: all ease-in-out .2s;
+    @include breakpoint(small) {
+        width: 100%;
+    }
+    @include breakpoint(medium) {
+        width: 100%;
+    }
+    @include breakpoint(large) {
+        width: 918px;
+    }
+}
+.masthead-hhlm-ihr {
+    transition: all ease-in-out .1s;
+
+    @include breakpoint(small) {
+        width: 150px;
+    }
+    @include breakpoint(medium) {
+        width: 150px;
+    }
+    @include breakpoint(large) {
+        width: 190px;
+    }
+}
+.split-row-l {
+
+    transition: all ease-in-out .1s;
+
+    @include breakpoint(small) {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        display: block;
+        justify-content: none;
+        align-items: none;
+        float: none;
+    }
+    @include breakpoint(medium) {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+        display: block;
+        justify-content: none;
+        align-items: none;
+        float: none;
+    }
+    @include breakpoint(large) {
+        width: 340px;
+        height: 300px;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: left;
+    }
+}
+.split-row-r {
+
+    transition: all ease-in-out .1s;
+
+    @include breakpoint(small) {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        display: block;
+        justify-content: none;
+        align-items: none;
+        float: none;
+    }
+    @include breakpoint(medium) {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+        display: block;
+        justify-content: none;
+        align-items: none;
+        float: none;
+    }
+    @include breakpoint(large) {
+        width: 537px;
+        height: 330px;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: left;
+    }
+}
+.body-bk-ihr {
+    background-size: cover !important;
+    background-color: $green !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: -1px;
+    transition: all ease-in-out .1s;
+    z-index: -1;
+
+    @include breakpoint(small) {
+        background: url('https://assetshuluimcom-a.akamaihd.net/ihr/img/bk-iheart-mast-mob.jpg') top center no-repeat;
+        height: 115vh;
+    }
+    @include breakpoint(medium) {
+        background: url('https://assetshuluimcom-a.akamaihd.net/ihr/img/bk-iheart-mast-tab.jpg') top center no-repeat;
+        height: 100vh;
+    }
+    @include breakpoint(large) {
+        background: url('https://assetshuluimcom-a.akamaihd.net/ihr/img/bk-iheart-mast-desk.jpg') top center no-repeat;
+        height: 107vh;
+    }
+}
+
+.body-bk-fiesta {
+    background-size: cover !important;
+    background-color: $green !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: -1px;
+    transition: all ease-in-out .1s;
+    z-index: -1;
+
+    @include breakpoint(small) {
+        background: url('https://assetshuluimcom-a.akamaihd.net/ifiesta/img/bk-masthead-fiesta-mob.jpg') top center no-repeat;
+        height: 115vh;
+        padding-top: 0;
+    }
+    @include breakpoint(medium) {
+        background: url('https://assetshuluimcom-a.akamaihd.net/ifiesta/img/bk-masthead-fiesta-tab.jpg') top center no-repeat;
+        height: 100vh;
+        padding-top: 60px;
+    }
+    @include breakpoint(large) {
+        background: url('https://assetshuluimcom-a.akamaihd.net/ifiesta/img/bk-masthead-fiesta-desk.jpg') top center no-repeat;
+        height: 110vh;
+        padding-top: 60px;
+    }
+}
+.masthead-ifiesta-logo {
+    transition: all ease-in-out .1s;
+    @include breakpoint(small) {
+        background: url('https://assetshuluimcom-a.akamaihd.net/ifiesta/img/img-logo-ifiesta-desk.png') no-repeat;
+        background-position: center center;
+        background-size: 100%;
+        width: 300px;
+        height: 110px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    @include breakpoint(medium) {
+        background: url('https://assetshuluimcom-a.akamaihd.net/ifiesta/img/img-logo-ifiesta-desk.png') no-repeat;
+        background-size: 100%;
+        width: 500px;
+        height: 185px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    @include breakpoint(large) {
+        background: url('https://assetshuluimcom-a.akamaihd.net/ifiesta/img/img-logo-ifiesta-desk.png') no-repeat;
+        background-size: 100%;
+        width: 550px;
+        height: 200px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
+.masthead-ifiesta-hulu {
+    transition: all ease-in-out .1s;
+
+    @include breakpoint(small) {
+        margin-bottom: 30px;
+    }
+    @include breakpoint(medium) {
+        margin-bottom: 30px;
+    }
+    @include breakpoint(large) {
+        margin-bottom: 30px;
+    }
+}
+.fiesta-container-vid {
+    width: 100%;
+    transition: all ease-in-out .2s;
+
+    @include breakpoint(small) {
+        background: url('https://assetshuluimcom-a.akamaihd.net/ifiesta/img/bk-fiesta-vid-desk.jpg') no-repeat !important;
+        height: 50vh;
+        background-color: #000000 !important;
+        background-position: center left !important;
+        background-size: cover !important;
+    }
+    @include breakpoint(medium) {
+        background: url('https://assetshuluimcom-a.akamaihd.net/ifiesta/img/bk-fiesta-vid-desk.jpg') no-repeat !important;
+        height: 70vh;
+        background-color: #000000 !important;
+        background-position: center left !important;
+        background-size: cover !important;
+    }
+    @include breakpoint(large) {
+        background: url('https://assetshuluimcom-a.akamaihd.net/ifiesta/img/bk-fiesta-vid-desk.jpg') no-repeat !important;
+        height: 100vh;
+        background-color: #000000 !important;
+        background-position: center center !important;
+        background-size: cover !important;
+    }
+
+}
+
+//country 24
+.body-bk-country {
+    background-size: cover !important;
+    background-color: $green !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: -1px;
+    transition: all ease-in-out .1s;
+    z-index: -1;
+
+    @include breakpoint(small) {
+        background: url('https://assetshuluimcom-a.akamaihd.net/ihr/img/country/bk-mast-country.jpg') top center no-repeat;
+        height: 105vh;
+        padding-top: 50px;
+    }
+    @include breakpoint(medium) {
+        background: url('https://assetshuluimcom-a.akamaihd.net/ihr/img/country/bk-mast-country.jpg') top center no-repeat;
+        height: 100vh;
+        padding-top: 60px;
+    }
+    @include breakpoint(large) {
+        background: url('https://assetshuluimcom-a.akamaihd.net/ihr/img/country/bk-mast-country.jpg') top center no-repeat;
+        height: 120vh;
+        padding-top: 60px;
+    }
+}
+.masthead-country-logo {
+    transition: all ease-in-out .1s;
+    @include breakpoint(small) {
+        background: url('https://assetshuluimcom-a.akamaihd.net/ihr/img/country/logo-iheartcountry25.png') no-repeat;
+        background-position: center center;
+        background-size: 100%;
+        width: 170px;
+        height: 185px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    @include breakpoint(medium) {
+        background: url('https://assetshuluimcom-a.akamaihd.net/ihr/img/country/logo-iheartcountry25.png') no-repeat;
+        background-size: 100%;
+        width: 290px;
+        height: 315px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    @include breakpoint(large) {
+        background: url('https://assetshuluimcom-a.akamaihd.net/ihr/img/country/logo-iheartcountry25.png') no-repeat;
+        background-size: 100%;
+        width: 290px;
+        height: 315px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
+.country-container-vid {
+    width: 100%;
+    transition: all ease-in-out .2s;
+
+    @include breakpoint(small) {
+        background: url('https://assetshuluimcom-a.akamaihd.net/ihr/img/country/bk-vid-country.jpg') no-repeat !important;
+        height: 50vh;
+        background-color: #000000 !important;
+        background-position: center left !important;
+        background-size: cover !important;
+    }
+    @include breakpoint(medium) {
+        background: url('https://assetshuluimcom-a.akamaihd.net/ihr/img/country/bk-vid-country.jpg') no-repeat !important;
+        height: 70vh;
+        background-color: #000000 !important;
+        background-position: center left !important;
+        background-size: cover !important;
+    }
+    @include breakpoint(large) {
+        background: url('https://assetshuluimcom-a.akamaihd.net/ihr/img/country/bk-vid-country.jpg') no-repeat !important;
+        height: 100vh;
+        background-color: #000000 !important;
+        background-position: center center !important;
+        background-size: cover !important;
+    }
+
+}
+
+.masthead-split {
+    display: block;
+    overflow: hidden;
+}
+.masthead-clear {
+    display: block;
+    clear: both;
+    margin-top: -15px;
+}
+.ihr-container-vid {
+    background: url('https://assetshuluimcom-a.akamaihd.net/ihr/img/bk-vid-iheart24.jpg') repeat !important;
+    background-position: top center !important;
+    background-size: cover !important;
+    background-color: #000000 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    transition: all ease-in-out .2s;
+    @include breakpoint(small) {
+        height: 50vh;
+    }
+    @include breakpoint(medium) {
+        height: 50vh;
+    }
+    @include breakpoint(large) {
+        height: 100vh;
+    }
+}
+.note-ihr {
+    margin: 0 auto;
+    transition: all ease-in-out .2s;
+    @include breakpoint(small) {
+        width: 85%;
+        font-size: 9px;
+        padding: 10px 0;
+    }
+    @include breakpoint(medium) {
+        font-size: 9px;
+        width: 465px;
+        font-size: 10px;
+        padding: 10px 0;
+    }
+    @include breakpoint(large) {
+        width: 465px;
+        font-size: 10px;
+        padding: 10px 0;
+    }
+}
+//MACBOOK AIR 
+@media (orientation: landscape) and (min-height: 100px) and (max-height: 800px)
+{ 
+    .body-bk-country {
+        height: 130vh;
+    }
+    .masthead-wide-wrapper {
+        height: 150vh;
+    }
+ }
+//MOBILE - LANDSCAPE VIEW
+@media (orientation: landscape) and (hover: none) and (pointer: coarse) {
+    .body-bk-ihr, .masthead-wide-wrapper {
+        height: 240vh;
+    }
+    .ihr-container-vid, .bonn-container-grass {
+        height: 150vh;
+    }
+    .body-bk-country {
+        height: 220vh;
+        padding-top: 60px;
+    }
+    .masthead-country-logo {
+        width: 227px;
+        height: 227px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}

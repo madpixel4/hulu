@@ -1,0 +1,514 @@
+.body-bk-acl {
+    background-size: cover !important;
+    background-color: #040405 !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: -1px;
+    transition: all ease-in-out .1s;
+    z-index: -1;
+    @include breakpoint(small) {
+        background: url('https://assetshuluimcom-a.akamaihd.net/acl/img/bk-acl24-mast-mob.jpg') top center no-repeat;
+        margin-top: 0;
+        height: 120vh;
+    }
+    @include breakpoint(medium) {
+        background: url('https://assetshuluimcom-a.akamaihd.net/acl/img/bk-acl24-mast-tab.jpg') top center no-repeat;
+        margin-top: 50px;
+        height: 100vh;
+    }
+    @include breakpoint(large) {
+        background: url('https://assetshuluimcom-a.akamaihd.net/acl/img/bk-acl24-mast-desk.jpg') top center no-repeat;
+        margin-top: 50px;
+        height: 107vh;
+    }
+}
+
+.masthead-wrapper-acl {
+    transition: all ease-in-out .1s;
+    @include breakpoint(small) {
+        margin: 30px 0 0 0;
+    }
+    @include breakpoint(medium) {
+        margin: 0;
+    }
+    @include breakpoint(large) {
+       margin: 50px 0 0 0;
+    }
+}
+.masthead-acl-logo {
+    transition: all ease-in-out .1s;
+    @include breakpoint(small) {
+        background: url('https://assetshuluimcom-a.akamaihd.net/acl/img/img-logo-acl-mob.png') no-repeat;
+        background-position: center center;
+        background-size: 100%;
+        width: 170px;
+        height: 210px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    @include breakpoint(medium) {
+        background: url('https://assetshuluimcom-a.akamaihd.net/acl/img/img-logo-acl.png') no-repeat;
+        background-size: 100%;
+        width: 500px;
+        height: 115px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    @include breakpoint(large) {
+        background: url('https://assetshuluimcom-a.akamaihd.net/acl/img/img-logo-acl.png') no-repeat;
+        background-size: 100%;
+        width: 700px;
+        height: 150px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
+.masthead-logo-austin {
+    transition: all ease-in-out .1s;
+    @include breakpoint(small) {
+        width: 420px;
+        margin: 30px 0 0 0;
+    }
+    @include breakpoint(medium) {
+        width: 420px;
+        margin: 30px 0 0 0;
+    }
+    @include breakpoint(large) {
+       width: 820px;
+       margin: 30px 0 0 0;
+    }
+}
+
+.masthead-acl-hulu {
+    transition: all ease-in-out .1s;
+    @include breakpoint(small) {
+        width: 270px;
+        margin: 10px 0;
+    }
+    @include breakpoint(medium) {
+        width: 420px;
+        margin: 10px 0;
+    }
+    @include breakpoint(large) {
+       width: 420px;
+       margin: 20px 0 30px 0;
+    }
+}
+
+.subtitle-require {
+    font-size: .9rem !important;
+    margin: 0 auto;
+    margin-top: 12px;
+    margin-bottom: 0;
+    @include breakpoint(small) {
+        font-size: 10px !important;
+        max-width: 80%;
+    }
+    @include breakpoint(medium) {
+        font-size: .7rem !important;
+        max-width: 360px;
+    }
+    @include breakpoint(large) {
+        font-size: .9rem !important;
+        max-width: 600px;
+    }
+}
+.acl-tabs-container {
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        padding: 0;
+        margin-bottom: -40px !important;
+    }
+    @include breakpoint(medium) {
+        padding: 4rem 0 2rem 0;
+        color: #FFFFFF;
+    }
+    @include breakpoint(large) {
+        padding: 3rem 0 7rem 7rem;
+    }
+}
+
+.masthead-wide-acl {
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        margin-top: -100px;
+    }
+    @include breakpoint(medium) {
+        margin-top: -100px;
+    }
+    @include breakpoint(large) {
+        margin-top: 100px;
+    }
+}
+.masthead-acl-mob {
+    transition: all ease-in-out .25s;
+    position: absolute;
+    @include breakpoint(small) {
+        display: block;
+        background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl8c0esxe1jml1v3jauydu6ie-acl-mast-mob.full.png') top center no-repeat !important;
+        height: 300px;
+        width: 100%;
+        background-size: 100% !important;
+        margin-top: 690px;
+    }
+    @include breakpoint(medium) {
+        display: block;
+        background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl8c0esxe1jml1v3jauydu6ie-acl-mast-mob.full.png') top center no-repeat !important;
+        height: 500px;
+        width: 100%;
+        background-size: 100% !important;
+        margin-top: 690px;
+    }
+    @include breakpoint(large) {
+        display: none;
+    }
+}
+.masthead-logo-acl {
+    background-position: 0 0;
+    margin: 0 auto;
+    margin-top: -3rem;
+    transition: all ease-in-out .2s;
+
+    @include breakpoint(small) {
+        background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl8bxq6j21g5f1v4jk5gy2br6-acl-logo-mob.full.png') top center no-repeat !important;
+        height: 220px;
+        width: 155px;
+        background-size: 100% !important;
+    }
+
+    @include breakpoint(medium) {
+        background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl8avxz18031r1v5jkt2dyc8f-acl-logo.full.png') top center no-repeat !important;
+        background-size: 100% !important;
+        background-position: 0 0;
+        width: 500px;
+        height: 200px;
+        margin-bottom: 0;
+    }
+
+    @include breakpoint(large) {
+        background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl8avxz18031r1v5jkt2dyc8f-acl-logo.full.png') top center no-repeat !important;
+        background-size: 100% !important;
+        background-position: 0 0;
+        width: 600px;
+        height: 270px;
+    }
+}
+
+
+.acl-container-vid {
+    width: 100%;
+    height: 115vh;
+    transition: all ease-in-out .2s;
+
+    @include breakpoint(small) {
+        background: url('https://assetshuluimcom-a.akamaihd.net/acl/img/bk-vid-acl24.png') no-repeat !important;
+        height: 38vh;
+        background-color: #000000 !important;
+        background-position: center center !important;
+        background-size: cover !important;
+    }
+    @include breakpoint(medium) {
+        background: url('https://assetshuluimcom-a.akamaihd.net/acl/img/bk-vid-acl24.png') no-repeat !important;
+        height: 50vh;
+        background-color: #000000 !important;
+        background-position: center center !important;
+        background-size: cover !important;
+    }
+    @include breakpoint(large) {
+        background: url('https://assetshuluimcom-a.akamaihd.net/acl/img/bk-vid-acl24.png') no-repeat !important;
+        height: 115vh;
+        background-color: #000000 !important;
+        background-position: center center !important;
+        background-size: cover !important;
+    }
+
+}
+
+
+.acl-on-live {
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        margin: 30px 0 0 0;
+        width: 240px;
+    }
+    @include breakpoint(medium) {
+        margin: 30px 0 0 0;
+        width: 330px;
+    }
+    @include breakpoint(large) {
+        width: 500px;
+        position: absolute;
+        right: 10%;
+        margin: 0 0 0 0;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 2920px) {
+    .masthead-cover-acl-top {
+        &::before {
+            content: '';
+            background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl8bxear01fpy1v4jehq650b4-acl-mast-tl.full.png') no-repeat top center;        
+            background-size: 100% auto; 
+            position: absolute;
+            width: 20%;
+            top: 100px;
+            left: 0;
+            height: 100%;
+            transition: all ease-in-out .25s;
+            @include breakpoint(small) {
+                display: none;
+            }
+            @include breakpoint(medium) {
+                display: none;
+            }
+            @include breakpoint(large) {
+                display: block;
+            }
+        }
+        &::after {
+            content: '';
+            background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl8bxear71fpy1v3j29epgkfy-acl-mast-tr.full.png') no-repeat top center;        
+            background-size: 100% auto; 
+            position: absolute;
+            width: 22%;
+            top: 100px;
+            right: 0;
+            height: 100%;
+            transition: all ease-in-out .25s;
+            @include breakpoint(small) {
+                display: none;
+            }
+            @include breakpoint(medium) {
+                display: none;
+            }
+            @include breakpoint(large) {
+                display: block;
+            }
+        }
+    }
+    .masthead-cover-acl-bot {
+        &::before {
+            content: '';
+            background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl8bxeapw1fpz1v47qvi54w0c-acl-mast-bl.full.png') no-repeat bottom center;        
+            background-size: 100% auto; 
+            position: absolute;
+            width: 33%;
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            transition: all ease-in-out .25s;
+            @include breakpoint(small) {
+                display: none;
+            }
+            @include breakpoint(medium) {
+                display: none;
+            }
+            @include breakpoint(large) {
+                display: block;
+            }
+        }
+        &::after {
+            content: '';
+            background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl8bxeasy1fpw1v0ye8ab25de-acl-mast-br.full.png') no-repeat bottom center;        
+            background-size: 100% auto; 
+            position: absolute;
+            width: 30%;
+            bottom: 0;
+            right: 0;
+            height: 100%;
+            transition: all ease-in-out .25s;
+            @include breakpoint(small) {
+                display: none;
+            }
+            @include breakpoint(medium) {
+                display: none;
+            }
+            @include breakpoint(large) {
+                display: block;
+            }
+        }
+    }
+}
+
+.stars {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl8bzdrk71ia91v14eyu01gcz-acl-mast-star.full.png') no-repeat center center;        
+    background-size: 100% auto; 
+    position: absolute;
+    width: 22px;
+    height: 25px;
+}
+.stars-one {
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        display: none;
+    }
+    @include breakpoint(medium) {
+        display: block;
+        left: 7%;
+        top: 100px;
+    }
+    @include breakpoint(large) {
+        display: block;
+        left: 25%;
+        top: 150px;
+    }
+}
+.stars-two {
+    left: 6%;
+    top: 280px;
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        display: none;
+    }
+    @include breakpoint(medium) {
+        display: none;
+    }
+    @include breakpoint(large) {
+        display: block;
+    }
+}
+.stars-three {
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        display: none;
+    }
+    @include breakpoint(medium) {
+        display: block;
+        left: 18%;
+        top: 450px;
+    }
+    @include breakpoint(large) {
+        display: block;
+        left: 18%;
+        top: 350px;
+    }
+}
+.stars-four {
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        display: none;
+    }
+    @include breakpoint(medium) {
+        display: block;
+        left: 6%;
+        top: 570px;
+    }
+    @include breakpoint(large) {
+        display: block;
+        left: 2%;
+        top: 420px;
+    }
+}
+.stars-five {
+    right: 30%;
+    top: 150px;
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        display: none;
+    }
+    @include breakpoint(medium) {
+        display: none;
+    }
+    @include breakpoint(large) {
+        display: block;
+    }
+}
+.stars-six {
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        display: none;
+    }
+    @include breakpoint(medium) {
+        display: block;
+        right: 12%;
+        top: 390px;
+    }
+    @include breakpoint(large) {
+        display: block;
+        right: 12%;
+        top: 350px;
+    }
+}
+.stars-seven {
+    right: 24%;
+    top: 530px;
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        display: none;
+    }
+    @include breakpoint(medium) {
+        display: block;
+    }
+    @include breakpoint(large) {
+        display: block;
+    }
+}
+.stars-eight {
+    right: 2%;
+    top: 540px;
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        display: none;
+    }
+    @include breakpoint(medium) {
+        display: none;
+    }
+    @include breakpoint(large) {
+        display: block;
+    }
+}
+.h1-acl {
+    margin-top: 50px !important;
+    margin-bottom: -30px !important;
+}
+.acl-on-desk {
+    margin-top: -380px;
+    width: 520px;
+    right: 8%;
+}
+
+
+@media only screen and (max-width: 3800px) {
+
+    .dont-acl-on-desk {
+        transition: all ease-in-out .24s;
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1800px) {
+
+    .dont-acl-on-desk {
+        width: 100%;
+    }
+
+    .masthead-logo-acl {
+        margin-top: -1rem !important;
+    }
+}
+@media only screen and (max-width: 1440px) {
+
+    .dont-acl-on-desk {
+        width: 120%;
+    }
+
+    .masthead-logo-acl {
+        margin-top: -1rem !important;
+    }
+}
+@media only screen and (max-width: 1022px) {
+
+}
+@media only screen and (max-width: 768px) {
+
+}
+@media only screen and (max-width: 475px) {
+    .masthead-logo-acl {
+        margin-top: 3rem !important;
+    }
+}

@@ -1,0 +1,1184 @@
+#grid {
+    margin-bottom: 60px;
+    display: block;
+    overflow: hidden;
+}
+.wkb-body {
+    display: block;
+    @include breakpoint(small) {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background: rgb(27,26,26); 
+        background: radial-gradient(circle, rgba(27,26,26,1) 0%, rgba(18,14,14,1) 100%);
+    }
+    @include breakpoint(medium) {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+  
+    }
+    @include breakpoint(large) {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: #1F1D1D;
+    }
+}
+.wkb-wrapper {
+    // display: flex;
+    // flex-wrap: nowrap;
+    // flex-direction: row;
+    // align-items: center;
+    // justify-content: center;
+    // overflow: hidden;
+
+    padding: 70px 30px;
+    overflow: hidden;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1630px;
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+      
+    }
+    @include breakpoint(medium) {
+     
+    }
+    @include breakpoint(large) {
+        width: 1630px;
+    }
+}
+.wkb-wrapper-desktop {
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        display: none;
+    }
+    @include breakpoint(medium) {
+        display: none;
+    }
+    @include breakpoint(large) {
+        display: block;
+        overflow-y: scroll;
+        height: 100vh;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+/* Hide scrollbar for Chrome, IE, Edge and Firefox */
+.wkb-wrapper-desktop::-webkit-scrollbar {
+    display: none;
+}
+.wkb-wrapper-desktop {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+.wkb-wrapper-mobile {
+    // background-color: #1F1D1D;
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        display: block;
+        background-size: 330px;
+        background-position: center;
+        background: radial-gradient(circle, #1b1a1a 0%, #120e0e 100%);
+    }
+    @include breakpoint(medium) {
+        display: block;
+        background-size: 360px;
+        background-position: center center;
+        background: radial-gradient(circle, #1b1a1a 0%, #120e0e 100%);
+    }
+    @include breakpoint(large) {
+        display: none;
+    }
+}
+.wkb-back-mobile {
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        // background: rgb(27,26,26); 
+        // background: radial-gradient(circle, rgba(27,26,26,1) 0%, rgba(18,14,14,1) 100%);
+        background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl5h2btdtasec1v3vgqt9oduz-wkb-logo.full.png');
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    @include breakpoint(medium) {
+        width: 300px;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    @include breakpoint(large) {
+        display: none;
+    }
+}
+.door-img-wkb {
+    width: 137px;
+    height: 143px;
+}
+.door-img-num {
+    width: 163px;
+    height: 289px;
+}
+.door {
+    position: relative;
+    float: left;
+    width: 165px;
+    height: 344px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: perspective(3000px) !important;
+    margin: 15px 15px;
+
+    &:hover {
+        z-index: 2;
+    }
+  }
+  
+  .door-front {
+    width: 170px;
+    height: 345px;
+    overflow: hidden;
+    transform-origin: right;
+    // box-shadow: 30px 0 50px rgba(0,0,0,0.2);
+    position: absolute;
+    background-color: #f9f9f9;
+    z-index:1;
+    transition: .5s;
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl5lidqdmek8f1v58ey8pw1l2-wkb-img-door-yellow.full.png') no-repeat;
+    background-size: 100%;
+  }
+  .door-front-red {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl5lidqagq0ap1v1y7bv3l23c-wkb-img-door-red.full.png') no-repeat;
+    background-size: 100%;
+  }
+  .door-front-green {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl5lidq9uv9fu1v6w0jkbw34h-wkb-img-door-green.full.png') no-repeat;
+    background-size: 100%;
+  }
+  
+  
+  .door:hover .door-front {
+    transform: rotateY(110deg); 
+    box-shadow: 30px 0 50px rgba(0,0,0,0.2);
+  }
+  
+  .door-back {
+    position: relative;
+    background: #ccc;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 10px solid #bc9645; 
+
+  }
+  .door-back-red {
+    outline: 10px solid #8e291d;
+
+  }
+  .door-back-green {
+    outline: 10px solid #3c6754;
+
+  }
+  .door-dark {
+    color: #ffffff;
+    background-color: transparent;
+    outline: transparent solid 10px;
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  
+//Door Back Suspects
+.door-back-link {
+    width: 100%;
+    height: 345px;
+    display: block;
+}
+.door-back-sus {
+    transition: all ease-in-out .75s !important;
+    width: 170px;
+    height: 345px;
+    background-size: 130%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.door-guilty {
+    display: none;
+    transition: all ease-in-out .25s;
+    text-decoration: none;
+    background:rgba(0, 0, 0, 0.65) ;
+    border: dashed 2px #f9f9f9;
+    padding: 5px 10px;
+    color: #f9f9f9;
+    position: absolute;
+    bottom: 20px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    letter-spacing: .5px;
+
+    &:hover {
+        width: 90%;
+        padding: 8px 15px;
+        bottom: 17px;
+        background:rgba(22, 22, 22, 0.35) ;
+    }
+}
+
+
+.wkb-footer {
+    background-image:  linear-gradient(to bottom, transparent, #000000);
+    position: fixed;
+    bottom: 0;
+    color: $white;
+    width: 100%;
+    z-index: 9999;
+    justify-content: space-between;
+    align-items: baseline;
+    @include breakpoint(small) {
+        height: 80px;
+        padding: 0 20px;
+        display: none;
+    }
+    @include breakpoint(medium) {
+        height: 120px;
+        padding: 0 40px;
+        display: none;
+    }
+    @include breakpoint(large) {
+        height: 120px;
+        padding: 0 40px;
+        display: flex;
+    }
+}
+.wkb-footer-r {
+    float: right;
+    @include breakpoint(small) {
+        display: none;
+    }
+    @include breakpoint(medium) {
+        display: block;
+    }
+    @include breakpoint(large) {
+        display: block;
+    }
+
+    img {
+        width: 135px;
+        height: 75px;
+    }
+}
+.wkb-footer-title {
+    color: $white;
+    font-size: 14px;
+    font-family: 'Graphik-Semibold';
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+}
+.footer-list ul li {
+    font-size: 10px;
+    float: left;
+    padding-right: 15px;
+    text-transform: uppercase;
+
+    a {
+        color: $white;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+.spotlight {
+    pointer-events: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-image: radial-gradient(
+        circle,
+        transparent 300px,
+        rgba(0, 0, 0, 0.85) 800px
+    );
+    z-index: 9;
+    @include breakpoint(small) {
+        display: none;
+    }
+    @include breakpoint(medium) {
+        display: none;
+    }
+    @include breakpoint(large) {
+        display: block;
+    }
+}
+.reveal-wkb {
+    background: transparent !important;
+    scrollbar-width: none;
+}
+
+.wkb-cover {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+}
+.cover-audio {
+    position: absolute;
+    font-family: 'Graphik-Semibold';
+    text-transform: uppercase;
+    text-align: right;
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+      font-size: 14px;
+      top: 15px;
+      right: 120px; 
+      width: 170px;
+    }
+    @include breakpoint(medium) {
+      font-size: 14px;
+      top: 15px;
+      right: 120px;
+      width: 170px;
+    }
+    @include breakpoint(large) {
+      right: 410px;
+      top: 18px;
+      font-size: 24px;
+      width: 300px;
+    }
+}
+.cover-message {
+    text-align: center;
+}
+.cover-instruction {
+    font-size: 35px;
+    font-family: 'Graphik-Semibold';
+    text-transform: uppercase;
+    margin: 30px auto;
+}
+.cover-instruction-mobile, .cover-share-mobile {
+    font-size: 14px;
+    font-family: 'Graphik-Semibold';
+    text-transform: uppercase;
+    margin: 30px auto;
+    width: 200px;
+}
+.cover-share-mobile {
+    position: absolute;
+    bottom: 55px;
+}
+.cover-button-mobile {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl6143h4ok4re1v58v76qobs8-wlb-cover-button.full.png') no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 200px;
+    height: 40px;
+    position: fixed;
+    bottom: 35px;
+}
+.cover-close {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: -25px;
+
+    &:after {
+        content: '';
+        background: url(https://hulu-matchmaker.s3.amazonaws.com/attachments/ckro70zxjobbr1u72rc1zmsac-icon-close.svg) no-repeat;
+        width: 23px;
+        height: 23px;
+        background-size: 100%;
+        position: absolute;
+        margin: -1px 0px 0 10px;
+    }
+}
+.cover-image {
+    margin: 0 auto;
+    @include breakpoint(small) {
+        background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl5jummurpnyo1w58axf6y010-wkb-cover-img-tap.full.png') center center no-repeat;
+        width: 100px;
+        height: 100px;
+        background-size: 100%;
+    }
+    @include breakpoint(medium) {
+        background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl5jummurpnyo1w58axf6y010-wkb-cover-img-tap.full.png') center center no-repeat;
+        width: 100px;
+        height: 100px;
+        background-size: 100%;
+    }
+    @include breakpoint(large) {
+        background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl5h2skp4k7xt1v1yap38yg3x-wkb-cover-img-click.full.png') center center no-repeat;
+        width: 100px;
+        height: 100px;
+        background-size: 100%;
+    }   
+}
+.cover-image-mobile {
+    margin: 0 auto;
+    @include breakpoint(small) {
+        background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl6143gzdk4wy1v6w25k4mpfk-wkb-cover-mobile-frame.full.png') center center no-repeat;
+        width: 200px;
+        height: 300px;
+        background-size: 100%;
+    }
+    @include breakpoint(medium) {
+        background: url('    https://hulu-matchmaker.s3.amazonaws.com/attachments/cl6143gzdk4wy1v6w25k4mpfk-wkb-cover-mobile-frame.full.png') center center no-repeat;
+        width: 200px;
+        height: 300px;
+        background-size: 100%;
+    }
+    @include breakpoint(large) {
+        display: none;
+    } 
+}
+.cover-message-desktop {
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        display: none;
+    }
+    @include breakpoint(medium) {
+        display: none;
+    }
+    @include breakpoint(large) {
+        display: inline-block;
+    }
+}
+.cover-message-mobile {
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        display: inline-block;
+    }
+    @include breakpoint(medium) {
+        display: inline-block;
+    }
+    @include breakpoint(large) {
+        display: none;
+    }
+}
+
+.reveal-wkb {
+    border-radius: 8px;
+    margin-top: 10px;
+    background-color: #1F1D1D !important;
+    padding: 40px;
+    background-size: 80% !important;
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        width: 265px !important;
+        height: 425px;
+    }
+    @include breakpoint(medium) {
+        width: 300px !important;
+        height: 480px;
+    }
+    @include breakpoint(large) {
+        width: 280px !important;
+        height: 450px;
+    }
+}
+.reveal-wkb-frame {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl5l8gm4ie7al1v8ohk83xp27-wkb-modal-frame.full.png') center center no-repeat !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    background-size: 100% !important;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        width: 210px;
+        height: 384px;
+        margin-top: -20px;
+    }
+    @include breakpoint(medium) {
+        width: 220p;
+        height: 405px;
+        margin-top: 0;
+    }
+    @include breakpoint(large) {
+        width: 220px;
+        height: 404px;
+        margin-top: -18px;
+    }
+}
+.reveal-wkb-card {
+    margin: 0 auto;
+    background-size: 100% !important;
+    z-index: 9;
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        width: 163px;
+        height: 340px;
+    }
+    @include breakpoint(medium) {
+        width: 170px;
+        height: 395px;
+    }
+    @include breakpoint(large) {
+        width: 170px;
+        height: 365px;
+    }
+}
+.reveal-title, .reveal-merch {
+    font-family: 'Graphik-Semibold';
+    font-size: 16px;
+    position: fixed;
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 60px 0 0 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.reveal-merch {
+    margin-top: 150px;
+    text-decoration: underline;
+
+    &:hover, &:active, &:focus {
+        color: $white !important;
+        text-decoration: none !important;
+    }
+}
+.reveal-social-wrapper {
+    position: fixed;
+    width: fit-content;
+    margin: 100px auto;
+    left: 0;
+    right: 0;
+}
+.btn-wkb-share {
+    float: left;
+    margin: 0 7.5px;
+    display: block;
+    background-color: #C3A404 !important;
+    display: block;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-family: 'Graphik-Semibold';
+    font-size: 11px;
+    text-transform: uppercase;
+    background: #C3A404;
+    color: #1F1D1D;
+    border-radius: 4px;
+    padding: 10px 25px 9px 37px;
+    border: none !important;
+    transition: transform ease-in-out .25s;
+    cursor: pointer;
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        margin: 0 4.5px;
+        padding: 10px 17px 9px 37px;
+    }
+    @include breakpoint(medium) {
+        margin: 0 7.5px;
+        padding: 10px 25px 9px 37px;
+    }
+    @include breakpoint(large) {
+        margin: 0 7.5px;
+        padding: 10px 25px 9px 37px;
+    }
+    
+
+
+    &:hover, &:active, &:focus {
+        transform: scale(1.1);
+        color: #1F1D1D !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+}
+.btn-wkb-fb {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl5jyutsa35501v34swb50ryo-wkb-icon-share-fb.full.png') no-repeat !important;
+    background-color: #C3A404 !important;
+    background-size: 8% !important;
+    background-position: 18px 8px !important;
+    // padding: 8px 25px 8px 37px;
+}
+.btn-wkb-tw {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl5jzvcjdclb91v58318ye6zf-wkb-icon-share-tw.full.png') no-repeat !important;
+    background-color: #C3A404 !important;
+    background-size: 15% !important;
+    background-position: 16px 10px !important;
+}
+.btn-wkb-ig {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl5n0kozt1sgg1v6hjcxwcvxw-wkb-icon-share-ig.full.png') no-repeat !important;
+    background-color: #C3A404 !important;
+    background-size: 13% !important;
+    background-position: 16px 9px !important;
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        margin: 0 4.5px;
+        padding: 8px 17px 7px 37px;
+    }
+    @include breakpoint(medium) {
+        margin: 0 7.5px;
+        padding: 8px 25px 7px 37px;
+    }
+    @include breakpoint(large) {
+        margin: 0 7.5px;
+        padding: 8px 25px 7px 37px;
+    }
+    &:hover {
+        text-decoration: none;
+    }
+}
+.reveal-wkb-sweep {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        width: 360px !important;
+        height: 547px;
+        background-image: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl63xah261cxw1v4sf1ixgxr8-wkb-sweep-frame-mobile-t.full.png') !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        background-size: 92% !important;
+        background-color: #1F1D1D !important;
+        top: 70px !important;
+    }
+    @include breakpoint(medium) {
+        width: 430px !important;
+        height: 630px;
+        background-size: 90% !important;
+        background-color: #1F1D1D !important;
+        top: 80px !important;
+    }
+    @include breakpoint(large) {
+        width: 470px !important;
+        height: 550px;
+        background-size: 90% !important;
+        margin-top: 50px;
+        background-color: #1F1D1D !important;
+        background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl62nkuoam5fj1v6heespedpc-wkb-sweep-frame-mobile.full.png') !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        background-size: 92% !important;
+        background-color: #1F1D1D !important;
+        top: 60px !important
+    }
+}
+.wkb-sweep-wrapper {
+    display: block;
+    text-align: center;  
+    width: 90%;
+    padding: 0 40px; 
+    margin-top: 30px;
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        padding: 0; 
+    }
+    @include breakpoint(medium) {
+        padding: 0 20px; 
+    }
+    @include breakpoint(large) {
+        padding: 0 20px; 
+    }
+}
+.wkb-sweep-img {
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        width: 210px;
+        margin-bottom: 15px;
+    }
+    @include breakpoint(medium) {
+        width: 253px;
+        margin-bottom: 30px; 
+    }
+    @include breakpoint(large) {
+        width: 253px;
+        margin-bottom: 30px;
+    }
+}
+.wkb-sweep-title {
+    font-size: 14px;
+    color: #C0BBA0;
+    font-family: 'Graphik-Semibold';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        margin-bottom: 15px;
+    }
+    @include breakpoint(medium) {
+        margin-bottom: 30px;
+    }
+    @include breakpoint(large) {
+        margin-bottom: 30px;
+    }
+}
+.wkb-sweep-title-o {
+    margin-bottom: 8px;
+}
+.wkb-sweep-note {
+    font-size: 14px;
+    margin-top: 8px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    line-height: 20px;
+}
+a.wkb-sweep-btn {
+    display: block;
+    max-width: 230px;
+    margin: 0 auto;
+    font-family: 'Graphik-Semibold';
+    font-size: 11px;
+    text-transform: uppercase;
+    background: #C3A404;
+    color: #1F1D1D;
+    border-radius: 4px;
+    padding: 11px 10px;
+    letter-spacing: 1px;
+    transition: transform ease-in-out .25s;
+
+    &:hover, &:active, &:focus {
+        text-decoration: none;
+        transform: scale(1.1);
+        color: #1F1D1D !important;
+        background: #C3A404 !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        margin-top: 15px;
+    }
+    @include breakpoint(medium) {
+        margin-top: 40px;
+    }
+    @include breakpoint(large) {
+        margin-top: 40px;
+    }
+}
+.wkb-sweep-btn-cancel {
+    display: block;
+    max-width: 230px;
+    margin: 0 auto;
+    border-radius: 4px;
+    font-family: 'Graphik-Semibold';
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    // border: solid 2px $white;
+    background: transparent;
+    color: $white;
+    padding: 11px 10px;
+    letter-spacing: 1px;
+    transition: transform ease-in-out .25s;
+    &:hover, &:active, &:focus {
+        text-decoration: none;
+        transform: scale(1.1);
+        color: $white !important;
+        background: transparent !important;
+        // border: solid 2px $white !important;
+        box-shadow: none !important;
+    }
+}
+.card-sus {
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.close-button {
+    top: -50px !important;
+}
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+
+    .close-button {
+        top: 0px !important;
+        margin-top: -40px;
+    }
+}}
+.close-button-large:after {
+    width: 30px;
+    height: 30px;
+    background-size: 100%;
+    position: fixed;   
+    transition: all ease-in-out .25s;
+    // @include breakpoint(small) {
+    //     top: 3%;
+    // }
+    // @include breakpoint(medium) {
+    //     top: 40px;
+    // }
+    // @include breakpoint(large) {
+    //     top: 4%;
+    // }
+}
+
+
+.sus-alice {
+    background-image: url('https://assetshuluimcom-a.akamaihd.net/wkb/alice_s.png')
+}
+.sus-amy {
+    background-image: url('https://assetshuluimcom-a.akamaihd.net/wkb/amy_t.png')
+}
+.sus-mabel {
+    background-image: url('https://assetshuluimcom-a.akamaihd.net/wkb/mabel.jpg')
+}
+.sus-marv {
+    background-image: url('https://assetshuluimcom-a.akamaihd.net/wkb/marv.jpg')
+}
+.sus-nina {
+    background-image: url('https://assetshuluimcom-a.akamaihd.net/wkb/nina.jpg')
+}
+.sus-oliver {
+    background-image: url('https://assetshuluimcom-a.akamaihd.net/wkb/oliver.jpg')
+}
+.sus-poppy {
+    background-image: url('https://assetshuluimcom-a.akamaihd.net/wkb/poppy.jpg')
+}
+.sus-teddy {
+    background-image: url('https://assetshuluimcom-a.akamaihd.net/wkb/teddy.jpg')
+}
+.sus-theo {
+    background-image: url('https://assetshuluimcom-a.akamaihd.net/wkb/theo.jpg')
+}
+.sus-uma {
+    background-image: url('https://assetshuluimcom-a.akamaihd.net/wkb/uma.jpg')
+}
+.sus-will {
+    background-image: url('https://assetshuluimcom-a.akamaihd.net/wkb/will.jpg')
+}
+.sus-charles {
+    background-image: url('https://assetshuluimcom-a.akamaihd.net/wkb/charles_s.png')
+}
+.sus-cinda {
+    background-image: url('https://assetshuluimcom-a.akamaihd.net/wkb/cinda_s.png')
+}
+.sus-williams {
+    background-image: url('https://assetshuluimcom-a.akamaihd.net/wkb/detectivewilliams_s.png')
+}
+.sus-grover {
+    background-image: url('https://assetshuluimcom-a.akamaihd.net/wkb/drgrover_s.png')
+}
+.sus-howard {
+    background-image: url('https://assetshuluimcom-a.akamaihd.net/wkb/howard.png')
+}
+.sus-kreps {
+    background-image: url('https://assetshuluimcom-a.akamaihd.net/wkb/detectivekreps_s.jpg');
+}
+.sus-lenora {
+    background-image: url('https://assetshuluimcom-a.akamaihd.net/wkb/leonora_s.png')
+}
+.sus-lester {
+    background-image: url('https://assetshuluimcom-a.akamaihd.net/wkb/lester_s.png')
+}
+.sus-lucy {
+    background-image: url('https://assetshuluimcom-a.akamaihd.net/wkb/lucy_s.png')
+}
+.sus-ursula {
+    background-image: url('https://assetshuluimcom-a.akamaihd.net/wkb/ursula.jpg')
+}
+.sus-sam {
+    background-image: url('https://assetshuluimcom-a.akamaihd.net/wkb/sam_s.png')
+}
+.sus-director {
+    background-image: url('https://assetshuluimcom-a.akamaihd.net/wkb/director_s.png')
+}
+.sus-ivan {
+    background-image: url('https://assetshuluimcom-a.akamaihd.net/wkb/ivan_s.png')
+}
+.sus-liam {
+    background-image: url('https://assetshuluimcom-a.akamaihd.net/wkb/liam_s.png')
+}
+.sus-grant {
+    background-image: url('https://assetshuluimcom-a.akamaihd.net/wkb/grant_s.png')
+}
+.sus-naomi {
+    background-image: url('https://assetshuluimcom-a.akamaihd.net/wkb/naomi_s.png')
+}
+.sus-jonathan {
+    background-image: url('https://assetshuluimcom-a.akamaihd.net/wkb/jonathan_s.png')
+}
+.sus-joy {
+    background-image: url('https://assetshuluimcom-a.akamaihd.net/wkb/joy_s.png')
+}
+.sus-paulette {
+    background-image: url('https://assetshuluimcom-a.akamaihd.net/wkb/paulette_s.png')
+}
+
+
+
+//swiper
+.swiper {
+    display: none;
+    width: 100%;
+    // height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    height: 100% !important;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    background-color: transparent;
+    height: 100%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    left: 0;
+    right: 0;
+  }
+  .swipe-card {
+    // background-color: #1F1D1D;
+    background-repeat: no-repeat;
+    // position: absolute;
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        background-position: center;
+        background-size: contain;
+        width: 75%;
+        height: 66vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -28%;
+    }
+    @include breakpoint(medium) {
+        background-position: center 58px;
+        background-size: contain;
+        width: 400px;
+        height: 70vh;
+        top: 50px;
+    }
+    @include breakpoint(large) {
+        display: none;
+    }
+
+    // &:after {
+    //     content: '';
+    //     // background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl5twrl89arwa1v4sp551e2tl-wkb-swipe-frame.full.png') center center no-repeat !important;
+    //     z-index: 99;
+    //     background-size: 100% !important;
+    //     position: absolute;
+    //     margin-left: auto;
+    //     margin-right: auto;
+    //     left: 0;
+    //     right: 0;
+    //     width: 75%;
+    //     height: 100%;
+    //     transition: all ease-in-out .5s;
+    // }
+  }
+  .swipe-frame {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl5twrl89arwa1v4sp551e2tl-wkb-swipe-frame.full.png') center center no-repeat !important;
+    display: flex;
+    align-items: center;
+    z-index: 99;
+    background-size: 100% !important;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        width: 210px;
+        height: 420px;
+        top: 35px;
+    }
+    @include breakpoint(medium) {
+        width: 255px;
+        height: 480px;
+        top: 60px
+    }
+    @include breakpoint(large) {
+        display: none;
+    }
+  }
+
+  .swipe-guilty-txt {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl5u3uchmb0ty1v1yh2l8p8ok-wkb-swipe-btn-guilty.full.png') no-repeat;
+    position: absolute;
+    background-size: 100%;
+    color: #ffffff;
+    height: 65px;
+    line-height: 65px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-position: center;
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+       bottom: 10%;
+       width: 220px;
+    }
+    @include breakpoint(medium) {
+
+    }
+    @include breakpoint(large) {
+        display: none;
+    }
+  }
+  .swiper-button-next:after, .swiper-button-prev:after {
+    display: none;
+  }
+.swiper-button-wrapper {
+    display: block;
+    width: 100%;
+}
+.swiper-button {
+    position: absolute;
+    background-size: 100% !important;
+    width: 35px;
+    height: 35px;
+    display: block !important;
+    top: unset;
+    bottom: 12% !important;
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+
+    }
+    @include breakpoint(medium) {
+        bottom: 0;
+    }
+    @include breakpoint(large) {
+        display: none;
+    }
+}
+.swiper-button-next {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl5u1yxsqayhs1v580y5hws6i-wkb-swipe-arrow-right.full.png') no-repeat;
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        right: 4%;
+    }
+    @include breakpoint(medium) {
+        right: 25%;
+    }
+    @include breakpoint(large) {
+        display: none;
+    }
+} 
+
+.swiper-button-prev {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl5u1yxm6ayg51v3c3ftoub25-wkb-swipe-arrow-left.full.png') no-repeat;
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        left: 4%;
+    }
+    @include breakpoint(medium) {
+        left: 25%;
+    }
+    @include breakpoint(large) {
+        display: none;
+    }
+}
+.outof {
+    display: inline-flex;
+    position: fixed;
+    width: 291px;
+    bottom: 20%;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.3);
+    z-index: 9999;
+    text-transform: uppercase;
+    font-family: 'Graphik-Semibold';
+    transition: all ease-in-out .25s;
+    white-space: nowrap;
+
+    @include breakpoint(small) {
+        width: 267px;
+    }
+    @include breakpoint(medium) {
+        width: 290px;
+    }
+    @include breakpoint(large) {
+        display: none;
+    }
+}
+.outof-sus {
+    float: left;
+}
+.outof-line {
+    display: inline-block;
+    margin: -10px 15px;
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        width: 150px;
+    }
+    @include breakpoint(medium) {
+        width: 155px;
+    }
+    @include breakpoint(large) {
+        display: none;
+    }
+
+    hr {
+       opacity: .5;
+    }
+}
+.outof-total {
+    float: right;
+}
+
+
+
+//MACBOOK 13in
+@media only screen and (min-width: 821px) and (max-width: 1500px) { 
+
+    .wkb-wrapper {
+        width: 1240px !important;
+        max-width: 1240px !important;
+    }
+    .door-sml {
+        display: none;
+    }
+}

@@ -1,0 +1,44 @@
+.time{
+    display: none;
+}
+.stime-wrapper {
+  background: url(https://assetshuluimcom-a.akamaihd.net/lolla/img/arrow-down.png) no-repeat !important;
+  background-size: 13px !important;
+  background-position: center right !important;
+}
+.stime-wrapper {
+  width: 260px;
+  position: absolute;
+  right: 0;
+  background: transparent;
+  color: #fff;
+  border: none;
+  font-family: $body-font-bold;
+  text-align: right;
+  text-align-last: right;
+  letter-spacing: .5px;
+  transition: all ease-in-out .25s;
+  transition: all ease-in-out .25s;
+    
+  @include breakpoint(small) {
+    font-size: 14px;
+    margin: 115px 15px 0 0;
+    text-align: right !important;
+  }
+  @include breakpoint(medium) {
+    font-size: 18px;
+    margin: 123px 15px 0 0;
+  }
+  @include breakpoint(large) {
+    font-size: 18px;
+    margin: 135px 15px 0 0;
+  }
+}
+.stime-wrapper:focus {
+  border: none;
+  box-shadow: none;
+}
+.stime-wrapper:hover {
+//   opacity: .8;
+  cursor:pointer;
+}

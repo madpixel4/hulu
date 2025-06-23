@@ -1,0 +1,29 @@
+.preloader{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/ckr29aaoom1d41u5hmzn7fz5a-hulu-logo-4beat-build-alpha-v01.full.gif') center no-repeat #040405;
+    background-size: 200px !important;
+
+    @include breakpoint(large) {
+        background-size: 30%;
+    }
+}
+.preloader-music {
+    background: url('https://assetshuluimcom-a.akamaihd.net/bonnaroo/site/img/anim-preloader-music.gif') center no-repeat #040405;
+
+    @include breakpoint(small) {
+        background-size: 110% !important;
+    }
+
+    @include breakpoint(medium) {
+        background-size: 110% !important;
+    }
+
+    @include breakpoint(large) {
+        background-size: 70% !important;
+    }
+}

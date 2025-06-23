@@ -1,0 +1,53 @@
+.body-bk {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/ckl9u2nsf28in1u83g93t94ft-bk-tthh-grad.full.png') top center repeat-y !important;
+
+    background-position: 0 0 !important;
+    background-size: 190% !important;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  
+    @include breakpoint (large) {
+      background-size: 100% !important;
+    }
+  }
+  .close-button {
+    position: absolute;
+    z-index: 9999999;
+    top: 20px;
+    color: #111;
+    font-size: 30px;
+    right: 0;
+
+    &:hover {
+      color: #111;
+      opacity: .7;
+    }
+  }
+
+  .reveal {
+    max-width: 1330px;
+    height: auto;
+    @include breakpoint (small) {
+      width: 90% !important;
+    }
+    @include breakpoint (medium) {
+      width: 90% !important;
+    }
+    @include breakpoint (large) {
+      width: 60% !important;
+    }
+  }
+
+  .button-margin {
+    @include breakpoint (small) {
+      margin-top: 36px;
+    }
+    @include breakpoint (medium) {
+      margin-top: 49px;
+    }
+    @include breakpoint (large) {
+      margin-top: 49px;
+    }
+  }

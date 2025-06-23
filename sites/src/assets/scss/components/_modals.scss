@@ -1,0 +1,701 @@
+.reveal {
+    padding: 2em 3em 3em 3em;
+    background: $white;
+    border: 0;
+    outline: none;
+    width: 90%;
+    height: auto !important;
+    min-height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    @include breakpoint(large) {
+      width: 55%;
+    }
+  }
+  .reveal-overlay {
+    @include breakpoint(small) {
+      background-color: rgba(21, 21, 21, 0.9);
+    }
+    @include breakpoint(large) {
+      background-color: rgba(21, 21, 21, 0.85);
+    }
+  }
+  html.is-reveal-open {
+    top: 0 !important;
+  }
+  .modal-title {
+    color: #16181d;
+    font-family: 'Graphik', Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1.24;
+    text-transform: none;
+    margin-bottom: 30px;
+  }
+  .modal-notes {
+    margin-top: 20px;
+    font-size: 11px;
+    font-style: italic;
+    color: #16181d;
+    font-family: 'Graphik-Light';
+    letter-spacing: .5px;
+    font-weight: 900;
+
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+      margin-right: 0;
+    }
+    @include breakpoint(medium) {
+      margin-right: 0;
+    }
+    @include breakpoint(large) {
+      margin-right: 50px; 
+    }
+  }
+  .modal-price {
+    font-size: 2.2rem;
+    font-family: 'Graphik', Helvetica, Arial, sans-serif;
+    font-family: sans-serif;
+    font-weight: 100;
+  }
+  .modal-copy {
+    margin-top: .5rem;
+    font-size: 1rem;
+    color: #6B7790;
+  }
+  .close-button {
+    font-size: 0.875rem;
+    color: $white;
+    position: absolute;
+    right: 5%;
+    display: inline-flex;
+    font-family: 'Graphik-Semibold';
+    letter-spacing: .5px;
+    line-height: 27px;
+    transition: all ease-in-out .25s;
+    margin-right: -20px;
+    margin-top: 60px;
+
+    @include breakpoint(small) {
+      top: 0 !important;
+
+    }
+    @include breakpoint(medium) {
+      top: 0 !important;
+    }
+    @include breakpoint(large) {
+      top: 0 !important;
+
+    }
+
+
+    &:after {
+        content: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/ckro70zxjobbr1u72rc1zmsac-icon-close.svg');
+        padding-left: .7rem;
+    }
+    &:hover {
+      opacity: .7;
+      color: $white;
+    }
+
+  }
+  
+  .modal-wrapper {
+    z-index: 99;
+    background-color: #000000;
+    @include breakpoint(small) {
+      padding: 0
+    }
+
+  }
+  .myVideo {
+    position: fixed;
+    top: 50%; left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+      height: 70%;
+      top: 50%;
+    }
+    @include breakpoint(medium) {
+      top: 50%; left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+
+      transform: translate(-50%, -50%);
+      transition: all ease-in-out .25s;
+    }
+    @include breakpoint(large) {
+      top: 50%; left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .myVideoLg {
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+      min-height: 120%;
+    }
+    @include breakpoint(medium) {
+      min-height: 100%;
+    }
+    @include breakpoint(large) {
+      min-height: 100%;
+    }
+  }
+  .myVideoBg {
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+      min-height: 140%;
+      left: 0;
+    }
+    @include breakpoint(medium) {
+      min-height: 140%;
+      left: 50%;
+    }
+    @include breakpoint(large) {
+      min-height: 140%;
+      left: 50%;
+    }
+  }
+  
+  .modal-cover {
+    background-image: radial-gradient(transparent, black);
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 9;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .modal-cover-huluween {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+  }
+  .modal-info-wrapper {
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: inline-grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    color: $white;
+    transition: all ease-in-out .25s;
+
+    @include breakpoint(small) {
+      // align-content: end;
+      // padding-bottom: 4rem;
+    }
+    @include breakpoint(large) {
+      align-content: center;
+      padding-bottom: 0;
+    }
+
+    h1 {
+      font-size: 2.25rem !important;
+      padding: 0 0 2rem 0;
+      margin: 0 !important;
+      height: unset;
+      line-height: .75rem;
+      @include breakpoint(small) {
+        line-height: 1.75rem;
+        padding-bottom: .8rem;
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+        font-size: 23px !important;
+      }
+      @include breakpoint(large) {
+        line-height: .75rem;
+        font-size: 2.25rem !important;
+      }
+    }
+    h4 {
+      text-transform: uppercase;
+      font-size: 0.875rem;
+      padding-top: 1rem;
+
+      @include breakpoint(small) {
+        padding-top: 0;
+        font-size: 0.875rem;
+      }
+      @include breakpoint(large) {
+        padding-top: 1rem;
+      }
+    }
+  }
+  .modal-img-network {
+    position: absolute;
+    right: 180px;
+    height: 17px;
+    transition: all ease-in-out .25s;
+
+    @include breakpoint(small) {
+      right: 5%;
+      bottom: 95px;
+      height: 11px;
+    }
+    @include breakpoint(medium) {
+      right: 5%;
+      bottom: 95px;
+      height: 11px;
+    }
+    @include breakpoint(large) {
+      right: 180px;
+      bottom: 98px;
+      height: 17px;
+    }
+
+  }
+  .modal-img-showtime {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cku7lkxjy3lw41v6blv08qsxm-showtime.full.png') no-repeat;
+    background-size: 100%;
+    width: 60px;
+    height: 20px;
+    @include breakpoint(small) {
+      width: 43px;
+      height: 15px;
+    }
+    @include breakpoint(medium) {
+      width: 60px;
+      height: 20px;
+    }
+    @include breakpoint(large) {
+      width: 60px;
+      height: 20px;
+      margin-bottom: -5px;
+    }
+  }
+  .modal-img-hulu {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cku7lspzeb2v81v7h1lh3ewca-hulu.full.png') no-repeat;
+    background-size: 100%;
+    width: 60px;
+    height: 20px;
+    @include breakpoint(small) {
+      width: 43px;
+      height: 15px;
+    }
+    @include breakpoint(medium) {
+      width: 60px;
+      height: 20px;
+    }
+    @include breakpoint(large) {
+      width: 60px;
+      height: 20px;
+      margin-bottom: -5px;
+    }
+  }
+  .modal-img-hbomax {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cku8mqj19cexg1vac1kc1ukow-hbo.full.png') no-repeat;
+    background-size: 100%;
+    width: 43px;
+    height: 18px;
+    @include breakpoint(small) {
+      width: 30px;
+      height: 13px;
+    }
+    @include breakpoint(medium) {
+      width: 43px;
+      height: 18px;
+    }
+    @include breakpoint(large) {
+      width: 43px;
+      height: 18px;
+      margin-bottom: -5px;
+    }
+  }
+  .modal-img-fxm {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cku7lraehb2ta1v7hak3m2sgg-fxm.full.png') no-repeat;
+    background-size: 100%;
+    width: 40px;
+    height: 18px;
+    @include breakpoint(small) {
+      width: 33px;
+      height: 13px;
+    }
+    @include breakpoint(medium) {
+      width: 40px;
+      height: 18px;
+    }
+    @include breakpoint(large) {
+      width: 40px;
+      height: 18px;
+      margin-bottom: -5px;
+    }
+  }
+  .modal-img-amc {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cku7loz583m1g1v6bs8ee564g-amc.full.png') no-repeat;
+    background-size: 100%;
+    width: 40px;
+    height: 18px;
+    @include breakpoint(small) {
+      width: 33px;
+      height: 13px;
+    }
+    @include breakpoint(medium) {
+      width: 40px;
+      height: 18px;
+    }
+    @include breakpoint(large) {
+      width: 40px;
+      height: 18px;
+      margin-bottom: -5px;
+    }
+  }
+  .modal-img-fx {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cku7lxrp73mcx1v6bfjkl2kzz-fx.full.png') no-repeat;
+    background-size: 100%;
+    width: 30px;
+    height: 18px;
+    @include breakpoint(small) {
+      width: 23px;
+      height: 13px;
+    }
+    @include breakpoint(medium) {
+      width: 30px;
+      height: 18px;
+    }
+    @include breakpoint(large) {
+      width: 30px;
+      height: 18px;
+      margin-bottom: -5px;
+    }
+  }
+  .modal-img-fox {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cku7m16fd3mb41v9ub3wzkq5y-fox.full.png') no-repeat;
+    background-size: 100%;
+    width: 49px;
+    height: 20px;
+    @include breakpoint(small) {
+      width: 36px;
+      height: 15px;
+    }
+    @include breakpoint(medium) {
+      width: 49px;
+      height: 20px;
+    }
+    @include breakpoint(large) {
+      width: 49px;
+      height: 20px;
+      margin-bottom: -5px;
+    }
+  }
+  .modal-img-usa {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cku7ml2oe3n781v6bcjpatbz0-usa.full.png') no-repeat;
+    background-size: 100%;
+    width: 49px;
+    height: 20px;
+    @include breakpoint(small) {
+      width: 36px;
+      height: 15px;
+    }
+    @include breakpoint(medium) {
+      width: 49px;
+      height: 20px;
+    }
+    @include breakpoint(large) {
+      width: 49px;
+      height: 20px;
+      margin-bottom: -5px;
+    }
+  }
+  .modal-img-cbs {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cku7mnwh93n181vakfhtce0oq-cbs.full.png') no-repeat;
+    background-size: 100%;
+    width: 49px;
+    height: 20px;
+    @include breakpoint(small) {
+      width: 36px;
+      height: 15px;
+    }
+    @include breakpoint(medium) {
+      width: 49px;
+      height: 20px;
+    }
+    @include breakpoint(large) {
+      width: 49px;
+      height: 20px;
+      margin-bottom: -5px;
+    }
+  }
+  
+  .modal-btn-watch {
+    font-family: 'Graphik-Semibold';
+    border: solid 2px #ffffff;
+    width: 230px;
+    margin: 0 auto;
+    color: #ffffff;
+    padding: 10px 30px;
+    border-radius: 4px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    transition: all ease-in-out .25s;
+
+    @include breakpoint(small) {
+      margin-top: 10px;
+      width: 208px;
+      padding: 6px 20px
+    }
+    @include breakpoint(large) {
+      margin-top: 30px;
+      width: 230px;
+      padding: 10px 30px;
+    }
+
+    &:hover, &:focus, &:active {
+      text-decoration: none;
+      color: $white;
+      opacity: .7;
+    }
+  }
+  .modal-btn-cs {
+    border: none;
+    cursor: default;
+    width: 200px;
+    &:hover, &:active, &:focus {
+      opacity: 1;
+      color: $white;
+    }
+  }
+  .modal-slider-wrapper {
+    width: 129px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 9;
+    bottom: 90px;
+  }
+  .slider-info {
+    font-size: 12px;
+    font-family: 'Graphik-Semibold';
+    color: $white;
+    margin-top: 2px !important;
+    width: 51px;
+  }
+  .slider-arrow, .slider-info {
+    float: left;
+    margin: 0 5px;
+  }
+  .slider-arrow {
+    &:hover {
+      opacity: .7;
+    }
+  }
+  .slider-arrow-left {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/ckt38eepk3zi31v3dapifmrq8-icon-left-slider.svg') no-repeat;
+    background-size: 100%;
+    width: 24px;
+    height: 24px;
+    display: block;
+  }
+  .slider-arrow-right {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/ckt38e3wr3zhm1v3d98ikh16z-icon-right-slider.svg') no-repeat;
+    background-size: 100%;
+    width: 24px;
+    height: 24px;
+    display: block;
+  }
+
+
+  .modal-body {
+    color: #16181d;
+    text-align: left;
+    padding: 0;
+  }
+
+
+
+
+.modal {
+  font-family: sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+}
+
+.modal-window {
+  position: relative;
+  background-color: #ffffff;
+  margin: 10% auto;
+  top: 0;
+  border-radius: 5px;
+  padding: 40px;
+  transition: all ease-in-out .25s;
+
+  @include breakpoint(small) {
+    width: 90%;
+    padding: 40px 20px;
+  }
+  @include breakpoint(medium) {
+    width: 80%;
+    padding: 40px;
+  }
+  @include breakpoint(large) {
+    width: 880px;
+    padding: 60px 40px;
+  }
+
+  h1 {
+    color: #16181d;
+    font-family: 'Graphik-semibold', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1.24;
+    text-transform: none;
+    margin-bottom: 30px;
+    @include breakpoint(small) {
+      font-size: 24px;
+    }
+    @include breakpoint(medium) {
+      font-size: 28px !important;
+    }
+    @include breakpoint(large) {
+      font-size: 28px !important;
+    }
+  }
+  p {
+    font-family: 'Graphik-light';
+    font-weight: 900;
+    color: #16181d;
+    text-align: left;
+    padding: 0;
+    transition: all ease-in-out .25s;
+
+    @include breakpoint(small) {
+      margin: 30px 0;
+      font-size: 14px;
+    }
+    @include breakpoint(medium) {
+      margin: 30px 0 0 0;
+      font-size: 16px;
+    }
+    @include breakpoint(large) {
+      margin: 30px 50px 0 0;
+      font-size: 16px;
+    }
+  }
+}
+.close-modal {
+  cursor: pointer;
+  font-family: 'graphik-light';
+  position: absolute;
+  z-index: 9999999;
+  color: #111;
+  transition: all ease-in-out .25s;
+
+  @include breakpoint(small) {
+    right: 15px;
+    top: 5px;
+    font-size: 30px;
+  }
+  @include breakpoint(medium) {
+    right: 20px;
+    top: -5px;
+    font-size: 40px;
+  }
+  @include breakpoint(large) {
+    right: 20px;
+    top: -5px;
+    font-size: 40px;
+  }
+
+  &:hover {
+    opacity: .5;
+  }
+}
+
+
+.open {
+  display: block;
+}
+
+.logos-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.logos-container {
+  display: flex;
+  flex-flow: wrap;
+  transition: all ease-in-out .25s;
+
+  @include breakpoint(small) {
+    justify-content: flex-start;
+    margin-top: 5px;
+  }
+  @include breakpoint(medium) {
+    justify-content: flex-start;
+    margin-top: 40px;
+  }
+  @include breakpoint(large) {
+    justify-content: flex-start;
+    margin-top: 40px;
+  }
+}
+.logos-wall {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  color: #16181d;
+  float: left;
+  background-size: contain;
+  border-radius: 100px;
+  box-shadow: 0px 0px 3px #ccc;
+  transition: all ease-in-out .25s;
+
+  @include breakpoint(small) {
+    width: 50px;
+    height: 50px;
+    margin: 0 5px 10px 5px;
+  }
+  @include breakpoint(medium) {
+    width: 70px;
+    height: 70px;
+    margin: 0 10px 20px 10px;
+  }
+  @include breakpoint(large) {
+    width: 70px;
+    height: 70px;
+    margin: 0 10px 20px 10px;
+  }
+
+  img {
+    width: 100%;
+    text-align: center;
+    color: #0b0c0f;
+    margin: 0 auto;
+    opacity: 1;
+    padding: 5px;
+  }
+}
+
+
+img {
+        opacity: 1;
+
+        .lazy {
+            opacity: 0;
+            transform: scale(0);
+        }
+}

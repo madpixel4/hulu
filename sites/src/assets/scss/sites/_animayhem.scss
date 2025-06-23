@@ -1,0 +1,744 @@
+*{scroll-behavior: smooth;}
+.module-header {
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        padding: 0 30px;
+    }
+    @include breakpoint(medium) {
+        padding: 0 30px;
+    }
+    @include breakpoint(large) {
+        padding: 0 64px;
+    }
+}
+.desk {
+    @include breakpoint(small) {
+        display: none;
+    }
+    @include breakpoint(medium) {
+        display: block;
+    }
+    @include breakpoint(large) {
+        display: block;
+    }
+}
+.mob {
+    @include breakpoint(small) {
+        display: block;
+    }
+    @include breakpoint(medium) {
+        display: none;
+    }
+    @include breakpoint(large) {
+        display: none;
+    }
+}
+.mast-anim {
+    height: 100vh;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        padding: 24px 22px 100px 22px;
+        align-items: center;
+        margin-bottom: 64px;
+        background: linear-gradient(1deg, rgba(0, 0, 0, 0.50) 20.83%, rgba(0, 0, 0, 0.00) 100%), url('https://assetshuluimcom-a.akamaihd.net/animayhem/img/anime/bk-anim-anime-greenswirl-mob.jpg'), lightgray -392.226px -504px / 311.45% 170% no-repeat;
+        background-size: cover;
+    }
+    @include breakpoint(medium) {
+        padding: 64px;
+        align-items: center;
+        margin-bottom: 64px;
+        background: radial-gradient(55.51% 55.51% at 50.00% 50.00%, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.00) 100%), 
+        url('https://assetshuluimcom-a.akamaihd.net/animayhem/img/anime/bk-anim-anime-greenswirl-mob.jpg'), lightgray -97.827px -947px / 145.029% 284.784% no-repeat;
+        background-size: cover;
+    }
+    @include breakpoint(large) {
+        padding: 64px;
+        align-items: center;
+        margin-bottom: 64px;
+        background: radial-gradient(55.51% 55.51% at 50.00% 50.00%, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.00) 100%), 
+        url('https://assetshuluimcom-a.akamaihd.net/animayhem/img/anime/bk-anim-anime-greenswirl.jpg'), lightgray -97.827px -947px / 145.029% 284.784% no-repeat;
+        background-size: cover;
+    }
+}
+.mast-anim-short {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    background-position: center center;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        padding: 24px 22px 100px 22px;
+        align-items: center;
+        margin-bottom: 64px;
+        background: linear-gradient(1deg, rgba(0, 0, 0, 0.50) 20.83%, rgba(0, 0, 0, 0.00) 100%), url('https://assetshuluimcom-a.akamaihd.net/animayhem/img/anime/bk-anim-anime-greenswirl-mob.jpg'), lightgray -392.226px -504px / 311.45% 170% no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+    @include breakpoint(medium) {
+        padding: 64px;
+        align-items: center;
+        margin-bottom: 64px;
+        background: radial-gradient(55.51% 55.51% at 50.00% 50.00%, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.00) 100%), 
+        url('https://assetshuluimcom-a.akamaihd.net/animayhem/img/anime/bk-anim-anime-greenswirl-mob.jpg'), lightgray -97.827px -947px / 145.029% 284.784% no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+    @include breakpoint(large) {
+        padding: 64px;
+        align-items: center;
+        margin-bottom: 64px;
+        background:  radial-gradient(55.51% 55.51% at 50.00% 50.00%, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.00) 100%),
+        url('https://assetshuluimcom-a.akamaihd.net/animayhem/img/mast-anim-desk-830.jpg') no-repeat;
+        background-size: cover;
+        height: 88vh;
+    }
+}
+.mast-anim-adult {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        padding: 24px 22px 100px 22px;
+        align-items: end;
+        margin-bottom: 0;
+        background: url('https://assetshuluimcom-a.akamaihd.net/animayhem/img/mast-anim-adult-mobile4.jpg') no-repeat;
+        background-size: cover;
+        height: 105vh;
+        margin-top: 20px;
+    }
+    @include breakpoint(medium) {
+        padding: 64px;
+        align-items: end;
+        margin-bottom: 64px;
+        background: url('https://assetshuluimcom-a.akamaihd.net/animayhem/img/mast-anim-adult-tablet3.jpg') no-repeat;
+        background-size: cover;
+        height: 120vh;
+        margin-top: 0;
+    }
+    @include breakpoint(large) {
+        padding: 64px;
+        align-items: end;
+        margin-bottom: 64px;
+        background: url('https://assetshuluimcom-a.akamaihd.net/animayhem/img/mast-anim-adult-desk2.jpg') no-repeat;
+        background-size: cover;
+        height: 88vh;
+        margin-top: 0;
+        background-position: center;
+    }
+}
+.button-wrapper-anim-desk {
+    @include breakpoint(small) {
+        display: none;
+    }
+    @include breakpoint(medium) {
+        display: block;
+    }
+    @include breakpoint(large) {
+        display: block;
+    }
+}
+.button-wrapper-anim-mobile {
+    @include breakpoint(small) {
+        display: block;
+    }
+    @include breakpoint(medium) {
+        display: none;
+    }
+    @include breakpoint(large) {
+        display: none;
+    }
+    a {
+        width: 100%;
+        height: 100vh;
+        background: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+.anim-wrapper {
+    overflow: hidden;
+    padding: 0;
+}
+.button-wrapper-anim {
+    transition: all ease-in-out .25s;
+
+    @include breakpoint(small) {
+        margin: -245px 0 0 0;
+    }
+    @include breakpoint(medium) {
+        margin: -400px 0 0 0;
+    }
+    @include breakpoint(large) {
+        margin: 0 0 0 0;
+    }
+}
+.mast-container {
+    text-align: center;
+    max-width: 640px;
+    transition: all ease-in-out .25s;
+
+    @include breakpoint(small) {
+        margin-bottom: 0;
+    }
+    @include breakpoint(medium) {
+        margin-bottom: 0;
+    }
+    @include breakpoint(large) {
+        margin-bottom: 0;
+    }
+}
+.title-h2-anim {
+    color: $white;
+    font-family: $body-font-bold;
+    @include breakpoint(small) {
+        font-size: 40px;
+        line-height: initial;
+        padding-bottom: 35px;
+    }
+    @include breakpoint(medium) {
+        font-size: 64px;
+        line-height: initial;
+        padding-bottom: 0;
+    }
+    @include breakpoint(large) {
+        font-size: 64px;
+        line-height: initial;
+        padding-bottom: 0;
+    }
+}
+.mast-logo-anim {
+    width: 640px;
+}
+
+.mast-text {
+    padding: 35px 0;
+    font-weight: 400;
+    color: $white;
+    transition: all ease-in-out .25s;
+
+    @include breakpoint(small) {
+        font-size: 15px;
+    }
+    @include breakpoint(medium) {
+        font-size: 24px;
+    }
+    @include breakpoint(large) {
+        font-size: 24px;
+    }
+}
+.link-box-wrapper {
+    background: #16181D;
+    padding: 8px 4px;
+    border-radius: 13px;
+    position: fixed;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    transition: all ease-in-out .25s;
+
+    @include breakpoint(small) {
+        width: 96%;
+    }
+    @include breakpoint(medium) {
+        width: max-content;
+    }
+    @include breakpoint(large) {
+        width: max-content;
+    }
+
+    .link-box {
+        color: $white;
+        font-family: 'Graphik-Semibold';
+        background: #424957;
+        border-radius: 11px;
+        float: left;
+        padding: 10px;
+        height: 55px;
+        font-size: 11.5px;
+        line-height: 11.5px;
+        text-align: center;
+        letter-spacing: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all ease-in-out .25s;
+
+        @include breakpoint(small) {
+            width: 28%;
+            margin: 0 .5%;
+        }
+        @include breakpoint(medium) {
+            width: 100px;
+            margin: 0 4px;
+        }
+        @include breakpoint(large) {
+            width: 100px;
+            margin: 0 4px;
+        }
+
+        &:hover {
+            background: #323843;
+        }
+        &:active {
+            background: #272C34;
+        }
+
+        a {
+            color: $white;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    .link-box-long {
+        @include breakpoint(small) {
+            width: 41%;
+        }
+        @include breakpoint(medium) {
+            width: 150px;
+        }
+        @include breakpoint(large) {
+            width: 150px;
+        }
+    }
+    .link-box-img {
+        width: 117px;
+    }
+    .link-box-text {
+        float: left;
+        transition: all ease-in-out .25s;
+        @include breakpoint(small) {
+            width: 94px;
+        }
+        @include breakpoint(medium) {
+            width: 100px;
+        }
+        @include breakpoint(large) {
+            width: 100px;
+        }
+    }
+    .link-box-img-txt {
+        font-size: 10px;
+        line-height: 12.5px;
+        text-align: center;
+    }
+}
+.module-header-anim {
+    margin-top: 52px;
+}
+.module-event-wrapper {
+    // max-width: 1800px;
+    width: auto;
+    background: $green;
+    border-radius: 25px;
+
+    overflow: hidden;
+    transition: all ease-in-out .25s;
+
+    @include breakpoint(small) {
+        padding: 35px 25px;
+        margin: 0 15px;
+    }
+    @include breakpoint(medium) {
+        padding: 35px 25px;
+        margin: 0 15px;
+    }
+    @include breakpoint(large) {
+        padding: 65px;
+        margin: 0 64px;
+    }
+
+    .event-col {
+        overflow: hidden;
+        transition: all ease-in-out .25s;
+        @include breakpoint(small) {
+            float: none;
+            width: 100%;
+        }
+        @include breakpoint(medium) {
+            float: none;
+            width: 100%;
+        }
+        @include breakpoint(large) {
+            float: left;
+            width: 50%;
+        }
+
+        .event-title {
+            color: #16181D;
+            font-family: $body-font-bold;
+            transition: all ease-in-out .25s;
+            @include breakpoint(small) {
+                font-size: 36px;
+                line-height: 45px;
+            }
+            @include breakpoint(medium) {
+                font-size: 36px;
+                line-height: 45px;
+            }
+            @include breakpoint(large) {
+                font-size: 48px;
+                line-height: 45px;
+            }
+        }
+        .event-subtitle {
+            transition: all ease-in-out .25s;
+            @include breakpoint(small) {
+                font-size: 36px;
+                line-height: 40px;
+                margin-bottom: 35px;
+            }
+            @include breakpoint(medium) {
+                font-size: 36px;
+                line-height: 40px;
+                margin-bottom: 35px;
+            }
+            @include breakpoint(large) {
+                font-size: 48px;
+                line-height: 45px;
+                margin-bottom: 0;
+            }
+        }
+    }
+    .event-content-img {
+        margin: 35px 0 0 0;
+        transition: all ease-in-out .25s;
+        @include breakpoint(small) {
+            border-radius: 15px;
+            width: 100%;
+            height: auto;
+        }
+        @include breakpoint(medium) {
+            border-radius: 25px;
+            width: 100%;
+            height: auto;
+        }
+        @include breakpoint(large) {
+            border-radius: 25px;
+            width: 100%;
+            height: auto;
+        }
+    }
+    .event-content-img-desk {
+        transition: all ease-in-out .25s;
+        @include breakpoint(small) {
+            display: none;
+        }
+        @include breakpoint(medium) {
+            display: inline-block;
+        }
+        @include breakpoint(large) {
+            display: inline-block;
+        }
+    }
+    .event-content-img-mob {
+        transition: all ease-in-out .25s;
+        @include breakpoint(small) {
+            display: inline-block;
+        }
+        @include breakpoint(medium) {
+            display: none;
+        }
+        @include breakpoint(large) {
+            display: none;
+        }
+    }
+    .event-btn {
+        display: block;
+        float: right;
+        margin-top: 35px;
+        width: auto;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        cursor: pointer;
+    }
+}
+
+.module-vid {
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        margin-top: 24px;
+    }
+    @include breakpoint(medium) {
+        margin-top: 0;
+    }
+    @include breakpoint(large) {
+        margin-top: 0;
+    }
+}
+.module-none {
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        padding: 0;
+    }
+    @include breakpoint(medium) {
+        padding: 48px 0;
+    }
+    @include breakpoint(large) {
+        padding: 48px 0;
+    }
+}
+.module-car {
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        padding: 14px 0;
+    }
+    @include breakpoint(medium) {
+        padding: 32px 0;
+    }
+    @include breakpoint(large) {
+        padding: 32px 0;
+    }
+}
+.button-header-lolla {
+    margin-top: 0;
+}
+.event-text {
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        font-size: 18px;
+    }
+    @include breakpoint(medium) {
+        font-size: 18px;
+    }
+    @include breakpoint(large) {
+        font-size: 24px;
+    }
+}
+
+.event-toggle{
+    display: block;
+    height:48px;
+    width:48px;  
+}
+.event-toggle:before {
+    content: 'Show more';
+    float: left;
+    padding-right: 10px;
+}
+.event-toggle:after {
+    content: '' ;
+    background: url("https://assetshuluimcom-a.akamaihd.net/animayhem/img/icon-show.png") no-repeat;
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
+    float: right;
+
+}
+.event-toggle.expanded:before{
+   content: 'Hide';
+   float: left;
+   padding-right: 10px;
+}
+.event-toggle.expanded:after{
+    content: '' ;
+    background: url("https://assetshuluimcom-a.akamaihd.net/animayhem/img/icon-hide.png") no-repeat;
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
+    float: right;
+}
+
+.event-toggle-two{
+    display: block;
+    height:48px;
+    width:48px;  
+}
+.event-toggle-two:before {
+    content: 'Show more';
+    float: left;
+    padding-right: 10px;
+}
+.event-toggle-two:after {
+    content: '' ;
+    background: url("https://assetshuluimcom-a.akamaihd.net/animayhem/img/icon-show.png") no-repeat;
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
+    float: right;
+
+}
+.event-toggle-two.expanded:before{
+   content: 'Hide';
+   float: left;
+   padding-right: 10px;
+}
+.event-toggle-two.expanded:after{
+    content: '' ;
+    background: url("https://assetshuluimcom-a.akamaihd.net/animayhem/img/icon-hide.png") no-repeat;
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
+    float: right;
+}
+.link-box-img {
+    display: none;
+}
+.link-box-arrow-left {
+    font-size: 14px;
+    float: left;
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+    margin-top: 5px;
+        transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        width: 12px; 
+    }
+    @include breakpoint(medium) {
+        width: 15px; 
+    }
+    @include breakpoint(large) {
+        width: 15px;  
+    }
+}
+.link-box-arrow-right {
+    font-size: 14px;
+    float: right;
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+    margin-top: 5px;
+        transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        width: 12px; 
+    }
+    @include breakpoint(medium) {
+        width: 15px;
+    }
+    @include breakpoint(large) {
+        width: 15px;
+    }
+}
+
+//tabs
+/* Tabs */
+.tabs {
+    margin-top: 65px;
+  }
+  ul#tabs-nav, ul#tabs-nav-two {
+    list-style: none;
+    margin: 0;
+    padding: 5px 5px 5px 0;
+    overflow: auto;
+  }
+  ul#tabs-nav li, ul#tabs-nav-two li {
+    letter-spacing: .6px;
+    font-weight: bold;
+    float: left;
+    padding: 8px 0;
+    border-radius: 5px 5px 5px 5px;
+    /*border: 1px solid #d5d5de;
+    border-bottom: none;*/
+    cursor: pointer;
+    display: flex;
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        font-size: 12px;
+        justify-content: center;
+        width: 25%;
+    }
+    @include breakpoint(medium) {
+        font-size: 14px;
+        justify-content: space-between;
+    }
+    @include breakpoint(large) {
+        font-size: 14px;
+        justify-content: space-between;
+    }
+  }
+  ul#tabs-nav li:last-of-type, ul#tabs-nav-two li:last-of-type {
+    margin-right: 0;
+  }
+  ul#tabs-nav li:hover,
+  ul#tabs-nav li.active,
+  
+  ul#tabs-nav-two li:hover,
+  ul#tabs-nav-two li.active {
+    color: #29A869;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 11px;
+  }
+  #tabs-nav li a, #tabs-nav-two li a {
+    text-decoration: none;
+    color: #040405;
+  }
+  .tab-content, .tab-content-two {
+    padding: 45px 10px 10px 0;
+  }
+
+  .event-table {
+    padding: 0;
+
+    td {
+        padding: 0;
+        color: #040405;
+    }
+    .event-table-title {
+        font-family: 'Graphik-Semibold';
+        font-size: 14px;
+        text-transform: uppercase;
+        border-bottom: 1px solid #272C34;
+        padding-bottom: 15px;
+    }
+    .event-one {
+        width: 50%;
+    }
+    .event-table-event {
+        font-size: 16px;
+        padding-top: 20px;
+        padding-bottom: 5px;
+    }
+  }
+.event-link-container {
+    overflow: hidden;
+    display: block;
+    width: 100%;border-bottom: 1px solid #272C34;
+    padding: 25px 0;
+    margin-bottom: 35px;
+}
+.event-link-name {
+    float: left;
+    font-size: 14px;
+    font-family: 'Graphik-Semibold';
+}
+.event-link-link {
+    float: right;
+
+    img {
+        width: 16px;
+        transition: all ease-in-out .25s;
+        margin-right: 3px;
+
+        &:hover {
+            opacity: .8;
+            rotate: 45deg;
+        }
+    }   
+}
+
+//MACBOOK 13in
+@media only screen and (min-width: 1280px) and (max-height: 800px)  {
+    .mast-anim-adult {
+        height: 77vh;
+    }
+}

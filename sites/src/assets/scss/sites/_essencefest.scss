@@ -1,0 +1,293 @@
+.masthead-wrapper {
+    overflow: hidden;
+    transition: all ease-in-out .2s;
+
+    @include breakpoint(small) {
+        width: 335px;
+    }
+
+    @include breakpoint(medium) {
+        width: 500px;
+    }
+
+    @include breakpoint(large) {
+        width: 700px;
+    }
+}
+.masthead-wide-ef {
+    background-color: #000000 !important;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out .25s;
+
+    @include breakpoint(small) {
+        background: url('https://assetshuluimcom-a.akamaihd.net/ef/img/bk-ef-mast-mobile.jpg') no-repeat !important;
+        background-size: cover !important;
+        background-position: top center !important;
+    }
+    @include breakpoint(medium) {
+        background: url('https://assetshuluimcom-a.akamaihd.net/ef/img/bk-ef-mast-tablet.jpg') no-repeat !important;
+        background-size: cover !important;
+        background-position: top center !important;
+    }
+    @include breakpoint(large) {
+        background: url('https://assetshuluimcom-a.akamaihd.net/ef/img/bk-ef-mast.jpg')  no-repeat !important;
+        background-size: cover !important;
+        background-position: top center !important;
+
+    }
+}
+
+.masthead-logo-ef {
+    background: url('https://assetshuluimcom-a.akamaihd.net/ef/img/img-ef-mast-logos.png') no-repeat !important;
+    background-position: 0 0;
+    background-size: 100% !important;
+    margin: 0 auto;
+    transition: all ease-in-out .2s;
+
+    @include breakpoint(small) {
+        width: 300px;
+        height: 100px;
+        margin-bottom: 10px;
+        margin-top: 120px;
+    }
+
+    @include breakpoint(medium) {
+        width: 530px;
+        height: 190px;
+        margin-bottom: 0;
+        margin-top: 120px;
+    }
+
+    @include breakpoint(large) {
+        width: 720px;
+        height: 260px;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+}
+.masthead-block-black > * {
+    color: $black-drk;
+}
+.subtitle-date {
+    transition: all ease-in-out .2s;
+
+    @include breakpoint(small) {
+        font-size: 19px;
+    }
+
+    @include breakpoint(medium) {
+        font-size: 24px;
+    }
+
+    @include breakpoint(large) {
+        font-size: 24px;
+    }
+}
+
+.subtitle-desc {
+    line-height: inherit;
+    margin: 0 auto;
+    padding-top: 10px;
+    transition: all ease-in-out .2s;
+
+    @include breakpoint(small) {
+        font-size: 14px;
+    }
+
+    @include breakpoint(medium) {
+        font-size: 19px;
+    }
+
+    @include breakpoint(large) {
+        font-size: 21px;
+    }
+}
+.note-ef {
+    color: #367449;
+    margin: auto 0;
+    display: inline-block;
+    transition: all ease-in-out .2s;
+
+    @include breakpoint(small) {
+        padding: 5px 10px;
+        font-size: 9px;
+    }
+
+    @include breakpoint(medium) {
+        padding: 5px 0;
+        font-size: 10px;
+    }
+
+    @include breakpoint(large) {
+        padding: 5px 23%;
+        font-size: 10px;
+    }
+}
+.carousel-ef {
+    background-color: $green;
+    margin-bottom: 0;
+    margin-top: 0;
+    transition: all ease-in-out .2s;
+
+    @include breakpoint(small) {
+        padding: 3.5rem 0 !important;
+    }
+
+    @include breakpoint(medium) {
+        padding: 5rem 0 !important;
+    }
+
+    @include breakpoint(large) {
+        padding: 9rem 0 !important;
+    }
+}
+.container-black {
+    background-color: #000000;
+    width: 100%;
+}
+.ef-container {
+    transition: all ease-in-out .2s;
+
+    @include breakpoint(small) {
+        padding: 90px .2rem;
+    }
+
+    @include breakpoint(medium) {
+        padding: 110px 3rem;
+    }
+
+    @include breakpoint(large) {
+        padding: 160px 7rem;
+    }
+}
+.ef-container-vid {
+    background: url('https://assetshuluimcom-a.akamaihd.net/ef/img/bk-er-swirl-blk.jpg')  no-repeat !important;
+    background-position: top center !important;
+    background-size: cover !important;
+    background-color: #000000 !important;
+    width: 100%;
+    transition: all ease-in-out .2s;
+
+    @include breakpoint(small) {
+        height: auto;
+    }
+
+    @include breakpoint(medium) {
+        height: auto;
+    }
+
+    @include breakpoint(large) {
+        height: 100vh;
+    }
+}
+.ef-container-green {
+    background: url('https://assetshuluimcom-a.akamaihd.net/ef/img/bk-er-swirl.png')  no-repeat !important;
+    background-position: bottom left !important;
+    background-color: $green !important;
+    width: 100%;
+    transition: all ease-in-out .2s;
+    display: inline-table;
+
+    //temp padding top
+    padding-top: 0 !important;
+
+    @include breakpoint(small) {
+        height: auto;
+        margin: -2px 0 0 0;
+        background-size: 120% !important;
+    }
+
+    @include breakpoint(medium) {       
+        height: auto;
+        margin: 0 0 65px 0px;
+        background-size: 140% !important;
+    }
+
+    @include breakpoint(large) {
+        height: 100vh;
+        margin: 0;
+        background-size: 100% !important;
+    }
+
+}
+.ef-on-desk {
+    position: absolute;
+    right: 0;
+    margin: 0;
+    width: 45%;
+    max-width: 47%;
+    transition: all ease-in-out .2s;
+
+    @include breakpoint(small) {
+        display: none;
+    }
+
+    @include breakpoint(medium) {
+        display: none;
+    }
+
+    @include breakpoint(large) {
+        display: block;
+    }
+}
+.ef-on-mob {
+    transition: all ease-in-out .2s;
+
+    @include breakpoint(small) {
+        display: block;
+        width: 80%;
+    }
+
+    @include breakpoint(medium) {
+        display: block;
+        width: 80%;
+        margin-bottom: 80px;
+    }
+
+    @include breakpoint(large) {
+        display: none;
+    }
+}
+.note-fav-ef {
+    transition: all ease-in-out .2s;
+
+    @include breakpoint(small) {
+        font-size: 11px;
+    }
+
+    @include breakpoint(medium) {
+        font-size: 11px;
+    }
+
+    @include breakpoint(large) {
+        font-size: 12px;
+    }
+}
+
+//macbook pro 13in
+@media only screen and (min-width: 1280px) and (max-height: 800px)  {
+    .tabs-title > a {
+        margin: 1.25rem 3rem 2.25rem 0rem;
+    }
+    .h1-pad-bot {
+        font-size: 4rem !important;
+    }
+    .ef-container-green {
+        margin-top: -2px; 
+    }
+    .ef-container-vid {
+        height: 105vh;
+    }
+    .h1-ef {
+        font-size: 3.7rem !important;
+        line-height: 4.5rem;
+    }
+    .h1-lolla {
+        width: 110%;
+    }
+}

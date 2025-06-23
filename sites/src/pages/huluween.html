@@ -1,0 +1,1470 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+<script>
+  $(window).load(function() {
+  $(".preloader-huluween").fadeOut("slow");
+});
+</script>
+<style>
+  .preloader {display: none;}
+</style>
+<div class="bk-gradient-huluween"></div>
+<!-- start huluween preloader -->
+<div class="preloader-huluween">
+  <span class="preloader-js"></span>
+  <div class="preloader-wrapper">
+    <img class="preloader-logo" src="https://hulu-matchmaker.s3.amazonaws.com/attachments/ckshzj6vo41a51ud43j7ylxit-logo-huluween-grn.svg" alt="HULUWEEN">
+    <div class="progress-bar__container">
+      <div class="progress-bar"></div>
+    </div>
+    <button class="playpause preloader-audio preloader-audio-pause"></button>
+  </div>
+</div>
+<!-- end huluween preloader -->
+
+<!-- start of page slideshow-->
+<div id="splashscreen">
+  <p>All is not right this Huluween.<br>The spirit of Uluh has possessed Hulu.</p>
+  <div class="intro-screen"></div>
+</div>
+
+<div id="intro">
+  <p>stream chilling classics, spine-tingling shows, and horrifying originals on hulu.</p>
+</div>
+<!-- end of page slideshow-->
+
+<!-- start of sticky top nav -->
+<div class="sticky-topbar">
+
+  <div class="audio-wrapper">
+    <audio id="track">
+        <source src="https://assetshuluimcom-a.akamaihd.net/huluween21/Huluween-scary.mp3" type="audio/mpeg" />
+      </audio>
+      
+      <div id="player-container">
+        <div id="play-pause" class="play">Play</div>
+      </div>
+  </div>
+
+  <div class="title-bar" data-responsive-toggle="example-animated-menu" data-hide-for="large" data-sticky-container>
+    <button class="menu-icon" type="button" data-toggle></button>
+    <div class="title-bar-title title-bar-image"></div>
+  </div>
+  <div class="top-bar" id="example-animated-menu" data-animate="fade-in fade-out" data-sticky-container>
+    <div class="top-bar-left">
+      <ul class="dropdown menu" id="myMenuId" data-dropdown-menu>
+        <li href="#home" class="js-anchor-link menu-logo"></li>
+        <li class="top-bar-blank"><a href="">&nbsp;</a></li>
+      </ul>
+    </div>
+    <div class="top-bar-right">
+      <ul class="dropdown menu" data-dropdown-menu>
+        <li class="dropdown-desk">
+          <a href="https://signup.hulu.com/plans" class="button-menu" target="_blank" onclick="utag.link({
+          'ga_eventCategory' : 'Navbar_SYFT_Button',
+          'ga_eventAction' : 'click', 
+          'ga_eventLabel' : 'Start Your Free Trial',
+          'page_name' : 'Huluween'
+          }) ">START YOUR FREE TRIAL</a>
+          <div class="syft-note">Free trial for new & eligible returning subscribers only</div>
+        </li>
+        <li class="dropdown-desk-sub">
+          <a href="https://www.hulu.com/hub/huluween" class="button-menu button-menu-manage" target="_blank" onclick="utag.link({
+          'ga_eventCategory' : 'Navbar_Manage_Account_Button',
+          'ga_eventAction' : 'click', 
+          'ga_eventLabel' : 'START SCREAMING',
+          'page_name' : 'Huluween'
+          }) ">START SCREAMING</a>
+        </li>
+        <li class="dropdown-login">
+          <a href="https://auth.hulu.com/web/login" target="_blank" onclick="utag.link({
+          'ga_eventCategory' : 'Navbar_Link_Login',
+          'ga_eventAction' : 'click', 
+          'ga_eventLabel' : 'Login',
+          'page_name' : 'Huluween'
+           }) ">LOGIN</a>
+        </li>
+        <li class="dropdown-mobile">
+          <a href="https://signup.hulu.com/plans" class="button-menu" target="_blank" onclick="utag.link({
+          'ga_eventCategory' : 'Navbar_SYFT_Button',
+          'ga_eventAction' : 'click', 
+          'ga_eventLabel' : 'Start Your Free Trial',
+          'page_name' : 'Huluween'
+           }) ">START YOUR FREE TRIAL</a>
+           <div class="syft-note">Free trial for new & eligible returning subscribers only</div>
+         </li>
+      </ul>
+    </div>
+  </div> 
+</div>
+<!-- end of sticky top nav -->
+
+<!-- start of page cover -->
+<div class="cover-direction toggle" id="target">
+  <div class="cover-explore-icon"><img src="https://hulu-matchmaker.s3.amazonaws.com/attachments/ckro7y6mtnqz01u6kp3a57w9h-icon-explore.svg" alt="Explore The Huluween Website"></div>
+  <h2><span class="txt-mob">PRESS AND DRAG</span> <span class="txt-desk">CLICK AND DRAG</span> &nbsp;TO EXPLORE</h2>
+  <!-- <div class="cover-audio-note">Turn on audio for best experience</div> -->
+  <div class="cover-close-note">CLOSE</div>
+</div>
+<!-- end of page cover -->
+
+<!-- start of body tiles -->
+<!-- <div class="hw-gradient"></div> -->
+<div class="hw-uluh-one"></div><div class="hw-uluh-two"></div><div class="hw-uluh-three"></div><div class="hw-uluh-four"></div><div class="hw-uluh-five"></div><div class="hw-uluh-mob-one"></div><div class="hw-uluh-mob-two"></div><div class="hw-uluh-mob-three"></div><div class="hw-uluh-mob-four"></div>
+<div class="hw-tiles-wrapper" id="hw-wrapper">
+  <div class="hw-container">
+    <div class="hw-tile hw-tile-355x295 tile-1 lazy-bg">
+      <div class="hw-tile-btn" data-toggle="exampleModal1"></div> 
+      <button class="hw-button" data-toggle="exampleModal1">
+        <div class="img-layer-1 img-layer--1"></div>
+        <div class="img-layer-1 img-layer--2"></div>
+        <div class="img-layer-1 img-layer--3"></div>
+        <div class="img-layer-1 img-layer--4"></div>
+        <div class="img-layer-1 img-layer--5"></div>
+        <div class="img-layer-1 img-layer--6"></div>
+        <div class="img-layer-1 img-layer--7"></div>
+      </button> 
+      <div class="hw-tile-info-wrapper">
+        <div class="hw-tile-title">American Horror Story<img src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cku7lxrp73mcx1v6bfjkl2kzz-fx.full.png" class="hw-tile-img-network" alt="Watch Huluween"></div>
+      </div>
+    </div>
+    <div class="hw-tile hw-tile-355x498 tile-2">
+      <button class="hw-button" data-toggle="exampleModal2">
+        <div class="img-layer-2 img-layer--1"></div>
+        <div class="img-layer-2 img-layer--2"></div>
+        <div class="img-layer-2 img-layer--3"></div>
+        <div class="img-layer-2 img-layer--4"></div>
+        <div class="img-layer-2 img-layer--5"></div>
+        <div class="img-layer-2 img-layer--6"></div>
+        <div class="img-layer-2 img-layer--7"></div>
+      </button>
+      <div class="hw-tile-info-wrapper">
+        <div class="hw-tile-title">Fear the Walking Dead<img src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cku7loz583m1g1v6bs8ee564g-amc.full.png" class="hw-tile-img-network" alt="Watch Huluween"></div>
+      </div>
+    </div>
+    <div class="hw-tile hw-tile-355x295 tile-3">
+      <button class="hw-button" data-toggle="exampleModal3">
+        <div class="img-layer-3 img-layer--1"></div>
+        <div class="img-layer-3 img-layer--2"></div>
+        <div class="img-layer-3 img-layer--3"></div>
+        <div class="img-layer-3 img-layer--4"></div>
+        <div class="img-layer-3 img-layer--5"></div>
+        <div class="img-layer-3 img-layer--6"></div>
+        <div class="img-layer-3 img-layer--7"></div>
+      </button>
+      <div class="hw-tile-info-wrapper">
+        <div class="hw-tile-title">Ouija: Origin of Evil<img src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cku8mqj19cexg1vac1kc1ukow-hbo.full.png" class="hw-tile-img-network" alt="Watch Huluween"></div>
+        <div class="hw-tile-note">HBO Max add-on subscription required.</div>
+      </div>
+    </div>
+    <div class="hw-tile hw-tile-250x440 tile-4">
+      <button class="hw-button" data-toggle="exampleModal4">
+        <div class="img-layer-4 img-layer--1"></div>
+        <div class="img-layer-4 img-layer--2"></div>
+        <div class="img-layer-4 img-layer--3"></div>
+        <div class="img-layer-4 img-layer--4"></div>
+        <div class="img-layer-4 img-layer--5"></div>
+        <div class="img-layer-4 img-layer--6"></div>
+        <div class="img-layer-4 img-layer--7"></div>
+      </button>
+      <div class="hw-tile-info-wrapper">
+        <div class="hw-tile-title">WHAT WE DO IN THE SHADOWS <img src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cku7lxrp73mcx1v6bfjkl2kzz-fx.full.png" class="hw-tile-img-network" alt="Watch Huluween"></div>
+      </div>
+    </div>
+    <div class="hw-tile hw-tile-505x235 tile-5">
+      <button class="hw-button" data-toggle="exampleModal5">
+        <div class="img-layer-5 img-layer--1"></div>
+        <div class="img-layer-5 img-layer--2"></div>
+        <div class="img-layer-5 img-layer--3"></div>
+        <div class="img-layer-5 img-layer--4"></div>
+        <div class="img-layer-5 img-layer--5"></div>
+        <div class="img-layer-5 img-layer--6"></div>
+        <div class="img-layer-5 img-layer--7"></div>
+      </button>
+      <div class="hw-tile-info-wrapper">
+        <div class="hw-tile-title">DRAG ME TO HELL <img src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cku7lkxjy3lw41v6blv08qsxm-showtime.full.png" class="hw-tile-img-network hw-tile-img-network-long" alt="Watch Huluween"></div>
+        <div class="hw-tile-note">SHOWTIME add-on subscription required.</div>
+      </div>
+    </div>
+    <div class="hw-tile hw-tile-250x155 tile-6">
+      <button class="hw-button" data-toggle="exampleModal6">
+        <div class="img-layer-6 img-layer--1"></div>
+        <div class="img-layer-6 img-layer--2"></div>
+        <div class="img-layer-6 img-layer--3"></div>
+        <div class="img-layer-6 img-layer--4"></div>
+        <div class="img-layer-6 img-layer--5"></div>
+        <div class="img-layer-6 img-layer--6"></div>
+        <div class="img-layer-6 img-layer--7"></div>
+      </button>
+      <div class="hw-tile-info-wrapper">
+        <div class="hw-tile-title">GAIA</div>
+      </div>
+    </div>
+    <div class="hw-tile hw-tile-355x295 tile-7">
+      <button class="hw-button" data-toggle="exampleModal7">
+        <div class="img-layer-7 img-layer--1"></div>
+        <div class="img-layer-7 img-layer--2"></div>
+        <div class="img-layer-7 img-layer--3"></div>
+        <div class="img-layer-7 img-layer--4"></div>
+        <div class="img-layer-7 img-layer--5"></div>
+        <div class="img-layer-7 img-layer--6"></div>
+        <div class="img-layer-7 img-layer--7"></div>
+      </button>
+      <div class="hw-tile-info-wrapper">
+        <div class="hw-tile-title">ANTEBELLUM</div>
+      </div>
+    </div>
+    <div class="hw-tile hw-tile-355x498 tile-8">
+      <button class="hw-button" data-toggle="exampleModal8">
+        <div class="img-layer-8 img-layer--1"></div>
+        <div class="img-layer-8 img-layer--2"></div>
+        <div class="img-layer-8 img-layer--3"></div>
+        <div class="img-layer-8 img-layer--4"></div>
+        <div class="img-layer-8 img-layer--5"></div>
+        <div class="img-layer-8 img-layer--6"></div>
+        <div class="img-layer-8 img-layer--7"></div>
+      </button>
+      <div class="hw-tile-info-wrapper">
+        <div class="hw-tile-title">CENSOR</div>
+      </div>
+    </div>
+    <div class="hw-tile hw-tile-355x295 tile-9">
+      <button class="hw-button" data-toggle="exampleModal9">
+        <div class="img-layer-9 img-layer--1"></div>
+        <div class="img-layer-9 img-layer--2"></div>
+        <div class="img-layer-9 img-layer--4"></div>
+        <div class="img-layer-9 img-layer--7"></div>
+        <div class="img-layer-9 img-layer--3"></div>
+        <div class="img-layer-9 img-layer--7"></div>
+        <div class="img-layer-9 img-layer--4"></div>
+        <div class="img-layer-9 img-layer--5"></div>
+        <div class="img-layer-9 img-layer--6"></div>
+        <div class="img-layer-9 img-layer--7"></div>
+      </button>
+      <div class="hw-tile-info-wrapper">
+        <div class="hw-tile-title">THE WITCH <img src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cku7lkxjy3lw41v6blv08qsxm-showtime.full.png" class="hw-tile-img-network hw-tile-img-network-long" alt="Watch Huluween"></div>
+        <div class="hw-tile-note">SHOWTIME add-on subscription required.</div>
+      </div>
+    </div>
+    <div class="hw-tile hw-tile-505x235 tile-18">
+      <button class="hw-button" data-toggle="exampleModal18">
+        <div class="img-layer-18 img-layer--1"></div>
+        <div class="img-layer-18 img-layer--2"></div>
+        <div class="img-layer-18 img-layer--4"></div>
+        <div class="img-layer-18 img-layer--7"></div>
+        <div class="img-layer-18 img-layer--3"></div>
+        <div class="img-layer-18 img-layer--7"></div>
+        <div class="img-layer-18 img-layer--4"></div>
+        <div class="img-layer-18 img-layer--5"></div>
+        <div class="img-layer-18 img-layer--6"></div>
+        <div class="img-layer-18 img-layer--7"></div>
+      </button>
+      <div class="hw-tile-info-wrapper">
+        <div class="hw-tile-title">AMERICAN HORROR STORIES <img src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cku7lxrp73mcx1v6bfjkl2kzz-fx.full.png" class="hw-tile-img-network" alt="Watch Huluween"></div>
+      </div>
+    </div>
+    <div class="hw-tile hw-tile-355x295 tile-10">
+      <button class="hw-button" data-toggle="exampleModal10">
+        <div class="img-layer-10 img-layer--1"></div>
+        <div class="img-layer-10 img-layer--2"></div>
+        <div class="img-layer-10 img-layer--4"></div>
+        <div class="img-layer-10 img-layer--3"></div>
+        <div class="img-layer-10 img-layer--4"></div>
+        <div class="img-layer-10 img-layer--5"></div>
+        <div class="img-layer-10 img-layer--6"></div>
+        <div class="img-layer-10 img-layer--7"></div>
+      </button>
+      <div class="hw-tile-info-wrapper">
+        <div class="hw-tile-title">BUFFY THE VAMPIRE SLAYER </div>
+      </div>
+    </div>
+    <div class="hw-tile hw-tile-355x498 tile-11">
+      <button class="hw-button" data-toggle="exampleModal11">
+        <div class="img-layer-11 img-layer--1"></div>
+        <div class="img-layer-11 img-layer--2"></div>
+        <div class="img-layer-11 img-layer--4"></div>
+        <div class="img-layer-11 img-layer--3"></div>
+        <div class="img-layer-11 img-layer--4"></div>
+        <div class="img-layer-11 img-layer--5"></div>
+        <div class="img-layer-11 img-layer--6"></div>
+        <div class="img-layer-11 img-layer--7"></div>
+      </button>
+      <div class="hw-tile-info-wrapper">
+        <div class="hw-tile-title">THE RESORT</div>
+
+      </div>
+    </div>
+    <div class="hw-tile hw-tile-355x498 tile-12">
+      <button class="hw-button" data-toggle="exampleModal12">
+        <div class="img-layer-12 img-layer--1"></div>
+        <div class="img-layer-12 img-layer--2"></div>
+        <div class="img-layer-12 img-layer--4"></div>
+        <div class="img-layer-12 img-layer--3"></div>
+        <div class="img-layer-12 img-layer--4"></div>
+        <div class="img-layer-12 img-layer--5"></div>
+        <div class="img-layer-12 img-layer--6"></div>
+        <div class="img-layer-12 img-layer--7"></div>
+      </button>
+      <div class="hw-tile-info-wrapper">
+        <div class="hw-tile-title">CHILD'S PLAY</div>
+        <div class="hw-tile-note">Child’s Play © 2019 Orion Releasing LLC. All Rights Reserved.</div>
+      </div>
+    </div>
+    <div class="hw-tile hw-tile-250x440 tile-14">
+      <button class="hw-button" data-toggle="exampleModal14">
+        <div class="img-layer-14 img-layer--1"></div>
+        <div class="img-layer-14 img-layer--2"></div>
+        <div class="img-layer-14 img-layer--4"></div>
+        <div class="img-layer-14 img-layer--3"></div>
+        <div class="img-layer-14 img-layer--4"></div>
+        <div class="img-layer-14 img-layer--5"></div>
+        <div class="img-layer-14 img-layer--6"></div>
+        <div class="img-layer-14 img-layer--7"></div>
+      </button>
+      <div class="hw-tile-info-wrapper">
+        <div class="hw-tile-title">THE CONJURING:<br>THE DEVIL MADE ME DO IT<img src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cku8mqj19cexg1vac1kc1ukow-hbo.full.png" class="hw-tile-img-network" alt="Watch Huluween"></div>
+        <div class="hw-tile-note">HBO Max add-on subscription required.</div>
+      </div>
+    </div>
+    <div class="hw-tile hw-tile-250x155 tile-13">
+      <button class="hw-button" data-toggle="exampleModal13">
+        <div class="img-layer-13 img-layer--1"></div>
+        <div class="img-layer-13 img-layer--2"></div>
+        <div class="img-layer-13 img-layer--4"></div>
+        <div class="img-layer-13 img-layer--3"></div>
+        <div class="img-layer-13 img-layer--4"></div>
+        <div class="img-layer-13 img-layer--5"></div>
+        <div class="img-layer-13 img-layer--6"></div>
+        <div class="img-layer-13 img-layer--7"></div>
+      </button>
+      <div class="hw-tile-info-wrapper">
+        <div class="hw-tile-title">THE HUNT <img src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cku8mqj19cexg1vac1kc1ukow-hbo.full.png" class="hw-tile-img-network" alt="Watch Huluween"></div>
+        <div class="hw-tile-note">HBO Max add-on subscription required.</div>
+      </div>
+    </div>
+    <div class="hw-tile hw-tile-250x440 tile-15">
+      <button class="hw-button" data-toggle="exampleModal15">
+        <div class="img-layer-15 img-layer--1"></div>
+        <div class="img-layer-15 img-layer--2"></div>
+        <div class="img-layer-15 img-layer--4"></div>
+        <div class="img-layer-15 img-layer--3"></div>
+        <div class="img-layer-15 img-layer--4"></div>
+        <div class="img-layer-15 img-layer--5"></div>
+        <div class="img-layer-15 img-layer--6"></div>
+        <div class="img-layer-15 img-layer--7"></div>
+      </button>
+      <div class="hw-tile-info-wrapper">
+        <div class="hw-tile-title">BAD HAIR <img src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cku7lspzeb2v81v7h1lh3ewca-hulu.full.png" class="hw-tile-img-network" alt="Watch Huluween"></div>
+      </div>
+    </div>
+    <div class="hw-tile hw-tile-250x155 tile-16">
+      <button class="hw-button" data-toggle="exampleModal16">
+        <div class="img-layer-16 img-layer--1"></div>
+        <div class="img-layer-16 img-layer--2"></div>
+        <div class="img-layer-16 img-layer--4"></div>
+        <div class="img-layer-16 img-layer--3"></div>
+        <div class="img-layer-16 img-layer--4"></div>
+        <div class="img-layer-16 img-layer--5"></div>
+        <div class="img-layer-16 img-layer--6"></div>
+        <div class="img-layer-16 img-layer--7"></div>
+      </button>
+      <div class="hw-tile-info-wrapper">
+        <div class="hw-tile-title">THE EVIL NEXT DOOR</div>
+      </div>
+    </div>
+    <div class="hw-tile hw-tile-250x440 tile-17">
+      <button class="hw-button" data-toggle="exampleModal17">
+        <div class="img-layer-17 img-layer--1"></div>
+        <div class="img-layer-17 img-layer--2"></div>
+        <div class="img-layer-17 img-layer--4"></div>
+        <div class="img-layer-17 img-layer--3"></div>
+        <div class="img-layer-17 img-layer--4"></div>
+        <div class="img-layer-17 img-layer--5"></div>
+        <div class="img-layer-17 img-layer--6"></div>
+        <div class="img-layer-17 img-layer--7"></div>
+      </button>
+      <div class="hw-tile-info-wrapper">
+        <div class="hw-tile-title">IT <img src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cku8mqj19cexg1vac1kc1ukow-hbo.full.png" class="hw-tile-img-network" alt="Watch Huluween"></div>
+        <div class="hw-tile-note">HBO Max add-on subscription required.</div>
+      </div>
+    </div>
+    <div class="hw-tile hw-tile-355x498 tile-21">
+      <button class="hw-button" data-toggle="exampleModal21">
+        <div class="img-layer-21 img-layer--1"></div>
+        <div class="img-layer-21 img-layer--2"></div>
+        <div class="img-layer-21 img-layer--4"></div>
+        <div class="img-layer-21 img-layer--3"></div>
+        <div class="img-layer-21 img-layer--4"></div>
+        <div class="img-layer-21 img-layer--5"></div>
+        <div class="img-layer-21 img-layer--6"></div>
+        <div class="img-layer-21 img-layer--7"></div>
+      </button>
+      <div class="hw-tile-info-wrapper">
+        <div class="hw-tile-title">RUN <img src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cku7lspzeb2v81v7h1lh3ewca-hulu.full.png" class="hw-tile-img-network" alt="Watch Huluween"></div>
+      </div>
+    </div>
+
+    <div class="hw-tile hw-tile-355x295 tile-23">
+      <button class="hw-button" data-toggle="exampleModal23">
+        <div class="img-layer-23 img-layer--1"></div>
+        <div class="img-layer-23 img-layer--2"></div>
+        <div class="img-layer-23 img-layer--4"></div>
+        <div class="img-layer-23 img-layer--3"></div>
+        <div class="img-layer-23 img-layer--4"></div>
+        <div class="img-layer-23 img-layer--5"></div>
+        <div class="img-layer-23 img-layer--6"></div>
+        <div class="img-layer-23 img-layer--7"></div>
+      </button>
+      <div class="hw-tile-info-wrapper">
+        <div class="hw-tile-title">BLACK SWAN <img src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cku7m16fd3mb41v9ub3wzkq5y-fox.full.png" class="hw-tile-img-network" alt="Watch Huluween"></div>
+      </div>
+    </div>
+    
+    <div class="hw-tile hw-tile-505x235 tile-24">
+      <button class="hw-button" data-toggle="exampleModal24">
+        <div class="img-layer-24 img-layer--1"></div>
+        <div class="img-layer-24 img-layer--2"></div>
+        <div class="img-layer-24 img-layer--4"></div>
+        <div class="img-layer-24 img-layer--3"></div>
+        <div class="img-layer-24 img-layer--4"></div>
+        <div class="img-layer-24 img-layer--5"></div>
+        <div class="img-layer-24 img-layer--6"></div>
+        <div class="img-layer-24 img-layer--7"></div>
+      </button>
+      <div class="hw-tile-info-wrapper">
+        <div class="hw-tile-title">ANNABELLE: CREATION <img src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cku8mqj19cexg1vac1kc1ukow-hbo.full.png" class="hw-tile-img-network" alt="Watch Huluween"></div>
+        <div class="hw-tile-note">HBO Max add-on subscription required.</div>
+      </div>
+    </div>
+    <div class="hw-tile hw-tile-505x235 tile-25">
+      <button class="hw-button" data-toggle="exampleModal25">
+        <div class="img-layer-25 img-layer--1"></div>
+        <div class="img-layer-25 img-layer--2"></div>
+        <div class="img-layer-25 img-layer--4"></div>
+        <div class="img-layer-25 img-layer--3"></div>
+        <div class="img-layer-25 img-layer--4"></div>
+        <div class="img-layer-25 img-layer--5"></div>
+        <div class="img-layer-25 img-layer--6"></div>
+        <div class="img-layer-25 img-layer--7"></div>
+      </button>
+      <div class="hw-tile-info-wrapper">
+        <div class="hw-tile-title">ANNIHILATION <img src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cku7lraehb2ta1v7hak3m2sgg-fxm.full.png" class="hw-tile-img-network" alt="Watch Huluween"></div>
+      </div>
+    </div>
+    <div class="hw-tile hw-tile-355x295 tile-26">
+      <button class="hw-button" data-toggle="exampleModal26">
+        <div class="img-layer-26 img-layer--1"></div>
+        <div class="img-layer-26 img-layer--2"></div>
+        <div class="img-layer-26 img-layer--4"></div>
+        <div class="img-layer-26 img-layer--3"></div>
+        <div class="img-layer-26 img-layer--4"></div>
+        <div class="img-layer-26 img-layer--5"></div>
+        <div class="img-layer-26 img-layer--6"></div>
+        <div class="img-layer-26 img-layer--7"></div>
+      </button>
+      <div class="hw-tile-info-wrapper">
+        <div class="hw-tile-title">EXORCIST: THE BEGINNING</div>
+      </div>
+    </div>
+    <div class="hw-tile hw-tile-355x498 tile-28">
+      <button class="hw-button" data-toggle="exampleModal28">
+        <div class="img-layer-28 img-layer--1"></div>
+        <div class="img-layer-28 img-layer--2"></div>
+        <div class="img-layer-28 img-layer--4"></div>
+        <div class="img-layer-28 img-layer--3"></div>
+        <div class="img-layer-28 img-layer--4"></div>
+        <div class="img-layer-28 img-layer--5"></div>
+        <div class="img-layer-28 img-layer--6"></div>
+        <div class="img-layer-28 img-layer--7"></div>
+      </button>
+      <div class="hw-tile-info-wrapper">
+        <div class="hw-tile-title">FALSE POSITIVE <img src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cku7lspzeb2v81v7h1lh3ewca-hulu.full.png" class="hw-tile-img-network" alt="Watch Huluween"></div>
+      </div>
+    </div>
+    <div class="hw-tile hw-tile-355x295 tile-27">
+      <button class="hw-button" data-toggle="exampleModal27">
+        <div class="img-layer-27 img-layer--1"></div>
+        <div class="img-layer-27 img-layer--2"></div>
+        <div class="img-layer-27 img-layer--3"></div>
+        <div class="img-layer-27 img-layer--4"></div>
+        <div class="img-layer-27 img-layer--5"></div>
+        <div class="img-layer-27 img-layer--6"></div>
+        <div class="img-layer-27 img-layer--7"></div>
+      </button>
+      <div class="hw-tile-info-wrapper">
+        <div class="hw-tile-title">THE EMPTY MAN <img src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cku8mqj19cexg1vac1kc1ukow-hbo.full.png" class="hw-tile-img-network" alt="Watch Huluween"></div>
+        <div class="hw-tile-note">HBO Max add-on subscription required.</div>
+      </div>
+    </div>
+    <div class="hw-tile hw-tile-355x295 tile-30">
+      <button class="hw-button" data-toggle="exampleModal30">
+        <div class="img-layer-30 img-layer--1"></div>
+        <div class="img-layer-30 img-layer--2"></div>
+        <div class="img-layer-30 img-layer--3"></div>
+        <div class="img-layer-30 img-layer--4"></div>
+        <div class="img-layer-30 img-layer--5"></div>
+        <div class="img-layer-30 img-layer--6"></div>
+        <div class="img-layer-30 img-layer--7"></div>
+      </button>
+      <div class="hw-tile-info-wrapper">
+        <div class="hw-tile-title">AMERICAN PSYCHO <img src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cku7lkxjy3lw41v6blv08qsxm-showtime.full.png" class="hw-tile-img-network hw-tile-img-network-long" alt="Watch Huluween"></div>
+        <div class="hw-tile-note">SHOWTIME add-on subscription required.</div>
+      </div>
+    </div>
+    <div class="hw-tile hw-tile-505x235 tile-19">
+      <button class="hw-button" data-toggle="exampleModal19">
+        <div class="img-layer-19 img-layer--1"></div>
+        <div class="img-layer-19 img-layer--2"></div>
+        <div class="img-layer-19 img-layer--4"></div>
+        <div class="img-layer-19 img-layer--3"></div>
+        <div class="img-layer-19 img-layer--4"></div>
+        <div class="img-layer-19 img-layer--5"></div>
+        <div class="img-layer-19 img-layer--6"></div>
+        <div class="img-layer-19 img-layer--7"></div>
+      </button>
+      <div class="hw-tile-info-wrapper">
+        <div class="hw-tile-title">MOTHER! <img src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cku7lraehb2ta1v7hak3m2sgg-fxm.full.png" class="hw-tile-img-network" alt="Watch Huluween"></div>
+      </div>
+    </div>
+
+    
+    <div class="hw-tile hw-tile-505x235 tile-29">
+      <button class="hw-button" data-toggle="exampleModal29">
+        <div class="img-layer-29 img-layer--1"></div>
+        <div class="img-layer-29 img-layer--2"></div>
+        <div class="img-layer-29 img-layer--4"></div>
+        <div class="img-layer-29 img-layer--3"></div>
+        <div class="img-layer-29 img-layer--4"></div>
+        <div class="img-layer-29 img-layer--5"></div>
+        <div class="img-layer-29 img-layer--6"></div>
+        <div class="img-layer-29 img-layer--7"></div>
+      </button>
+      <div class="hw-tile-info-wrapper">
+        <div class="hw-tile-title">ONLY MURDERS IN THE BUILDING <img src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cku7lspzeb2v81v7h1lh3ewca-hulu.full.png" class="hw-tile-img-network" alt="Watch Huluween"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end of body tiles -->
+
+<!-- start huluween logo -->
+<div class="hw-logo" id="hw-logo-center">
+  <img class="logo-huluween" id="id-logo-huluween" src="https://hulu-matchmaker.s3.amazonaws.com/attachments/ckshzj6vo41a51ud43j7ylxit-logo-huluween-grn.svg" alt="HULUWEEN">
+</div> 
+<!-- end of huluween logo -->
+
+<!-- start of footer -->
+<div class="footer-short-wrapper">
+  <div class="footer-share">
+    SHARE
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.hulu.com/huluween" class="share-link-short" target="_blank" onclick="utag.link({
+      'ga_eventCategory' : 'Share',
+      'ga_eventAction' : 'click', 
+      'ga_eventLabel' : 'Facebook',
+      'page_name' : 'Huluween'
+  }) "><img class="share-btn share-btn-short" src="https://hulu-matchmaker.s3.amazonaws.com/attachments/ckre3lqdxamz41u6y1o9zms8g-icon-share-fb.svg" alt="Share With Facebook"></a>
+  <a href="https://twitter.com/share?url=https://www.hulu.com/huluween" class="share-link-short share-link-lst" target="_blank" onclick="utag.link({
+      'ga_eventCategory' : 'Share',
+      'ga_eventAction' : 'click', 
+      'ga_eventLabel' : 'Twitter',
+      'page_name' : 'Huluween'
+  }) "><img class="share-btn share-btn-short-lst" src="https://hulu-matchmaker.s3.amazonaws.com/attachments/ckre3lqe9b7ir1u72sj81zfwa-icon-share-tw.svg" alt="Share With Twitter"></a>       
+  </div>
+  <ul>
+    <li>
+      <a href="https://info.evidon.com/pub_info/3920?v=1&nt=0&nw=false" target="_blank" onclick="utag.link({
+      'ga_eventCategory' : 'Footer Links',
+      'ga_eventAction' : 'click', 
+      'ga_eventLabel' : 'About Ads',
+      'page_name' : 'Huluween'
+      }) ">About Ads</a>
+    </li>
+    <li>
+      <a href="https://www.hulu.com/terms" target="_blank" onclick="utag.link({
+      'ga_eventCategory' : 'Footer Links',
+      'ga_eventAction' : 'click', 
+      'ga_eventLabel' : 'Term of Use',
+      'page_name' : 'Huluween'
+      }) ">Term of Use</a>
+    </li>
+    <li>
+      <a href="https://www.hulu.com/privacy" target="_blank" onclick="utag.link({
+      'ga_eventCategory' : 'Footer Links',
+      'ga_eventAction' : 'click', 
+      'ga_eventLabel' : 'Privacy Policy',
+      'page_name' : 'Huluween'
+      }) ">Privacy Policy</a>
+    </li>
+    <li>
+      <a href="https://www.hulu.com/ca-privacy-rights" target="_blank" onclick="utag.link({
+      'ga_eventCategory' : 'Footer Links',
+      'ga_eventAction' : 'click', 
+      'ga_eventLabel' : 'Your California Privacy Rights',
+      'page_name' : 'Huluween'
+      }) ">Your California Privacy Rights</a>
+    </li>
+    <li>
+      &#xA9; 2022 Hulu
+    </li>
+  </ul>
+</div>
+<!-- end of footer -->
+
+
+
+<!-- START MODALS -->
+
+<!-- start modal 1 -->
+<div class="full reveal modal-wrapper reveal-huluween" id="exampleModal1" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+  <div class="modal-cover"></div>
+  <video class="vid-large lazy myVideo" playsinline autoplay muted loop preload="none" >
+    <source src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cktg25emv3vna1v6xp94hs34m-americanhorrorstories-5s-16x9-210823-compressed.mp4" type="video/mp4">
+  </video>
+  <div class="modal-info-wrapper">
+    <h1>American Horror Story</h1>
+    <h4>TVMA &#183; Drama, Horror &#183; TV Series &#183; 2021</h4>
+    <a href="https://www.hulu.com/series/american-horror-stories-04d07a40-2e27-4141-aa47-cef856aeee60" class="modal-btn-watch" target="_blank" onclick="utag.link({
+      'ga_eventCategory' : 'Watch Now Button',
+      'ga_eventAction' : 'click', 
+      'ga_eventLabel' : 'American Horror Story',
+      'page_name' : 'Huluween'
+  }) ">WATCH THIS AND MORE</a>
+  </div>
+  <div class="modal-slider-wrapper">
+    <button data-toggle="exampleModal30" class="slider-arrow slider-arrow-left"></button>
+    <div class="slider-info">1 of 28</div>
+    <button data-toggle="exampleModal2" class="slider-arrow slider-arrow-right"></button>
+  </div>
+  <div class="modal-img-network modal-img-fx"></div>
+  <div class="cover-close-note cover-close-huluween" data-close>CLOSE</div>
+</div>
+<!-- end modal 1 -->
+
+<!-- start modal 2 -->
+<div class="full reveal modal-wrapper reveal-huluween" id="exampleModal2" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+  <div class="modal-cover"></div>
+  <video class="vid-large lazy myVideo" playsinline autoplay muted loop preload="none">
+    <source src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cktg25f2r3vsl1v1n7uiqfx2b-fearthewalkingdead-s6-5s-16x9-210819-compressed.mp4" type="video/mp4">
+  </video>
+  <div class="modal-info-wrapper">
+    <h1>Fear the Walking Dead</h1>
+    <h4>TVMA &#183; Drama, Horror &#183; TV Series &#183; 2021</h4>
+    <a href="https://www.hulu.com/series/fear-the-walking-dead-6b075a0b-3d97-42a8-b2f1-c1d698d64d53" class="modal-btn-watch" target="_blank" onclick="utag.link({
+      'ga_eventCategory' : 'Watch Now Button',
+      'ga_eventAction' : 'click', 
+      'ga_eventLabel' : 'Fear the Walking Dead',
+      'page_name' : 'Huluween'
+  }) ">WATCH THIS AND MORE</a>
+  </div>
+  <div class="modal-slider-wrapper">
+    <button data-toggle="exampleModal1" class="slider-arrow slider-arrow-left"></button>
+    <div class="slider-info">2 of 28</div>
+    <button data-toggle="exampleModal3" class="slider-arrow slider-arrow-right"></button>
+  </div>
+  <div class="modal-img-network modal-img-amc"></div>
+  <div class="cover-close-note cover-close-huluween" data-close>CLOSE</div>
+</div>
+<!-- end modal 2 -->
+
+<!-- start modal 3 -->
+<div class="full reveal modal-wrapper reveal-huluween" id="exampleModal3" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+  <div class="modal-cover"></div>
+  <video class="vid-large lazy myVideo" playsinline autoplay muted loop preload="none">
+    <source src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cktg25ecz3uv21v755x7d1z1s-ouijaoriginofevil-5s-16x9-210819-compressed.mp4" type="video/mp4">
+  </video>
+  <div class="modal-info-wrapper">
+    <h1>Ouija: Original of Evil</h1>
+    <h4>PG13 &#183; Drama, Horror &#183; Movie &#183; 2018</h4>
+    <a href="https://www.hulu.com/movie/ouija-origin-of-evil-0320cd91-2f27-4161-be37-0fabc792d5b5 " class="modal-btn-watch" target="_blank" onclick="utag.link({
+      'ga_eventCategory' : 'Watch Now Button',
+      'ga_eventAction' : 'click', 
+      'ga_eventLabel' : 'Ouija: Original of Evil',
+      'page_name' : 'Huluween'
+  }) ">WATCH THIS AND MORE</a>
+  </div>
+  <div class="modal-slider-wrapper">
+    <button data-toggle="exampleModal2" class="slider-arrow slider-arrow-left"></button>
+    <div class="slider-info">3 of 28</div>
+    <button data-toggle="exampleModal4" class="slider-arrow slider-arrow-right"></button>
+  </div>
+  <div class="modal-img-network modal-img-hbomax"></div>
+  <div class="cover-close-note cover-close-huluween" data-close>CLOSE</div>
+</div>
+<!-- end modal 3 -->
+
+<!-- start modal 4 -->
+<div class="full reveal modal-wrapper reveal-huluween" id="exampleModal4" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+  <div class="modal-cover"></div>
+  <video class="vid-large lazy myVideo" playsinline autoplay muted loop preload="none">
+    <source src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cktg25ek53vsh1v1nkzjb9siz-wwdits-s3-5s-16x9-210819-compressed.mp4" type="video/mp4">
+  </video>
+  <div class="modal-info-wrapper">
+    <h1>What We Do in the Shadows</h1>
+    <h4>TVMA &#183; Comedy, Horror &#183; TV Series &#183; 2021</h4>
+    <a href="https://www.hulu.com/series/what-we-do-in-the-shadows-0b10c46a-12f0-4357-8a00-547057b49bac" class="modal-btn-watch" target="_blank" onclick="utag.link({
+      'ga_eventCategory' : 'Watch Now Button',
+      'ga_eventAction' : 'click', 
+      'ga_eventLabel' : 'What We Do In The Shadows',
+      'page_name' : 'Huluween'
+  }) ">WATCH THIS AND MORE</a>
+  </div>
+  <div class="modal-slider-wrapper">
+    <button data-toggle="exampleModal3" class="slider-arrow slider-arrow-left"></button>
+    <div class="slider-info">4 of 28</div>
+    <button data-toggle="exampleModal5" class="slider-arrow slider-arrow-right"></button>
+  </div>
+  <div class="modal-img-network modal-img-fx"></div>
+  <div class="cover-close-note cover-close-huluween" data-close>CLOSE</div>
+</div>
+<!-- end modal 4 -->
+
+<!-- start modal 5 -->
+<div class="full reveal modal-wrapper reveal-huluween" id="exampleModal5" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+  <div class="modal-cover"></div>
+  <video class="vid-large lazy myVideo" playsinline autoplay muted loop preload="none" >
+    <source src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cktnf5etcdgtv1v75yzl4rp0w-dragmetohell-5s-16x9-210916-1.mp4" type="video/mp4">
+  </video>
+  <div class="modal-info-wrapper">
+    <h1>Drag Me to Hell</h1>
+    <h4>PG13 &#183; Drama, Horror &#183; TV Series &#183; 2021</h4>
+    <a href="https://www.hulu.com/movie/drag-me-to-hell-ae47ddd3-ac1c-417f-aaad-f2054f92bcce" class="modal-btn-watch" target="_blank" onclick="utag.link({
+      'ga_eventCategory' : 'Watch Now Button',
+      'ga_eventAction' : 'click', 
+      'ga_eventLabel' : 'Drag Me to Hell',
+      'page_name' : 'Huluween'
+  }) ">WATCH THIS AND MORE</a>
+  </div>
+  <div class="modal-slider-wrapper">
+    <button data-toggle="exampleModal4" class="slider-arrow slider-arrow-left"></button>
+    <div class="slider-info">5 of 28</div>
+    <button data-toggle="exampleModal6" class="slider-arrow slider-arrow-right"></button>
+  </div>
+  <div class="modal-img-network modal-img-showtime"></div>
+  <div class="cover-close-note cover-close-huluween" data-close>CLOSE</div>
+</div>
+<!-- end modal 5 -->
+
+<!-- start modal 6 -->
+<div class="full reveal modal-wrapper reveal-huluween" id="exampleModal6" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+  <div class="modal-cover"></div>
+  <video class="vid-large lazy myVideo" playsinline autoplay muted loop preload="none">
+    <source src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cktg25f003uvx1v4z656mxr4r-gaia-5s-16x9-210824-compressed.mp4" type="video/mp4">
+  </video>
+  <div class="modal-info-wrapper">
+    <h1>Gaia</h1>
+    <h4>R &#183; Drama, Horror &#183; Movie &#183; 2021</h4>
+    <a class="modal-btn-watch modal-btn-cs" target="_blank" onclick="utag.link({
+      'ga_eventCategory' : 'Watch Now Button',
+      'ga_eventAction' : 'click', 
+      'ga_eventLabel' : 'Gaia',
+      'page_name' : 'Huluween'
+  }) ">COMING SOON</a>
+  </div>
+  <div class="modal-slider-wrapper">
+    <button data-toggle="exampleModal5" class="slider-arrow slider-arrow-left"></button>
+    <div class="slider-info">6 of 28</div>
+    <button data-toggle="exampleModal7" class="slider-arrow slider-arrow-right"></button>
+  </div>
+  <div class="cover-close-note cover-close-huluween" data-close>CLOSE</div>
+</div>
+<!-- end modal 6 -->
+
+<!-- start modal 7 -->
+<div class="full reveal modal-wrapper reveal-huluween" id="exampleModal7" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+  <div class="modal-cover"></div>
+  <video class="vid-large lazy myVideo" playsinline autoplay muted loop preload="none">
+    <source src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cktg25fd63v5d1v7cmnpo2ag0-antebellum-5s-16x9-210819-compressed.mp4" type="video/mp4">
+  </video>
+  <div class="modal-info-wrapper">
+    <h1>Antebellum</h1>
+    <h4>R &#183; Drama, Horror &#183; Movie &#183; 2021</h4>
+    <a href="https://www.hulu.com/movie/antebellum-1efb9d1e-b2d9-48e9-b550-5ef09286818d" class="modal-btn-watch" target="_blank" onclick="utag.link({
+      'ga_eventCategory' : 'Watch Now Button',
+      'ga_eventAction' : 'click', 
+      'ga_eventLabel' : 'Antebellum',
+      'page_name' : 'Huluween'
+  }) ">WATCH THIS AND MORE</a>
+  </div>
+  <div class="modal-slider-wrapper">
+    <button data-toggle="exampleModal6" class="slider-arrow slider-arrow-left"></button>
+    <div class="slider-info">7 of 28</div>
+    <button data-toggle="exampleModal8" class="slider-arrow slider-arrow-right"></button>
+  </div>
+  <div class="cover-close-note cover-close-huluween" data-close>CLOSE</div>
+</div>
+<!-- end modal 7 -->
+
+<!-- start modal 8 -->
+<div class="full reveal modal-wrapper reveal-huluween" id="exampleModal8" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+  <div class="modal-cover"></div>
+  <video class="vid-large lazy myVideo" playsinline autoplay muted loop preload="none">
+    <source src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cktg25f8f3vhf1v6tkqmlz9oc-censor-5s-16x9-210823-compressed.mp4" type="video/mp4">
+  </video>
+  <div class="modal-info-wrapper">
+    <h1>Censor</h1>
+    <h4>TVMA &#183; Drama, Horror &#183; Movie &#183; 2021</h4>
+    <a class="modal-btn-watch modal-btn-cs" target="_blank" onclick="utag.link({
+      'ga_eventCategory' : 'Watch Now Button',
+      'ga_eventAction' : 'click', 
+      'ga_eventLabel' : 'Censor',
+      'page_name' : 'Huluween'
+  }) ">COMING SOON</a>
+  </div>
+  <div class="modal-slider-wrapper">
+    <button data-toggle="exampleModal7" class="slider-arrow slider-arrow-left"></button>
+    <div class="slider-info">8 of 28</div>
+    <button data-toggle="exampleModal9" class="slider-arrow slider-arrow-right"></button>
+  </div>
+  <div class="cover-close-note cover-close-huluween" data-close>CLOSE</div>
+</div>
+<!-- end modal 8 -->
+
+<!-- start modal 9 -->
+<div class="full reveal modal-wrapper reveal-huluween" id="exampleModal9" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+  <div class="modal-cover"></div>
+  <video class="vid-large lazy myVideo" playsinline autoplay muted loop preload="none">
+    <source src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cktg25ec73v571v7cq4xypsp2-thewitch-5s-16x9-210820-compressed.mp4" type="video/mp4">
+  </video>
+  <div class="modal-info-wrapper">
+    <h1>The Witch</h1>
+    <h4>R &#183; Drama, Horror &#183; Movie &#183; 2016</h4>
+    <a href="https://www.hulu.com/movie/the-witch-8e1e1028-e7fe-4368-ba80-deddd1a92575" class="modal-btn-watch" target="_blank" onclick="utag.link({
+      'ga_eventCategory' : 'Watch Now Button',
+      'ga_eventAction' : 'click', 
+      'ga_eventLabel' : 'The Witch',
+      'page_name' : 'Huluween'
+  }) ">WATCH THIS AND MORE</a>
+  </div>
+  <div class="modal-slider-wrapper">
+    <button data-toggle="exampleModal8" class="slider-arrow slider-arrow-left"></button>
+    <div class="slider-info">9 of 28</div>
+    <button data-toggle="exampleModal10" class="slider-arrow slider-arrow-right"></button>
+  </div>
+  <div class="modal-img-network modal-img-showtime"></div>
+  <div class="cover-close-note cover-close-huluween" data-close>CLOSE</div>
+</div>
+<!-- end modal 9 -->
+
+<!-- start modal 10 -->
+<div class="full reveal modal-wrapper reveal-huluween" id="exampleModal10" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+  <div class="modal-cover"></div>
+  <video class="vid-large lazy myVideo" playsinline autoplay muted loop preload="none" >
+    <source src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cktg25fep3lcv1w7j66jo0ol4-buffythevampireslayer-5s-16x9-210823-compressed.mp4" type="video/mp4">
+  </video>
+  <div class="modal-info-wrapper">
+    <h1>Buffy The Vampire Slayer</h1>
+    <h4>TVPG &#183; Drama, Horror &#183; TV Series &#183; 1997-2003</h4>
+    <a href="https://www.hulu.com/series/buffy-the-vampire-slayer-f2c277c5-62b4-417c-b277-8435b70176dd" class="modal-btn-watch" target="_blank" onclick="utag.link({
+      'ga_eventCategory' : 'Watch Now Button',
+      'ga_eventAction' : 'click', 
+      'ga_eventLabel' : 'Buffy The Vampire Slayer',
+      'page_name' : 'Huluween'
+  }) ">WATCH THIS AND MORE</a>
+  </div>
+  <div class="modal-slider-wrapper">
+    <button data-toggle="exampleModal9" class="slider-arrow slider-arrow-left"></button>
+    <div class="slider-info">10 of 28</div>
+    <button data-toggle="exampleModal11" class="slider-arrow slider-arrow-right"></button>
+  </div>
+  <div class="cover-close-note cover-close-huluween" data-close>CLOSE</div>
+</div>
+<!-- end modal 10 -->
+
+<!-- start modal 11 -->
+<div class="full reveal modal-wrapper reveal-huluween" id="exampleModal11" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+  <div class="modal-cover"></div>
+  <video class="vid-large lazy myVideo" playsinline autoplay muted loop preload="none">
+    <source src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cktg25f4d3vjt1v4wfvan4pli-theresort-5s-16x9-210823-compressed.mp4" type="video/mp4">
+  </video>
+  <div class="modal-info-wrapper">
+    <h1>The Resort</h1>
+    <h4>TVMA &#183; Drama, Horror &#183; Movie &#183; 2021</h4>
+    <a href="https://www.hulu.com/movie/the-resort-3008b4ba-fc30-48bc-9856-0911077e2555" class="modal-btn-watch" target="_blank" onclick="utag.link({
+      'ga_eventCategory' : 'Watch Now Button',
+      'ga_eventAction' : 'click', 
+      'ga_eventLabel' : 'The Resort',
+      'page_name' : 'Huluween'
+  }) ">WATCH THIS AND MORE</a>
+  </div>
+  <div class="modal-slider-wrapper">
+    <button data-toggle="exampleModal10" class="slider-arrow slider-arrow-left"></button>
+    <div class="slider-info">11 of 28</div>
+    <button data-toggle="exampleModal12" class="slider-arrow slider-arrow-right"></button>
+  </div>
+  <div class="cover-close-note cover-close-huluween" data-close>CLOSE</div>
+</div>
+<!-- end modal 11 -->
+
+<!-- start modal 12 -->
+<div class="full reveal modal-wrapper reveal-huluween" id="exampleModal12" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+  <div class="modal-cover"></div>
+  <video class="vid-large lazy myVideo" playsinline autoplay muted loop preload="none">
+    <source src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cktg25fa23v5c1v7cfo2lgbg6-childsplay-5s-16x9-210823-compressed.mp4" type="video/mp4">
+  </video>
+  <div class="modal-info-wrapper">
+    <h1>Child's Play</h1>
+    <h4>R &#183; Drama, Horror &#183; Movie &#183; 2019</h4>
+    <a href="https://www.hulu.com/movie/childs-play-22bbbacb-3afc-4194-bf61-c5ef83d58348" class="modal-btn-watch" target="_blank" onclick="utag.link({
+      'ga_eventCategory' : 'Watch Now Button',
+      'ga_eventAction' : 'click', 
+      'ga_eventLabel' : 'Child\'s Play',
+      'page_name' : 'Huluween'
+  }) ">WATCH THIS AND MORE</a>
+  </div>
+  <div class="modal-slider-wrapper">
+    <button data-toggle="exampleModal11" class="slider-arrow slider-arrow-left"></button>
+    <div class="slider-info">12 of 28</div>
+    <button data-toggle="exampleModal13" class="slider-arrow slider-arrow-right"></button>
+  </div>
+
+  <div class="cover-close-note cover-close-huluween" data-close>CLOSE</div>
+</div>
+<!-- end modal 12 -->
+
+<!-- start modal 13 -->
+<div class="full reveal modal-wrapper reveal-huluween" id="exampleModal13" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+  <div class="modal-cover"></div>
+  <video class="vid-large lazy myVideo" playsinline autoplay muted loop preload="none" >
+    <source src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cktndn4fsdev51v75474yzlzf-thehunt-5s-16x9-210916-1.mp4" type="video/mp4">
+  </video>
+  <div class="modal-info-wrapper">
+    <h1>The Hunt</h1>
+    <h4>R &#183; Drama, Horror &#183; Movie &#183; 2020</h4>
+    <a href="https://www.hulu.com/movie/the-hunt-bb112e53-1fb5-4243-96f9-1767b59a4891" class="modal-btn-watch" target="_blank" onclick="utag.link({
+      'ga_eventCategory' : 'Watch Now Button',
+      'ga_eventAction' : 'click', 
+      'ga_eventLabel' : 'The Hunt',
+      'page_name' : 'Huluween'
+  }) ">WATCH THIS AND MORE</a>
+  </div>
+  <div class="modal-slider-wrapper">
+    <button data-toggle="exampleModal12" class="slider-arrow slider-arrow-left"></button>
+    <div class="slider-info">13 of 28</div>
+    <button data-toggle="exampleModal14" class="slider-arrow slider-arrow-right"></button>
+  </div>
+  <div class="modal-img-network modal-img-hbomax"></div>
+  <div class="cover-close-note cover-close-huluween" data-close>CLOSE</div>
+</div>
+<!-- end modal 13 -->
+
+<!-- start modal 14 -->
+<div class="full reveal modal-wrapper reveal-huluween" id="exampleModal14" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+  <div class="modal-cover"></div>
+  <video class="vid-large lazy myVideo" playsinline autoplay muted loop preload="none" >
+    <source src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cktna88679fgg1v6t7p6vcksj-conjuring3-5s-16x9-210916-1.mp4" type="video/mp4">
+  </video>
+  <div class="modal-info-wrapper">
+    <h1>The Conjuring: The Devil Made Me Do It</h1>
+    <h4>R &#183; Drama, Horror &#183; Movie &#183; 2021</h4>
+    <a class="modal-btn-watch modal-btn-cs" target="_blank" onclick="utag.link({
+      'ga_eventCategory' : 'Watch Now Button',
+      'ga_eventAction' : 'click', 
+      'ga_eventLabel' : 'The Conjuring: The Devil Made Me Do It',
+      'page_name' : 'Huluween'
+  }) ">COMING SOON </a>
+  </div>
+  <div class="modal-slider-wrapper">
+    <button data-toggle="exampleModal13" class="slider-arrow slider-arrow-left"></button>
+    <div class="slider-info">14 of 28</div>
+    <button data-toggle="exampleModal15" class="slider-arrow slider-arrow-right"></button>
+  </div>
+  <div class="modal-img-network modal-img-hbomax"></div>
+  <div class="cover-close-note cover-close-huluween" data-close>CLOSE</div>
+</div>
+<!-- end modal 14 -->
+
+<!-- start modal 15 -->
+<div class="full reveal modal-wrapper reveal-huluween" id="exampleModal15" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+  <div class="modal-cover"></div>
+  <video class="vid-large lazy myVideo" playsinline autoplay muted loop preload="none" >
+    <source src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cktg25ery3w2i1v58mfpeh4by-badhair-5s-16x9-210820-compressed.mp4" type="video/mp4">
+  </video>
+  <div class="modal-info-wrapper">
+    <h1>Bad Hair</h1>
+    <h4>TVMA &#183; Drama, Horror &#183; TV Series &#183; 2020</h4>
+    <a href="https://www.hulu.com/movie/bad-hair-eb67f592-fd7a-4d0b-aa82-6fef5ee0dd6b" class="modal-btn-watch" target="_blank" onclick="utag.link({
+      'ga_eventCategory' : 'Watch Now Button',
+      'ga_eventAction' : 'click', 
+      'ga_eventLabel' : 'Bad Hair',
+      'page_name' : 'Huluween'
+  }) ">WATCH THIS AND MORE</a>
+  </div>
+  <div class="modal-slider-wrapper">
+    <button data-toggle="exampleModal14" class="slider-arrow slider-arrow-left"></button>
+    <div class="slider-info">15 of 28</div>
+    <button data-toggle="exampleModal16" class="slider-arrow slider-arrow-right"></button>
+  </div>
+  <div class="modal-img-network modal-img-hulu"></div>
+  <div class="cover-close-note cover-close-huluween" data-close>CLOSE</div>
+</div>
+<!-- end modal 15 -->
+
+<!-- start modal 16 -->
+<div class="full reveal modal-wrapper reveal-huluween" id="exampleModal16" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+  <div class="modal-cover"></div>
+  <video class="vid-large lazy myVideo" playsinline autoplay muted loop preload="none">
+    <source src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cktg25fb93vsc1v5i1tzrxzyh-evilnextdoor-5s-16x9-210823-compressed.mp4" type="video/mp4">
+  </video>
+  <div class="modal-info-wrapper">
+    <h1>The Evil Next Door</h1>
+    <h4>TVMA &#183; Drama, Horror &#183; Movie &#183; 2021</h4>
+    <a class="modal-btn-watch modal-btn-cs" target="_blank" onclick="utag.link({
+      'ga_eventCategory' : 'Watch Now Button',
+      'ga_eventAction' : 'click', 
+      'ga_eventLabel' : 'The Evil Next Door',
+      'page_name' : 'Huluween'
+  }) ">COMING SOON </a>
+  </div>
+  <div class="modal-slider-wrapper">
+    <button data-toggle="exampleModal15" class="slider-arrow slider-arrow-left"></button>
+    <div class="slider-info">16 of 28</div>
+    <button data-toggle="exampleModal17" class="slider-arrow slider-arrow-right"></button>
+  </div>
+  <div class="cover-close-note cover-close-huluween" data-close>CLOSE</div>
+</div>
+<!-- end modal 16 -->
+
+<!-- start modal 17 -->
+<div class="full reveal modal-wrapper reveal-huluween" id="exampleModal17" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+  <div class="modal-cover"></div>
+  <video class="vid-large lazy myVideo" playsinline autoplay muted loop preload="none">
+    <source src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cktg25el33uvu1v4zv3587u7j-it-5s-16x9-210823-compressed.mp4" type="video/mp4">
+  </video>
+  <div class="modal-info-wrapper">
+    <h1>IT</h1>
+    <h4>R &#183; Drama, Horror &#183; Movie &#183; 2017</h4>
+    <a href="https://www.hulu.com/movie/it-73dfacd1-46f4-4c14-84a9-ed93c2ae1b12" class="modal-btn-watch" target="_blank" onclick="utag.link({
+      'ga_eventCategory' : 'Watch Now Button',
+      'ga_eventAction' : 'click', 
+      'ga_eventLabel' : 'It',
+      'page_name' : 'Huluween'
+  }) ">WATCH THIS AND MORE</a>
+  </div>
+  <div class="modal-slider-wrapper">
+    <button data-toggle="exampleModal16" class="slider-arrow slider-arrow-left"></button>
+    <div class="slider-info">17 of 28</div>
+    <button data-toggle="exampleModal18" class="slider-arrow slider-arrow-right"></button>
+  </div>
+  <div class="modal-img-network modal-img-hbomax"></div>
+  <div class="cover-close-note cover-close-huluween" data-close>CLOSE</div>
+</div>
+<!-- end modal 17 -->
+
+<!-- start modal 18 -->
+<div class="full reveal modal-wrapper reveal-huluween" id="exampleModal18" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+  <div class="modal-cover"></div>
+  <video class="vid-large lazy myVideo" playsinline autoplay muted loop preload="none" >
+    <source src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cktfxg9pb3f9c1w7jbmqkiox4-ahs-s10-5s-16x9-210819-compressed-1.mp4" type="video/mp4">
+  </video>
+  <div class="modal-info-wrapper">
+    <h1>American Horror Story</h1>
+    <h4>TVMA &#183; Drama, Horror &#183; TV Series &#183; 2021</h4>
+    <a href="https://www.hulu.com/series/american-horror-story-a67a233c-fcfe-4e8e-b000-052603ddd616" class="modal-btn-watch" target="_blank" onclick="utag.link({
+      'ga_eventCategory' : 'Watch Now Button',
+      'ga_eventAction' : 'click', 
+      'ga_eventLabel' : 'American Horror Story',
+      'page_name' : 'Huluween'
+  }) ">WATCH THIS AND MORE</a>
+  </div>
+  <div class="modal-slider-wrapper">
+    <button data-toggle="exampleModal17" class="slider-arrow slider-arrow-left"></button>
+    <div class="slider-info">18 of 28</div>
+    <button data-toggle="exampleModal19" class="slider-arrow slider-arrow-right"></button>
+  </div>
+  <div class="modal-img-network modal-img-fx"></div>
+  <div class="cover-close-note cover-close-huluween" data-close>CLOSE</div>
+</div>
+<!-- end modal 18 -->
+
+<!-- start modal 19 -->
+<div class="full reveal modal-wrapper reveal-huluween" id="exampleModal19" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+  <div class="modal-cover"></div>
+  <video class="vid-large lazy myVideo" playsinline autoplay muted loop preload="none" >
+    <source src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cktg25emb3lcr1w7j8cmdsqbd-mother-5s-16x9-210823-compressed.mp4" type="video/mp4">
+  </video>
+  <div class="modal-info-wrapper">
+    <h1>Mother!</h1>
+    <h4>R &#183; Drama, Horror &#183; Movie &#183; 2017</h4>
+    <a href="https://www.hulu.com/movie/mother-076d945a-5e48-4411-9a65-3e8f2dd68258" class="modal-btn-watch" target="_blank" onclick="utag.link({
+      'ga_eventCategory' : 'Watch Now Button',
+      'ga_eventAction' : 'click', 
+      'ga_eventLabel' : 'Mother!',
+      'page_name' : 'Huluween'
+  }) ">WATCH THIS AND MORE</a>
+  </div>
+  <div class="modal-slider-wrapper">
+    <button data-toggle="exampleModal18" class="slider-arrow slider-arrow-left"></button>
+    <div class="slider-info">19 of 28</div>
+    <button data-toggle="exampleModal21" class="slider-arrow slider-arrow-right"></button>
+  </div>
+  <div class="modal-img-network modal-img-fxm"></div>
+  <div class="cover-close-note cover-close-huluween" data-close>CLOSE</div>
+</div>
+<!-- end modal 19 -->
+
+
+<!-- start modal 21 -->
+<div class="full reveal modal-wrapper reveal-huluween" id="exampleModal21" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+  <div class="modal-cover"></div>
+  <video class="vid-large lazy myVideo" playsinline autoplay muted loop preload="none" >
+    <source src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cktg25es53w2j1v580fap0mzy-run-5s-16x9-210823-compressed.mp4">
+  </video>
+  <div class="modal-info-wrapper">
+    <h1>RUN</h1>
+    <h4>PG13 &#183; Drama, Horror &#183; Movie &#183; 2020</h4>
+    <a href="https://www.hulu.com/movie/run-72eec9c8-0164-4e0c-868a-b433960d7f93" class="modal-btn-watch" target="_blank" onclick="utag.link({
+      'ga_eventCategory' : 'Watch Now Button',
+      'ga_eventAction' : 'click', 
+      'ga_eventLabel' : 'RUN',
+      'page_name' : 'Huluween'
+  }) ">WATCH THIS AND MORE</a>
+  </div>
+  <div class="modal-slider-wrapper">
+    <button data-toggle="exampleModal19" class="slider-arrow slider-arrow-left"></button>
+    <div class="slider-info">20 of 28</div>
+    <button data-toggle="exampleModal23" class="slider-arrow slider-arrow-right"></button>
+  </div>
+  <div class="modal-img-network modal-img-hulu"></div>
+  <div class="cover-close-note cover-close-huluween" data-close>CLOSE</div>
+</div>
+<!-- end modal 21 -->
+
+
+
+<!-- start modal 23 -->
+<div class="full reveal modal-wrapper reveal-huluween" id="exampleModal23" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+  <div class="modal-cover"></div>
+  <video class="vid-large lazy myVideo" playsinline autoplay muted loop preload="none" >
+    <source src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cktg25evp3uv51v75f0ugl22d-blackswan-5s-16x9-210823-compressed.mp4">
+  </video>
+  <div class="modal-info-wrapper">
+    <h1>Black Swan</h1>
+    <h4>R &#183; Drama, Horror &#183; Movie &#183; 2010</h4>
+    <a href="https://www.hulu.com/movie/black-swan-0de850bd-a343-4dd7-86c4-c008cdaca86f" class="modal-btn-watch" target="_blank" onclick="utag.link({
+      'ga_eventCategory' : 'Watch Now Button',
+      'ga_eventAction' : 'click', 
+      'ga_eventLabel' : 'Black Swan',
+      'page_name' : 'Huluween'
+  }) ">WATCH THIS AND MORE</a>
+  </div>
+  <div class="modal-slider-wrapper">
+    <button data-toggle="exampleModal21" class="slider-arrow slider-arrow-left"></button>
+    <div class="slider-info">21 of 28</div>
+    <button data-toggle="exampleModal24" class="slider-arrow slider-arrow-right"></button>
+  </div>
+  <div class="modal-img-network modal-img-fox"></div>
+  <div class="cover-close-note cover-close-huluween" data-close>CLOSE</div>
+</div>
+<!-- end modal 23 -->
+
+<!-- start modal 24 -->
+<div class="full reveal modal-wrapper reveal-huluween" id="exampleModal24" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+  <div class="modal-cover"></div>
+  <video class="vid-large lazy myVideo myVideoBg" playsinline autoplay muted loop preload="none" >
+    <source src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cktdhggzv08j31w7jnlxa9gxm-annabellecreation-5s-16x9-210902-1.mp4">
+  </video>
+  <div class="modal-info-wrapper">
+    <h1>Annabelle: Creation</h1>
+    <h4>R &#183; Drama, Horror &#183; Movie &#183; 2017</h4>
+    <a href="https://www.hulu.com/movie/annabelle-creation-bee90fbd-f0d3-4a93-b842-64635f9a9754" class="modal-btn-watch" target="_blank" onclick="utag.link({
+      'ga_eventCategory' : 'Watch Now Button',
+      'ga_eventAction' : 'click', 
+      'ga_eventLabel' : 'Annabelle: Creation',
+      'page_name' : 'Huluween'
+  }) ">WATCH THIS AND MORE</a>
+  </div>
+  <div class="modal-slider-wrapper">
+    <button data-toggle="exampleModal23" class="slider-arrow slider-arrow-left"></button>
+    <div class="slider-info">22 of 28</div>
+    <button data-toggle="exampleModal25" class="slider-arrow slider-arrow-right"></button>
+  </div>
+  <div class="modal-img-network modal-img-hbomax"></div>
+  <div class="cover-close-note cover-close-huluween" data-close>CLOSE</div>
+</div>
+<!-- end modal 24 -->
+
+<!-- start modal 25 -->
+<div class="full reveal modal-wrapper reveal-huluween" id="exampleModal25" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+  <div class="modal-cover"></div>
+  <video class="vid-large lazy myVideo" playsinline autoplay muted loop preload="none" >
+    <source src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cktg25fia3vjx1v4w3apg53hl-annihilation-5s-16x9-210823-compressed.mp4">
+  </video>
+  <div class="modal-info-wrapper">
+    <h1>Annihilation</h1>
+    <h4>R &#183; Drama, Horror &#183; Movie &#183; 2018</h4>
+    <a href="https://www.hulu.com/movie/annihilation-22c89819-1d6b-4f3e-b375-56496418ff9b" class="modal-btn-watch" target="_blank" onclick="utag.link({
+      'ga_eventCategory' : 'Watch Now Button',
+      'ga_eventAction' : 'click', 
+      'ga_eventLabel' : 'Annihilation',
+      'page_name' : 'Huluween'
+  }) ">WATCH THIS AND MORE</a>
+  </div>
+  <div class="modal-slider-wrapper">
+    <button data-toggle="exampleModal24" class="slider-arrow slider-arrow-left"></button>
+    <div class="slider-info">23 of 28</div>
+    <button data-toggle="exampleModal26" class="slider-arrow slider-arrow-right"></button>
+  </div>
+  <div class="modal-img-network modal-img-fxm"></div>
+  <div class="cover-close-note cover-close-huluween" data-close>CLOSE</div>
+</div>
+<!-- end modal 25 -->
+
+<!-- start modal 26 -->
+<div class="full reveal modal-wrapper reveal-huluween" id="exampleModal26" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+  <div class="modal-cover"></div>
+  <video class="vid-large lazy myVideo" playsinline autoplay muted loop preload="none" >
+    <source src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cktg25f5p3vsm1v1n98rtr5ql-exorcistthebeginning-5s-16x9-210823-compressed.mp4">
+  </video>
+  <div class="modal-info-wrapper">
+    <h1>Exorcist: The Beginning</h1>
+    <h4>R &#183; Drama, Horror &#183; Movie &#183; 2004</h4>
+    <a class="modal-btn-watch modal-btn-cs target="_blank" onclick="utag.link({
+      'ga_eventCategory' : 'Watch Now Button',
+      'ga_eventAction' : 'click', 
+      'ga_eventLabel' : 'Exorcist: The Beginning',
+      'page_name' : 'Huluween'
+  }) ">COMING SOON</a>
+  </div>
+  <div class="modal-slider-wrapper">
+    <button data-toggle="exampleModal25" class="slider-arrow slider-arrow-left"></button>
+    <div class="slider-info">24 of 28</div>
+    <button data-toggle="exampleModal27" class="slider-arrow slider-arrow-right"></button>
+  </div>
+  <div class="cover-close-note cover-close-huluween" data-close>CLOSE</div>
+</div>
+<!-- end modal 26 -->
+
+<!-- start modal 27 -->
+<div class="full reveal modal-wrapper reveal-huluween" id="exampleModal27" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+  <div class="modal-cover"></div>
+  <video class="vid-large lazy myVideo" playsinline autoplay muted loop preload="none" >
+    <source src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cktn8h08dd80f1v759l1n8zhp-emptyman-5s-16x9-210902.mp4">
+  </video>
+  <div class="modal-info-wrapper">
+    <h1>The Empty Man</h1>
+    <h4>R &#183; Drama, Horror &#183; Movie &#183; 2020</h4>
+    <a href="https://www.hulu.com/movie/the-empty-man-ea56ce1d-9924-4b4c-8acc-63e2146ab901" class="modal-btn-watch" target="_blank" onclick="utag.link({
+      'ga_eventCategory' : 'Watch Now Button',
+      'ga_eventAction' : 'click', 
+      'ga_eventLabel' : 'The Empty Man',
+      'page_name' : 'Huluween'
+  }) ">WATCH THIS AND MORE</a>
+  </div>
+  <div class="modal-slider-wrapper">
+    <button data-toggle="exampleModal26" class="slider-arrow slider-arrow-left"></button>
+    <div class="slider-info">25 of 28</div>
+    <button data-toggle="exampleModal28" class="slider-arrow slider-arrow-right"></button>
+  </div>
+  <div class="modal-img-network modal-img-hbomax"></div>
+  <div class="cover-close-note cover-close-huluween" data-close>CLOSE</div>
+</div>
+<!-- end modal 27 -->
+
+<!-- start modal 28 -->
+<div class="full reveal modal-wrapper reveal-huluween" id="exampleModal28" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+  <div class="modal-cover"></div>
+  <video class="vid-large lazy myVideo myVideoLg" playsinline autoplay muted loop preload="none" >
+    <source src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cktn6rde09arr1v6tefm4ru79-falsepositive-5s-16x9-210915-1-1.mp4">
+  </video>
+  <div class="modal-info-wrapper">
+    <h1>False Positive</h1>
+    <h4>TVMA &#183; Drama, Horror &#183; TV Series &#183; 2021</h4>
+    <a href="https://www.hulu.com/movie/false-positive-4e97d2ec-a1ef-46ce-a98e-920b82eeb4d9" class="modal-btn-watch" target="_blank" onclick="utag.link({
+      'ga_eventCategory' : 'Watch Now Button',
+      'ga_eventAction' : 'click', 
+      'ga_eventLabel' : 'False Positive',
+      'page_name' : 'Huluween'
+  }) ">WATCH THIS AND MORE</a>
+  </div>
+  <div class="modal-slider-wrapper">
+    <button data-toggle="exampleModal27" class="slider-arrow slider-arrow-left"></button>
+    <div class="slider-info">26 of 28</div>
+    <button data-toggle="exampleModal29" class="slider-arrow slider-arrow-right"></button>
+  </div>
+  <div class="modal-img-network modal-img-hulu"></div>
+  <div class="cover-close-note cover-close-huluween" data-close>CLOSE</div>
+</div>
+<!-- end modal 28 -->
+
+<!-- start modal 29 -->
+<div class="full reveal modal-wrapper reveal-huluween" id="exampleModal29" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+  <div class="modal-cover"></div>
+  <video class="vid-large lazy myVideo myVideoLg" playsinline autoplay muted loop preload="none" >
+    <source src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cktn6rd87d6jj1v6xlyo8az7r-onlymurderss01e05-5s-16x9-210915-1.mp4">
+  </video>
+  <div class="modal-info-wrapper">
+    <h1>Only Murders in the Building</h1>
+    <h4>TVMA &#183; Drama, Horror &#183; Movie &#183; 2021</h4>
+    <a href="https://www.hulu.com/series/only-murders-in-the-building-ef31c7e1-cd0f-4e07-848d-1cbfedb50ddf" class="modal-btn-watch" target="_blank" onclick="utag.link({
+      'ga_eventCategory' : 'Watch Now Button',
+      'ga_eventAction' : 'click', 
+      'ga_eventLabel' : 'Only Murders in the Building',
+      'page_name' : 'Huluween'
+  }) ">WATCH THIS AND MORE</a>
+  </div>
+  <div class="modal-slider-wrapper">
+    <button data-toggle="exampleModal28" class="slider-arrow slider-arrow-left"></button>
+    <div class="slider-info">27 of 28</div>
+    <button data-toggle="exampleModal30" class="slider-arrow slider-arrow-right"></button>
+  </div>
+  <div class="modal-img-network modal-img-hulu"></div>
+  <div class="cover-close-note cover-close-huluween" data-close>CLOSE</div>
+</div>
+<!-- end modal 29 -->
+
+<!-- start modal 30 -->
+<div class="full reveal modal-wrapper reveal-huluween" id="exampleModal30" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+  <div class="modal-cover"></div>
+  <video class="vid-large lazy myVideo" playsinline autoplay muted loop preload="none">
+    <source src="https://hulu-matchmaker.s3.amazonaws.com/attachments/cktg25fbc3vsd1v5i06zjplc0-americanpsycho-5s-16x9-210823-compressed.mp4">
+  </video>
+  <div class="modal-info-wrapper">
+    <h1>American Psycho</h1>
+    <h4>R &#183; Drama, Horror &#183; Movie &#183; 2000</h4>
+    <a href="https://www.hulu.com/movie/american-psycho-404a410c-ef36-469d-8fcd-1f93ec44a5c0" class="modal-btn-watch" target="_blank" onclick="utag.link({
+      'ga_eventCategory' : 'Watch Now Button',
+      'ga_eventAction' : 'click', 
+      'ga_eventLabel' : 'American Psycho',
+      'page_name' : 'Huluween'
+  }) ">WATCH THIS AND MORE</a>
+  </div>
+  <div class="modal-slider-wrapper">
+    <button data-toggle="exampleModal29" class="slider-arrow slider-arrow-left"></button>
+    <div class="slider-info">28 of 28</div>
+    <button data-toggle="exampleModal1" class="slider-arrow slider-arrow-right"></button>
+  </div>
+  <div class="modal-img-network modal-img-showtime"></div>
+  <div class="cover-close-note cover-close-huluween" data-close>CLOSE</div>
+</div>
+<!-- end modal 30 -->
+
+<!-- END MODALS -->
+
+
+<div class="spotlight" style="visibility: hidden;"></div>
+<!-- SCRIPT-->
+
+<script>
+  //Splash Preloader Pages Animation
+$(document).ready(function(){
+  setTimeout(function() {
+      $('.preloader-huluween').fadeOut();
+  }, 6300);
+});
+$(function(){
+  setTimeout(function() {
+     $('#splashscreen').fadeOut(500);
+  }, 11300);
+});
+$(function(){
+  setTimeout(function() {
+     $('#intro').fadeOut(500);
+  }, 15000);
+});
+$(function(){
+  setTimeout(function() {
+     $('.cover-direction').fadeOut(500);
+  }, 19000);
+});
+
+//Show DIV after set time onload
+$(document).ready(function(){
+  setTimeout(function(){
+     $(".hw-tiles-wrapper").show();
+     $('.hw-tiles-wrapper').css('display', 'flex');
+  }, 16000);
+});
+
+
+
+
+
+//vertical and horizontal container drag
+const container = document.querySelector('#hw-wrapper');
+                
+let startY;
+let startX;
+let scrollLeft;
+let scrollTop;
+let isDown;
+
+container.addEventListener('mousedown',e => mouseIsDown(e));  
+container.addEventListener('mouseup',e => mouseUp(e))
+container.addEventListener('mouseleave',e=>mouseLeave(e));
+container.addEventListener('mousemove',e=>mouseMove(e));
+
+function mouseIsDown(e){
+  isDown = true;
+  startY = e.pageY - container.offsetTop;
+  startX = e.pageX - container.offsetLeft;
+  scrollLeft = container.scrollLeft;
+  scrollTop = container.scrollTop; 
+}
+function mouseUp(e){
+  isDown = false;
+}
+function mouseLeave(e){
+  isDown = false;
+}
+function mouseMove(e){
+  if(isDown){
+    e.preventDefault();
+    //Move vertcally
+    const y = e.pageY - container.offsetTop;
+    const walkY = y - startY;
+    container.scrollTop = scrollTop - walkY;
+
+    //Move Horizontally
+    const x = e.pageX - container.offsetLeft;
+    const walkX = x - startX;
+    container.scrollLeft = scrollLeft - walkX;
+
+  }
+}
+
+
+//Progress Bar
+const progressBarContainer = document.querySelector('.progress-bar__container');
+const progressBar = document.querySelector('.progress-bar');
+const progressBarText = document.querySelector('.progress-bar__text');
+
+const progressBarStates = [0, 100];
+
+let time = 0;
+let endState = 100;
+
+progressBarStates.forEach(state => {
+  let randomTime = Math.floor(Math.random() * 2000);
+  setTimeout(() => {
+    if(state == endState){
+      gsap.to(progressBar, {
+        x: `${state}%`,
+        duration: 2,
+        backgroundColor: '#1ce783',
+        onComplete: () => {
+          // progressBarText.style.display = "initial";
+          progressBarContainer.style.boxShadow = '0 0 5px #4895ef';
+        }
+      });
+    }else{
+      gsap.to(progressBar, {
+        x: `${state}%`,
+        duration: 2,
+      });
+    }
+  }, randomTime + time);
+  time += randomTime;
+})
+
+
+//center to page
+var $container = $("html,body");
+var $scrollTo = $('.hw-tiles-wrapper');
+$container.animate({scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop(), scrollTop: 890, scrollLeft: 1400}, 200); 
+
+
+// //Auto Page Centering
+$('.hw-tiles-wrapper').delay(16000).animate({scrollLeft:'+=1400'}, 1000, "swing");
+$('.hw-tiles-wrapper').animate({scrollTop:'+=920'}, 1000, "swing");
+
+</script>

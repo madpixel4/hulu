@@ -1,0 +1,219 @@
+.title-bar {
+    @include breakpoint(small) {
+      padding: 1rem 2rem;
+      background: $black-drk;
+    }
+  }
+  .title-bar-image, .menu-logo {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/ckl9u2j5v296z1u6ptre9fa28-logo-hulu-green.svg') no-repeat;
+    background-size: 100%;
+    background-position: 0 0;
+    width: 65px;
+    height: 22px;
+  }
+  .menu-icon {
+    @include breakpoint(small) {
+      position: absolute;
+      right: 1.5rem;
+    }
+  }
+  .menu-text {
+    display: none;
+    @include breakpoint(large) {
+      display: flex;
+    }
+  }
+  .sticky-topbar {
+      width: 100%;
+      position: fixed;
+      z-index: 999;
+    }
+  .top-bar, .top-bar ul {
+    @include breakpoint(large) {
+      display: flex;
+    }
+    background-color: transparent;
+    display: block;
+    align-items: baseline;
+    padding: 0.4rem 0.5rem;
+  }
+  .top-bar {
+    background-image: linear-gradient(to top, rgba(4,4,5,0), rgba(4,4,5,1));
+    transition: all ease-in-out .25s;
+    align-items: center;
+
+    @include breakpoint(small) {
+      background: #040405;
+      padding-bottom: 30px;
+      padding-left: 25px;
+    }
+    @include breakpoint(medium) {
+      background: #040405;
+      padding-bottom: 30px;
+      padding-left: 25px;
+    }
+    @include breakpoint(large) {
+      background: transparent;
+      padding-bottom: 20px;
+      padding-left: 0;
+    }
+  }
+  .top-bar-blk {
+    background-color: #040405;
+  }
+  .top-bar-blank {
+    @include breakpoint(small) {
+      display: none;
+    }
+    @include breakpoint(medium) {
+      display: none;
+    }
+    @include breakpoint(large) {
+      display: block;
+    }
+  }
+  .dropdown.menu > li > a {
+    color: $white;
+    text-transform: uppercase;
+    padding: .75rem 0.625rem;
+    font-size: 	0.875rem;
+    letter-spacing: 0.063rem;
+    transition: $slider-transition;
+    width: fit-content;
+    margin-bottom: 5px;
+    justify-content: center !important;
+    font-family: 'Graphik-Semibold';
+    @include breakpoint(small) {
+      padding-left: 0;
+    }
+    @include breakpoint(medium) {
+      padding-left: 0;
+    }
+    @include breakpoint(large) {
+      margin-bottom: 0;
+      padding: 0 0.625rem;
+      width: 100%;
+    }
+    @include breakpoint(xlarge) {
+      padding: 0 1.25rem;
+    }
+  }
+  .menu a, .menu a.button{
+    padding: 0.9rem 1rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 43px;
+  }
+  .menu-logo {
+    margin-right: 1.5rem;
+    display: none;
+    margin-top: -6px;
+    position: relative;
+    margin-bottom: auto;
+    margin-left: 2rem;;
+  
+    @include breakpoint(large) {
+      display: block;
+    }
+  }
+  .menu li img {
+    margin: -5px 0 0 1rem;
+  }
+
+  .button-menu {
+      background-color: $white;
+      color: $black-drk !important;
+      border-radius: 3px;
+      text-align: center;
+
+      &:hover {
+          text-decoration: none;
+          opacity: .8;
+      }
+   }
+   .nav-btn {
+     color: $black-drk !important;
+   }
+   .button-menu-manage {
+    @include breakpoint(small) {
+     margin-top: 35px;
+     margin-bottom: -40px !important;
+    }
+    @include breakpoint(medium) {
+      margin-top: 35px;
+      margin-bottom: -40px !important;
+    }
+    @include breakpoint(large) {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+   }
+  .dropdown-desk {
+      display: none;
+      @include breakpoint(large) {
+        display: block;
+      } 
+  }
+  .dropdown-mobile {
+    display: block;
+    @include breakpoint(large) {
+      display: none;
+    } 
+}
+.dropdown-desk-sub a {
+  @include breakpoint(small) {
+    width: 195px !important;
+  } 
+  @include breakpoint(medium) {
+    width: 195px !important;
+  } 
+  @include breakpoint(large) {
+    width: 195px; 
+  } 
+}
+.syft-note {
+  position: absolute;
+  color: #ffffff;
+  font-size: 9px;
+  font-family: 'Graphik', Helvetica, Arial, sans-serif;
+  opacity: .8;
+  letter-spacing: -.1px;
+  @include breakpoint(small) {
+    margin: 4px 0 0 0;
+  }
+  @include breakpoint(medium) {
+    margin: 4px 0 0 0;
+  }
+  @include breakpoint(large) {
+    margin: 4px 0 0 0;
+  }
+}
+  //Nav Styling Change
+.past-main {
+    background-image: none !important;
+    background-color: $white !important;
+    color:#444 !important;
+    padding-bottom: 20px;
+
+    .menu-logo {
+        background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/ckf49zojn9i1z184a8ajrcsyg-logo-hulu.svg') no-repeat !important;
+        background-position: 0 !important;
+    }
+  
+    .dropdown.menu > li > a {
+      color: $black-drk;
+    }
+    a.button-menu {
+      background-color: $black-drk !important;
+      color: $white !important;
+    }
+    .nav-btn {
+      color: #ffffff !important;
+    }
+    .syft-note {
+      color: $black-drk;
+    }
+  }
+
+  ///////////////////////////////// END OF STICKY NAV //////////////////////////////

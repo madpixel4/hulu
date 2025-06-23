@@ -1,0 +1,124 @@
+#splashscreen, #intro {
+    // background: url('../img/bk-intro.png')  no-repeat;
+    background-color: #000000;
+    background-position: 0 0;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    color: $white;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+    h1 {
+        font-size: 1.625rem;
+        line-height: 2rem;
+        text-align: center;
+        width: 750px;
+        height: 100%;
+        text-transform: uppercase;
+    }
+}
+#splashscreen {
+    z-index: 99999;
+    
+    p{
+        font-size: 36px;  
+        text-align: center;      
+        @include breakpoint(small) {
+            font-size: 1.188rem;
+        }
+        @include breakpoint(medium) {
+            font-size: 2.25rem;  
+        }
+        @include breakpoint(large) {
+            font-size: 2.25rem;  
+        }
+    }
+    
+    .logo-huluween {
+        margin: 0 auto;
+        transition: all ease-in-out .25s;
+        @include breakpoint(small) {
+            width: 80%;
+        }
+        @include breakpoint(medium) {
+            width: 100%;
+        }
+        @include breakpoint(large) {
+            width: 100%;
+        }
+    }
+}
+#intro {
+    z-index: 9999;
+
+    p {
+        font-size: 36px;
+        max-width: 750px;
+        margin: 0 auto;
+        text-align: center;
+        z-index: 1;
+        transition: all ease-in-out .25s;
+        @include breakpoint(small) {
+            font-size: 1.188rem;
+            padding: 0 2rem;
+        } 
+        @include breakpoint(medium) {
+            font-size: 1.5rem;
+        } 
+        @include breakpoint(large) {
+            font-size: 36px;
+        }
+    }
+}
+.intro-screen {
+    background-size: cover;
+    background-position: 0 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-size: 36px;
+    transition: all ease-in-out .25s;
+    // @include breakpoint(small) {
+    //     background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktf23fpr2l2d1v5iezpbab7v-spectral-uluh-close-mobile.full.png') no-repeat;
+    //     background-position: -150px 0;
+    //     background-size: cover;
+    // } 
+    // @include breakpoint(medium) {
+    //     background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktf23fpr2l2d1v5iezpbab7v-spectral-uluh-close-mobile.full.png') no-repeat;
+    //     background-position: 0 0;
+    //     background-size: cover;
+    // } 
+    // @include breakpoint(large) {
+    //     background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktaoy8dv0kee1w49x5smscau-spectral-uluh-close.full.png') no-repeat;
+    //     background-size: cover;
+    // } 
+  }
+  #splashscreen, #intro {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktvorw6doa0k1v6x6o057okg-bg-veil-grad-2-3x.full.jpg') no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    width: 100%;
+    height: 100%;
+    font-size: 36px;
+    font-family: 'Huluween-Sans';
+    @include breakpoint(small) {
+        background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktw52zmyovgl1v1n48p2aibf-bg-veil-grad-2-mobile3.full.jpg') no-repeat;
+        height: 101vh;
+        background-size: cover;
+      }
+      @include breakpoint(medium) {
+        background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktvorw6doa0k1v6x6o057okg-bg-veil-grad-2-3x.full.jpg') no-repeat;
+        height: 101vh;
+        background-size: cover;
+      }
+      @include breakpoint(large) {
+        background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktvorw6doa0k1v6x6o057okg-bg-veil-grad-2-3x.full.jpg') no-repeat;
+        background-size: cover;
+        background-position: 0 0;
+        width: 100%;
+        height: 100%;
+      }
+  }

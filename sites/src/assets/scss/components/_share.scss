@@ -1,0 +1,144 @@
+//share
+#share-example {
+    margin: 0 0 .4rem 0;
+}
+.b1sfkvwp {
+    border: none !important;
+    transition: all ease-in-out .25s;
+}
+.dtuwxu6 {
+    &:hover {
+        opacity: .7;
+        background-color: transparent !important;
+    }
+    &:active {
+        background-color: transparent;
+    }
+}
+.b1ayz11m:hover, .b1ayz11m:active, .b1cts6hf {
+    background: transparent !important;
+}
+    
+.bw4zrxo:after:hover, .py2ntml:after {
+    opacity: 1 !important;
+}
+.cn02a8x:hover {
+    color: #040405 !important;
+    opacity: .7 !important;
+}
+.m1lpp60t {
+    display: none;
+}
+.a16p6fhc {
+    background-color: transparent !important;
+}
+.bap9lfg {
+    box-shadow: none !important;
+}
+.dtuwxu6 {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/ckr41bwigolwq1u6ntlhqvqxv-btn-share.svg') no-repeat center center;
+    background-position: 0 0;
+    color: transparent;
+    width: 85px;
+    height: 25px;
+}
+.lzp9x50 {
+    text-align: left;
+}
+.bblki9 {
+    border-radius: 10px;
+    background-color: $white !important;
+    color: #040405;
+    width: 100%;
+
+    @include breakpoint(small) {
+        width: 230px;
+    }
+    @include breakpoint(large) {
+        width: 400px;
+    }
+}
+.fzahwet {
+    flex-wrap: no-wrap !important;
+
+    @include breakpoint(small) {
+        flex-wrap: wrap !important;
+    }
+}
+.b6gfw7i:after {
+    border-color: transparent transparent $white !important;
+
+    &:active {
+        opacity: 1 !important;
+    }
+    &:focus {
+        opacity: 1 !important;
+    }
+}
+.c1k6mrrm {
+    color: #040405 !important;
+}
+.m1trcu4i+.m1trcu4i {
+    @include breakpoint(small) {
+        margin-left: 0 !important;
+    }
+    @include breakpoint(large) {
+        margin-left: 40px;
+    }
+}
+.hmgv4u2 svg:hover, .hmgv4u2 img:hover {
+    opacity: .7;
+}
+
+
+//hardcoded share styling
+.share-wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    align-items: baseline;
+    overflow: hidden;
+    margin: .5rem auto 1rem auto;
+    margin-top: 15px;
+    color: $white;
+    max-width: 300px;
+
+    p {
+        text-transform: uppercase;
+        font-family: $body-font-bold;
+        font-size: 0.875rem;
+        letter-spacing: 1.5px;
+        margin-right: 1rem;
+
+        @include breakpoint(small) {
+           margin-top: -.3rem;
+           margin-bottom: .5rem;
+        }
+    }
+
+    a.share-link {
+        float: left;
+        margin: 1px 1rem 0 0;
+    }
+    a.share-link-lst {
+        margin-right: 0;
+    }
+    .share-btn {
+        height: 25px;
+        transition: all ease-in-out .2s;
+        &:hover {
+            opacity: .7;
+        }
+        @include breakpoint(small) {
+            height: 20px;
+        }
+    }
+}
+.share-btn-white {
+    color: #ffffff !important;
+    filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(189deg) brightness(100%) contrast(99%) !important;
+}
+.share-wrapper-black > * {
+    color: #000000 !important;
+    filter: invert(0%) sepia(2%) saturate(7459%) hue-rotate(189deg) brightness(0%) contrast(99%);
+}

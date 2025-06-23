@@ -1,0 +1,729 @@
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.h1-ps {
+  @include breakpoint(small) {
+      width: 75%;
+      margin: 0 auto;
+  }
+  @include breakpoint(medium) {
+      font-size: 3.375rem;
+      width: 80%;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 2rem;
+      line-height: 62px;
+      padding: 0 2rem;
+  }
+  @include breakpoint(large) {
+      font-size: 5rem;
+      line-height: 5.9rem;
+      width: 100%;
+      padding: 0 6rem 3rem 0;
+      text-align: left;
+  }
+}
+.ps-car-img {
+  border-radius: 15px !important;
+  margin: 0 0 -2px 0 !important;
+}
+.ps-video {
+  border-radius: 10px;
+  outline: none;
+  border: solid 3px $green;
+  object-fit: cover;
+  cursor: pointer;
+  transition: all ease-in-out .25s;
+  @include breakpoint(small) {
+    border-radius: 10px;
+    margin-top: 0;
+    width: 90%;
+    height: auto;
+  }
+  @include breakpoint(medium) {
+    border-radius: 20px;
+    margin-top: 0;
+    width: 90%;
+    height: auto;
+  }
+  @include breakpoint(large) {
+    border-radius: 20px;
+    margin-top: 0;
+    width: 990px;
+    height: 550px;
+  }
+}
+.button-header-watch {
+  min-width: 220px;
+  margin-top: 25px;
+  transition: all ease-in-out .25s;
+
+  &:hover {
+    opacity: .8 !important;
+    background-color: $white;
+    color: $black-drk;
+  }
+}
+.button-header-ps {
+  @include breakpoint(small) {
+    padding: 0.9rem 1.5rem !important;
+  }
+  @include breakpoint(medium) {
+    padding: 0.9rem 1rem;
+  }
+  @include breakpoint(large) {
+    padding: 0.9rem 1rem;
+  }
+ 
+}
+.ps-share-wrapper {
+  transition: all ease-in-out .25s;
+  @include breakpoint(small) {
+    margin-bottom: .5rem;
+  }
+  @include breakpoint(medium) {
+    margin-bottom: 1rem;
+  }
+  @include breakpoint(large) {
+    margin-bottom: 1rem;
+  }
+}
+.masthead-wide-planeswap {
+  padding: 12rem 0 12.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 103vh;
+}
+.masthead-back-hulu {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 0;
+  transition: all ease-in-out .25s;
+  @include breakpoint(small) {
+    width: 90%;
+    height: 87%;
+    top: 56%;
+    border: solid 4px $green;
+    border-radius: 40px;
+  }
+  @include breakpoint(medium) {
+    top: 50%;
+    width: 90%;
+    height: 85vh;
+    border: solid 8px $green;
+    border-radius: 50px;
+  }
+  @include breakpoint(large) {
+    top: 52%;
+    width: 80%;
+    height: 85vh;
+    border: solid 8px $green;
+    border-radius: 70px;
+  }
+}
+.masthead-block-wrapper-ps {
+  position: relative;
+  margin-top: 60px !important;
+  transition: all ease-in-out .25s;
+  width: 70%;
+}
+.masthead-back-planeswap {
+  .back-left {
+    .left-dots {
+      background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl1fgrmmu18pi1v7iq3vwhcn6-dots-left-top.full.png') no-repeat;
+      background-size: 100%;
+      background-position: 0 0;
+      position: absolute;
+      transition: all ease-in-out .25s;
+      @include breakpoint(small) {
+        width: 250px;
+        height: 300px;
+      }
+      @include breakpoint(medium) {
+        width: 300px;
+        height: 350px;
+      }
+      @include breakpoint(large) {
+        width: 410px;
+        height: 480px;
+        margin-top: -10px;
+      }
+    }
+    .left-plane {
+      background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl0ll8f5k0bbq1v4n9ywo1cfg-ps-mast-left-plane.full.png') no-repeat;
+      background-size: 100%;
+      background-position: 0 0;
+      position: absolute;
+      transition: all ease-in-out .25s;
+      @include breakpoint(small) {
+        width: 300px;
+        height: 300px;
+      }
+      @include breakpoint(medium) {
+        width: 530px;
+        height: 300px;
+      }
+      @include breakpoint(large) {
+        width: 50%;
+        max-width: 50%;
+        height: 500px;
+      }
+    }
+  }
+  .back-right {
+    .right-dots {
+      background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl0ll8ebl0bcs1v3pppmj2c5h-ps-mast-right-dots.full.png') no-repeat;
+      background-size: 100%;
+      background-position: 0 0;
+      width: 270px;
+      height: 800px;
+      position: absolute;
+      right: 0;
+      top: 300px;
+      transition: all ease-in-out .25s;
+      @include breakpoint(small) {
+        width: 180px;
+        height: 530px;
+        top: 620px;
+      }
+      @include breakpoint(medium) {
+        width: 200px;
+        height: 610px;
+        top: 530px;
+      }
+      @include breakpoint(large) {
+        width: 270px;
+        height: 800px;
+        top: 300px;
+      }
+    }
+    .right-plane {
+      background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl0ll8f2n0be81v26ecos2kvc-ps-mast-right-plane.full.png') no-repeat;
+      background-size: 100%;
+      background-position: 0 0;
+      position: absolute;
+      right: 0;
+      transition: all ease-in-out .25s;
+      max-width: 45%;
+      @include breakpoint(small) {
+        width: 230px;
+        height: 230px;
+        bottom: -100px;
+      }
+      @include breakpoint(medium) {
+        width: 400px;
+        height: 400px;
+        bottom: -90px;
+      }
+      @include breakpoint(large) {
+        width: 40%;
+        height: 700px;
+        bottom: -20%;
+      }
+    }
+  }
+}
+.masthead-logo-planeswap {
+  padding: 0;
+  transition: all ease-in-out .25s;
+  @include breakpoint(small) {
+    width: 230px;
+    margin: -55px 0 20px 0;
+  }
+  @include breakpoint(medium) {
+    margin: -40px 0 25px 0; 
+    width: 400px;
+    
+  }
+  @include breakpoint(large) {
+    margin: -40px 0 25px 0; 
+    width: 450px;
+  }
+}
+
+.bk-gradient-huluween {
+  background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktvorw6doa0k1v6x6o057okg-bg-veil-grad-2-3x.full.jpg') no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999;
+  position: fixed;
+  @include breakpoint(small) {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktw52zmyovgl1v1n48p2aibf-bg-veil-grad-2-mobile3.full.jpg') no-repeat;
+    background-size: cover;
+    height: 101vh;
+  }
+  @include breakpoint(medium) {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktvorw6doa0k1v6x6o057okg-bg-veil-grad-2-3x.full.jpg') no-repeat;
+    background-size: cover;
+    height: 101vh;
+  }
+  @include breakpoint(large) {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cktvorw6doa0k1v6x6o057okg-bg-veil-grad-2-3x.full.jpg') no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+.subtitle-ps {
+  width: 520px;
+  margin: 0 auto;
+  transition: all ease-in-out .25s;
+  @include breakpoint(small) {
+    width: 100%;
+    padding: 0;
+  }
+  @include breakpoint(medium) {
+    width: 520px;
+    padding: 0;
+  }
+  @include breakpoint(large) {
+    width: 600px;
+  }
+}
+.note-ps {
+  display: block;
+  margin: 0 auto;
+  transition: all ease-in-out .25s;
+  @include breakpoint(small) {
+    width: 100%;
+    padding: 5px 0;
+  }
+  @include breakpoint(medium) {
+    width: 400px;
+    padding: 5px 0;
+  }
+  @include breakpoint(large) {
+    width: 400px;
+    padding: 5px 0;
+  }
+}
+.container-wrapper {
+  max-width: 1350px;
+  overflow: hidden;
+  text-align: center;
+  color: $white;
+  transition: all ease-in-out .25s;
+  @include breakpoint(small) {
+    margin: 70px auto;  
+    padding: 0; 
+  }
+  @include breakpoint(medium) {
+    margin: 100px auto;
+    padding: 0 40px;
+  }
+  @include breakpoint(large) {
+    margin: 140px auto;
+    padding: 0 40px;
+  }
+}
+.container-left {
+  transition: all ease-in-out .25s;
+  @include breakpoint(small) {
+    float: none;
+    text-align: center;   
+  }
+  @include breakpoint(medium) {
+    float: none;
+    text-align: center;
+  }
+  @include breakpoint(large) {
+    width: 61%;
+    float: left;
+    text-align: left;
+  }
+}
+.container-right {
+  text-align: left;
+}
+.container-right-high {
+  transition: all ease-in-out .25s;
+  @include breakpoint(small) {
+    margin-top: 50px;  
+  }
+  @include breakpoint(medium) {
+    margin-top: 50px;
+  }
+  @include breakpoint(large) {
+    margin-top: -5px;
+  }
+} 
+.container-left-short {
+  transition: all ease-in-out .25s;
+  @include breakpoint(small) {
+    width: 100%;
+    float: none;
+    text-align: center;   
+  }
+  @include breakpoint(medium) {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+  @include breakpoint(large) {
+    width: 615px;
+    float: left;
+    text-align: left;
+  }
+}
+
+.carousel-ps {
+  padding: 3rem 0 3rem 0;
+  margin-bottom: 4rem;
+
+  @include breakpoint(small) {
+      padding: 5rem 0 0 0 !important;
+  }
+
+  @include breakpoint(medium) {
+    padding: 5rem 0 0 0 !important;
+  }
+
+  @include breakpoint(large) {
+      padding: 10rem 0 0 0 !important;
+      margin-bottom: 5rem;
+  }
+}
+
+.ps-on-mob {
+  @include breakpoint(small) {
+      width: 85%;
+      margin: 0 auto;
+      margin-top: 2rem;
+      display: block;
+  }
+  @include breakpoint(medium) {
+      display: block;
+      width: 85%;
+      margin: 0 auto;
+      margin-top: 2rem;
+  }
+  @include breakpoint(large) {
+      display: none;
+      width: 100%;
+      margin-top: 0;
+  }
+}
+.ps-on-desk {
+  @include breakpoint(small) {
+      display: none;
+  }
+  @include breakpoint(medium) {
+     display: none;
+  }
+  @include breakpoint(large) {
+      display: block;
+      position: absolute;
+      right: 0;
+      margin: -750px 0 0 0;
+      width: 120%;
+  }
+}
+.ps-text-block {
+  margin: -220px 0 0 0;
+  width: 580px;
+}
+.dots-left-mid {
+  background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl13uruvehobi1v5rz7jen0w5-ps-mid-left-dots.full.png') no-repeat;
+  background-size: 100%;
+  background-position: 0 0;
+
+  transition: all ease-in-out .25s;
+  @include breakpoint(small) {
+    background-size: 80%;
+    background-position: 0px 530px;
+    width: 160px;
+    height: 1000px;
+    position: absolute;
+    left: 0;
+  }
+  @include breakpoint(medium) {
+    background-position: 0 500px;
+    width: 250px;
+    height: 1200px;
+    position: absolute;
+    left: 0;
+    margin-top: 20%;
+
+  }
+  @include breakpoint(large) {
+    background-position: 0 0;
+    width: 250px;
+    height: 830px;
+    position: absolute;
+    left: 0;
+    top: 2100px;
+    margin-top: 120%;
+
+  }
+}
+
+.dots-right-mid {
+  background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl13twpvrlcex1v4j1pcdr4y1-ps-mid-right-dots.full.png') no-repeat;
+  background-size: 100%;
+  width: 230px;
+  height: 620px;
+  position: absolute;
+  right: 0;
+  transition: all ease-in-out .25s;
+  @include breakpoint(small) {
+    background-position: 80px 90px;
+  }
+  @include breakpoint(medium) {
+    background-position: 0 0;
+  }
+  @include breakpoint(large) {
+    background-position: 0 0;
+  }
+}
+.dots-right-bot {
+  background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl147641z022z1v4n1p2wvd6e-ps-bot-right-dots.full.png') no-repeat;
+  background-size: 100%;
+  background-position: 0 0;
+  width: 230px;
+  height: 480px;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  transition: all ease-in-out .25s;
+  @include breakpoint(small) {
+    margin: 0
+  }
+  @include breakpoint(medium) {
+    margin: 0;
+  }
+  @include breakpoint(large) {
+    margin: 250px 0 0 0;
+  }
+}
+.plane-right-mid {
+  background-size: 100%;
+  background-position: 0 0;
+  position: absolute;
+  height: 100%;
+  right: 0;
+  transition: all ease-in-out .25s;
+  @include breakpoint(small) {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl15fvsjg0dvf19apysgnkz4v-ps-mid-right-plane-full.full.png') no-repeat;
+    width: 380px;
+    right: 0;
+    left: 0;
+    height: 400px;
+    background-size: 90%;
+    position: relative;
+    margin-top: 40px;
+  }
+  @include breakpoint(medium) {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl15fvsjg0dvf19apysgnkz4v-ps-mid-right-plane-full.full.png') no-repeat;
+    width: 640px;
+    left: 0;
+    right: 0;
+    height: 500px;
+    background-size: 100%;
+    position: relative;
+    margin-top: 0;
+  }
+  @include breakpoint(large) {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl15fvsjg0dvf19apysgnkz4v-ps-mid-right-plane-full.full.png') no-repeat;
+    background-size: 100%;
+    right: 20px;
+    position: absolute;
+    left: auto;
+    width: 38%;
+    margin-top: 0;
+  }
+}
+.diver-right-mid {
+  background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl13ucbx7ahop1v6xlu5p9nmt-ps-mid-right-diver.full.png') no-repeat;
+  background-size: 100%;
+  right: 5%;
+  margin-top: 10%;
+  transition: all ease-in-out .25s;
+  @include breakpoint(small) {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl13ucbx7ahop1v6xlu5p9nmt-ps-mid-right-diver.full.png') no-repeat;
+    width: 95%;
+    right: -40px;
+    height: 430px;
+    position: relative;
+    margin: -220px 0 -100px 20px;
+    background-size: 90%;
+    background-position: 30px 0px;
+  }
+  @include breakpoint(medium) {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl13ucbx7ahop1v6xlu5p9nmt-ps-mid-right-diver.full.png') no-repeat;
+    width: 730px;
+    right: 0;
+    height: 500px;
+    position: relative;
+    margin: -200px 0 0 0;
+   
+  }
+  @include breakpoint(large) {
+    background: url('https://hulu-matchmaker.s3.amazonaws.com/attachments/cl13ucbx7ahop1v6xlu5p9nmt-ps-mid-right-diver.full.png') no-repeat;
+    background-size: 100%;
+    width: 43%;
+    height: 530px;
+    margin: 0;
+    max-width: 50%;
+    right: 0;
+    position: absolute;
+    margin-top: 15%;
+  }
+}
+.text-right-ps {
+  transition: all ease-in-out .25s;
+  @include breakpoint(small) {
+    padding: 0;
+  }
+
+  @include breakpoint(medium) {
+    padding: 15px 0 0 0;
+  }
+
+  @include breakpoint(large) {
+    padding: 15px 25px 0 0;
+  }
+}
+.text-right-short {
+  transition: all ease-in-out .25s;
+  @include breakpoint(small) {
+    margin-top: 1.95rem
+  }
+
+  @include breakpoint(medium) {
+   margin-top: 0;
+  }
+
+  @include breakpoint(large) {
+    margin-top: 0;
+  }
+}
+.devices-ps {
+  transition: all ease-in-out .25s;
+
+  @include breakpoint(small) {
+    padding: 0 20px;
+  }
+
+  @include breakpoint(medium) {
+    padding: 0;
+  }
+
+  @include breakpoint(large) {
+    padding: 0 0 80px 0;
+  }
+}
+.grid-select-ps {
+  transition: all ease-in-out .25s;
+
+  @include breakpoint(small) {
+   display: none;
+  }
+
+  @include breakpoint(medium) {
+    display: none;
+  }
+
+  @include breakpoint(large) {
+    display: block;
+  }
+}
+
+.tabs-wrapper-ps {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  transition: all ease-in-out .25s;
+
+  @include breakpoint(small) {
+    margin-top: -80px;
+  }
+
+  @include breakpoint(medium) {
+    margin-top: 220px;
+  }
+
+  @include breakpoint(large) {
+    margin-top: 220px;
+  }
+}
+.tabs-content-ps {
+  margin: 0 auto;
+  max-width: 100%;
+}
+.tabs-ps {
+  display: flex;
+  justify-content: center;
+}
+.tabs-title-ps {
+  width: auto !important;
+  letter-spacing: 1.5px;
+}
+
+.tabs-title-link {
+  transition: all ease-in-out .25s;
+
+  @include breakpoint(small) {
+    font-size: 11px !important;
+    letter-spacing: .5px;
+  }
+
+  @include breakpoint(medium) {
+    font-size: 12px !important;
+    letter-spacing: .5px;
+  }
+
+  @include breakpoint(large) {
+    font-size: 16px !important;
+    letter-spacing: 1px;
+  }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1306px) {
+  .h4-ps {
+    width: 80%;
+  }
+  .masthead-back-planeswap .back-right .right-plane {
+    bottom: -40%;
+  }
+  .tabs-wrapper-ps {
+    margin-top: 110px;
+  }
+  .ps-video {
+    width: 80%;
+    height: auto;
+  }
+}
+@media (min-width: 200px) and (max-width: 1023px) {
+  .h4-ps {
+    width: 80%;
+
+  }
+}
+@media (min-width: 1870px) and (max-width: 3306px) {
+
+  .masthead-back-planeswap .back-left .left-plane {
+    width: 41%;
+    transition: all ease-in-out .25s;
+  }
+  .tabs-wrapper-ps {
+    transition: all ease-in-out .25s;
+    margin-top: 350px;
+  }
+  .diver-right-mid {
+    width: 36%;
+  }
+
+}

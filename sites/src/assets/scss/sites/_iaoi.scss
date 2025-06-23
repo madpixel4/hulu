@@ -1,0 +1,155 @@
+body {
+    background: none;
+    background-color: $black-drk;
+}
+.iaoi_cover {
+    pointer-events: none;
+    background: url('../img/img-iaoi-page-cover.png') no-repeat;
+    position: fixed;
+    background-position: 0 0;
+    background-size: cover;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+}
+.tile_container {
+    display: flex;
+    width: 5287px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    z-index: 9;
+}
+.iaoi_tile {
+    float: left;
+    background-color:$white;
+    width: 200px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    z-index: 9;
+
+    &:hover {
+        transform: scale(1.1); 
+        -webkit-box-shadow: 0px 0px 24px -8px rgba(0,0,0,0.41);
+        -moz-box-shadow: 0px 0px 24px -8px rgba(0,0,0,0.41);
+        box-shadow: 0px 0px 24px -8px rgba(0,0,0,0.41);
+        z-index: 999;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+}
+.iaoi_tile:nth-child(7n+1), .iaoi_tile:nth-child(30n+1), .iaoi_tile:nth-child(12n+1){
+    visibility: visible;
+    margin: 10px 230px 10px 10px;
+ }
+  
+.tile_zoom {
+    width: 200px;
+    height: 300px;
+    background: $white;
+    transition: all ease-in-out .25s;
+    cursor: default;
+    text-transform: uppercase;
+    letter-spacing: -.5px;
+    
+    &:hover {
+        transform: scale(1.1); 
+        -webkit-box-shadow: 0px 0px 24px -8px rgba(0,0,0,0.41);
+        -moz-box-shadow: 0px 0px 24px -8px rgba(0,0,0,0.41);
+        box-shadow: 0px 0px 24px -8px rgba(0,0,0,0.41);
+        z-index: 999;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    h3 {
+        font-family: Helvetica, sans-serif;
+        font-weight: 900;
+        font-size: 4.5rem;
+        padding: 1.4rem 0 4rem 0;
+     }
+     .tile_name_container {
+         height: 90px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         flex-direction: column;
+        h4 {
+            font-family: Helvetica, sans-serif;
+            font-weight: 900;
+            font-size: 1.5rem;
+            width: min-content;
+            padding: 0;
+            margin: -.5rem 0 0 0;
+         }
+     }
+}
+
+.tile_social_wrapper {
+    position: absolute;
+    background:blue;
+    height:100px;
+    width:80px;
+    display:none;
+
+}
+.iaoi_tile:hover .tile_social_wrapper{
+    display:block;
+    cursor:pointer;
+    z-index: 99999;
+}
+
+.tile_hidden {
+    display: none;
+}
+.tile_link {
+    color: $black-drk;
+    &:hover {
+        text-decoration: none;
+        color: $black-drk;
+    }
+}
+#capture_wrapper {
+    display: none;
+    position: fixed;  
+    z-index: 99999;
+    bottom: 200px;
+    text-align: center;
+}
+canvas:nth-of-type(1) {
+    display: none;
+}
+canvas {
+    width: 300px !important; 
+    height: 300px !important;
+}
+  
+.reveal {
+    width: 375px;
+    height: 559px;
+}
+
+#widget {
+    text-align: center;
+    h1 {
+        font-family: Helvetica, sans-serif;
+        font-weight: 900;
+        padding-top: 3rem;
+        color: $black-drk;
+        font-size: 7.5rem;
+    }
+    h3 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        margin: 0 auto;
+        padding-bottom: 4rem;
+        width: 100%;
+        font-family: Helvetica, sans-serif;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+}

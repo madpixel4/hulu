@@ -1,0 +1,329 @@
+.tabs, .tabs-content, .tabs-panel, .tabs-panel.is-active, .tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
+    background-color: transparent;
+    border: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+.tabs-wrapper {
+    display: block; 
+    overflow: hidden; 
+    padding: 0;
+    @include breakpoint(medium) {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    @include breakpoint(large) {
+        width: 100%;
+        margin: 0 0 0 0;
+        padding: 0 0 2rem 11rem;
+    }
+}
+.tabs {
+    margin: 0 auto;
+    
+    @include breakpoint(small) {
+        margin: 0;
+        padding: 0 5px;
+    }
+    @include breakpoint(medium) {
+        margin: 0;
+        padding: 0;
+    }
+    @include breakpoint(large) {
+        margin: 0;
+        padding: 0;
+    }
+}
+.tabs-content {
+    width: 100%;
+    max-width: 1030px;
+    margin: 0 auto;
+    z-index: 0;
+    @include breakpoint(small) {
+
+    }
+    @include breakpoint(medium) {
+
+    }
+    @include breakpoint(large) {
+
+    }
+}
+.tabs-title-main {
+    text-align: center;
+    color: $white;
+    padding: 80px 0 40px 0;
+
+
+    .tabs-title-h1 {
+        font-family: 'Graphik-Semibold';
+        transition: all ease-in-out .25s;
+        margin-bottom: 16px;
+        @include breakpoint(small) {
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: -0.2px;
+        }
+        @include breakpoint(medium) {
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: -0.2px;
+        }
+        @include breakpoint(large) {
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 1.25;
+            letter-spacing: -0.5px;
+        }
+    }
+    .tabs-title-h3 {
+        font-family: "Graphik Web", "Graphik", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 1.32;
+        text-transform: none;
+    }
+}
+.tabs-content-center {
+    @include breakpoint(large) {
+       margin: 0 auto;
+       float: none;
+    }
+}
+.tabs-title {
+    @include breakpoint(small) {
+        width: 25%;
+        text-align: center;
+    }
+
+    @include breakpoint(medium) {
+        display: flex;
+        justify-content: center;
+    }
+    @include breakpoint(large) {
+        width: auto;
+    }
+}
+.tabs-title-one {
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        width: 100%;
+    }
+    @include breakpoint(medium) {
+        width: 100%;
+    }
+    @include breakpoint(large) {
+        width: auto;
+    }
+
+    > a {
+        padding: 5px 10px !important;
+    }
+}
+.tabs-title-two {
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        width: 50%;
+    }
+    @include breakpoint(medium) {
+        width: 50%;
+    }
+    @include breakpoint(large) {
+        width: auto;
+    }
+
+    > a {
+        padding: 5px 10px !important;
+    }
+}
+.tabs-title-three {
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        width: 33%;
+    }
+    @include breakpoint(medium) {
+        width: 33%;
+    }
+    @include breakpoint(large) {
+        width: auto;
+    }
+
+    > a {
+        padding: 5px 10px !important;
+    }
+}
+.tabs-title > a {
+    color: #686869;
+    padding: 0;
+    font-family: $body-font-bold;
+
+
+    @include breakpoint(small) {
+        margin: 1.25rem 10px 1.25rem 10px;
+        font-size: 13px;
+    }
+    @include breakpoint(medium) {
+        margin: 1.25rem 0 2.25rem 0;
+        font-size: 15px;
+    }
+    @include breakpoint(large) {
+        margin: 1.25rem 1rem 2.25rem 1rem;
+        font-size: 17px;
+    }
+
+    &:hover {
+        background-color: transparent;
+        text-decoration: none;
+        padding-bottom: 10px;
+        color: #686869;
+        @include breakpoint(small) {
+            border-bottom: 4px solid #408954 !important;
+        }
+        @include breakpoint(medium) {
+            border-bottom: 4px solid #408954 !important;
+        }
+        @include breakpoint(large) {
+            border-bottom: 4px solid #408954 !important;
+        }
+    }
+}
+
+.tabs-title-black > a {
+    color: #408954;
+    &:hover {
+        color: #000000;
+    }
+}
+
+
+.tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
+    color: $white;
+    text-decoration: none;
+    padding-bottom: 10px;
+    border-bottom: 4px solid $green;
+}
+
+.tabs-title-black > a:focus, .tabs-title-black > a[aria-selected='true'] {
+    color: #000000;
+    border-bottom: 4px solid #000 !important;
+}
+
+.tabs-panel p {
+    font-size: 1.5rem;
+}
+thead, tbody, tfoot, tbody tr:nth-child(even) {
+    color: #fff;
+    border: 0;
+    background-color: transparent;
+}
+.table-black thead, .table-black tbody, .table-black tfoot, .table-black tbody tr:nth-child(even) {
+    color: #000000;
+}
+.table td, .table th {
+    border-top: none;
+
+    @include breakpoint(small) {
+        vertical-align: middle;
+        padding: 1.1rem;
+    }
+    @include breakpoint(medium) {
+        vertical-align: middle;
+        padding: 1.1rem 2rem;
+    }
+    @include breakpoint(large) {
+        vertical-align: bottom;
+        padding: 1.1rem;
+    }
+
+}
+.row-1 {
+    padding-left: 0 !important;
+}
+tbody th, tbody td {
+    font-size: 0.875rem;
+
+    @include breakpoint(medium) {
+        font-size: 1.5rem;   
+
+    }
+    @include breakpoint(large) {
+        font-size: 1.5rem;
+    }
+    
+}
+.row-title {
+    font-family: $body-font-bold;
+    border-bottom: solid 1px $white;
+    @include breakpoint(small) {
+        font-size: 14px;
+    }
+    @include breakpoint(medium) {
+        font-size: 18px;
+    }
+    @include breakpoint(large) {
+        font-size: 18px;
+    }
+}
+.table-black .row-title {
+    border-bottom: solid 1px #000000;
+}
+.row-title-center {
+    text-align: center;
+}
+.row-title-black {
+    color: #000000;
+}
+.headliner {
+    font-size: 0.75rem;
+    color: $green;
+    font-family: $body-font-bold;
+    position: absolute;
+    margin-top: -15px;
+}
+.row-lock {
+    width: 40px;
+}
+.tabs-note {
+    color: #fff;
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin: 0 0 0 15px;
+    text-align: left;
+    letter-spacing: 1.5px;
+    @include breakpoint(small) {
+        text-align: center;
+        margin: 0;
+        padding: 0 20px;
+    }
+    @include breakpoint(large) {
+        text-align: left;
+        margin-left: 15px;
+        padding: 0;
+    }
+    a {
+        &:active, &:focus {
+            color: $blue;
+        }
+    }
+}
+.row-one {
+    transition: all ease-in-out .25s;
+    @include breakpoint(small) {
+        width: 65%;  
+    }
+    @include breakpoint(medium) {
+        width: 70%;  
+    }
+    @include breakpoint(large) {
+        width: 48%;
+    }
+}
+.row-two {
+    text-align: right;
+  }
